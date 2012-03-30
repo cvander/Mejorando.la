@@ -1,0 +1,59 @@
+{% load static %} {% get_static_prefix as STATIC_PREFIX %}
+<!DOCTYPE html>
+<html lang="es_ES">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1 ,maximum-scale=1" />
+    <title>{{ title }}</title>
+    
+    <link rel="shortcut icon" href="{{ STATIC_PREFIX }}/images/favicon.ico" />
+
+    <meta property="fb:page_id" content="198868566791554" />
+    <meta property="og:title" content="Mejorando.la" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://mejorando.la/"/>
+    <meta property="og:image" content="http://mejorando.la/images/isotipo.png" />
+    <meta property="og:site_name" content="http://mejorando.la/" />
+    <meta property="fb:admins" content="1030603473" />  
+
+    <link rel="stylesheet" href="{{ STATIC_PREFIX }}/css/base.css?2903" />
+
+    {% block head %}{% endblock %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
+
+    <script src="https://apis.google.com/js/plusone.js"></script>
+    <script src="{{ STATIC_PREFIX }}/js/index.js"></script>
+    <script src="{{ STATIC_PREFIX }}/js/css_browser_selector.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]>
+    <script src="{{ STATIC_PREFIX }}/js/selectivizr-min.js"></script>
+    <script src="{{ STATIC_PREFIX }}/js/respond.min.js"></script>
+    <noscript>
+      <link rel="stylesheet" href="[fallback css]">
+    </noscript><![endif]-->
+  </head>
+  <body>
+    {% block letrero %}{% endblock %}
+    <header>
+      <div>
+        <h1><a href="/" title="mejorando.la"><img src="{{ STATIC_PREFIX }}/images/logos/mejorandola.png" alt="mejorando.la"></a>
+        </h1><a id="maestros" href="http://maestrosdelweb.com" target="_blank" title="maestros del web"><img src="{{ STATIC_PREFIX }}/images/logos/maestros.png" alt="maestros del web"></a><a id="cristalab" href="http://cristalab.com" target="_blank" title="cristalab"><img src="{{ STATIC_PREFIX }}/images/logos/cristalab.png" alt="cristalab"></a>
+      </div>
+    </header>
+
+    {% block body %}{% endblock %}
+
+    <footer>
+      <div class="izquierda">
+        <div class="text"><span>transmisión en vivo</span><span>cada jueves</span>
+        </div>
+      </div>
+      <div class="derecha"><span>con</span><a href="http://twitter.com/freddier" title="@freddier" target="_blank">@freddier</a><span>+</span><a href="http://twitter.com/cvander" title="@cvander" target="_blank">@cvander</a>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,110 @@
+{% extends "website/base.html" %}
+
+{% block body %}
+<section id="cuerpo">
+  <article id="ultimo">
+    <div class="tela">
+    </div>
+    
+    <img src="http://dev.mejorando.la/resizer.php?s=h&amp;u={{ ultimo_video.imagen }}" alt="{{ ultimo_video.titulo }}" width="999" height="442" class="absolute"/>
+    
+    <div class="datos">
+      <p class="horario"><span class="block">todos los jueves - <strong>en vivo </strong></span><span class="big">{{ horario.pais }} /</span><strong class="big"> {{ horario.hora }}</strong>
+      </p><a href="/videos/{{ ultimo_video.url }}" title="{{ ultimo_video.titulo }}" class="titulo">
+        <h2 class="titulo">{{ ultimo_video.titulo }}</h2></a><span class="fecha">{{ ultimo_video.fecha|date:"F • j" }}</span>
+        <a href="/videos/{{ ultimo_video.url }}" title="{{ ultimo_video.titulo }}" class="boton">&#62; ver capitulo &#60;</a>
+    </div>
+  </article>
+  <aside id="social">
+    <div class="btn_youtube"><a href="http://www.youtube.com/subscription_center?add_user=mejorandolaweb&feature=creators_cornier-http%3A//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_64x64_red.png"><img src="{{ STATIC_PREFIX }}/images/home/boton-youtube.png" alt="Subscribe to me on YouTube"/></a><img src="http://www.youtube-nocookie.com/gen_204?feature=creators_cornier-http%3A//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_64x64_red.png" style="display: none"/>
+
+    </div>
+    <div class="btn_twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Yo también sintonizo #mejorandola" data-url="http://mejorando.la/" data-count="vertical" data-related="mejorandolaweb">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+    </div>
+    <div id="fb-root" class="btn_facebook"><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://www.facebook.com/mejorandola" send="false" layout="box_count" width="80" show_faces="false" ></fb:like>
+
+    </div>
+    <div class="btn_googlemas"><g:plusone size="tall" href="http://mejorando.la/"></g:plusone>	
+
+    </div>
+  </aside>
+  <div id="proximo" data-time="{{ horario.hora }}">
+    <div class="cinta">
+    </div>
+    <h3 class="centro">proximo capitulo en
+    </h3>
+    <div class="cuenta">
+      <div>
+        <span id="nextday"></span>
+      </div><span>dias</span>
+    </div>
+    <div class="cuenta">
+      <div>
+        <span id="nexthour"></span>
+      </div><span>horas</span>
+    </div>
+    <div class="cuenta">
+      <div>
+        <span id="nextmin"></span>
+      </div><span>minutos</span>
+    </div>
+  </div>
+  <section id="anteriores">
+    <div class="cinta">
+      <div class="todos"><a href="/videos" title="ver todos">archivo completo</a>
+      </div>
+    </div>
+
+    {% for video in videos %}
+    <article class="capitulo"><a href="{{ video.url }}" title="{{ video.titulo }}">
+        <div class="imagen">
+        	<img src="http://dev.mejorando.la/resizer.php?s=t&amp;u={{ video.imagen }}" alt="{{ video.titulo }}" width="245" height="176"/>
+        </div>
+        <div class="texto">
+          <div class="block">
+            <h2 class="tit">{{ video.titulo }}</h2>
+          </div>
+        </div></a>
+    </article>
+	{% endfor %}
+  </section>
+  <section id="cursos">
+    <h3>cursos
+    </h3>
+    <div class="pais azulclaro"><a href="http://mejorando.la/cursos/iphone-android-colombia/" title="iphone-android-colombia">
+        <div class="imagen"><img src="{{ STATIC_PREFIX }}/images/home/colombia.jpg" title="cursos en colombia"/>
+        </div>
+        <div class="fecha">
+          <h4>Colombia
+          </h4>
+          <p>Abril.20-21 <strong>/</strong>
+          </p>
+        </div>
+        <div class="nombre">
+          <h5>programación para iphone y android
+          </h5>
+        </div>
+        <div class="tec"><img src="{{ STATIC_PREFIX }}/images/home/apple.png" alt="iphone-android-colombia"/>
+        </div></a>
+    </div>
+    <div class="pais azuloscuro"><a href="http://mejorando.la/cursos/iphone-android-mexico/" title="iphone-android-colombia">
+        <div class="imagen"><img src="{{ STATIC_PREFIX }}/images/home/mexico.jpg" alt="cursos en mexico"/>
+        </div>
+        <div class="fecha">
+          <h4>méxico
+          </h4>
+          <p>Marzo.16-17 <strong>/</strong>
+          </p>
+        </div>
+        <div class="nombre">
+          <h5>programación para iphone y android  
+          </h5>
+        </div>
+        <div class="tec"><img src="{{ STATIC_PREFIX }}/images/home/android.png" alt="html5"/>
+        </div></a>
+    </div>
+  </section>
+</section>
+
+{% endblock %}

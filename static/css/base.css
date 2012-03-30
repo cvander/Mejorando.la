@@ -1,0 +1,550 @@
+/*
+Theme Name: Mejorando.la
+Theme URI: http://mejorando.la
+Description: El mejor tema que mejorando.la ha tenido
+Version: 1.0
+Author: Mejorando.la Team: @freddier, @dual3nigma, @LeonidasEsteban, @sp3ncer
+*/
+
+@font-face {
+  font-family: 'Bold';
+  src: url("../fonts/opensans-bold-webfont.eot");
+  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-bold-webfont.woff") format('woff'), url("../fonts/opensans-bold-webfont.ttf") format('truetype'), url("../fonts/opensans-bold-webfont.svg#OpenSansBold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Light';
+  src: url("../fonts/opensans-light-webfont.eot");
+  src: url("../fonts/opensans-light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-light-webfont.woff") format('woff'), url("../fonts/opensans-light-webfont.ttf") format('truetype'), url("../fonts/opensans-light-webfont.svg#OpenSansLight") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+}
+::selection {
+  text-shadow: 0 0 20px #017ecd, 1px 1px 1px #808080;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  margin: 0;
+}
+body {
+  background: #3c4043;
+  color: #fff;
+  font-family: 'Light', Arial;
+  font-size: 16px;
+}
+footer {
+  color: #3d4043;
+  padding-top: 75px;
+  text-transform: uppercase;
+}
+footer a {
+  color: #3d4043;
+  text-decoration: underline;
+  text-transform: lowercase;
+}
+footer div {
+  display: inline-block;
+  *display: inline;
+  min-height: 70px;
+  vertical-align: top;
+  zoom: 1;
+}
+footer .derecha {
+  font-family: Bold;
+  font-size: 25px;
+  height: 50px;
+  line-height: 70px;
+}
+footer .derecha a {
+  margin: 0 85px;
+}
+footer .izquierda {
+  background: #3d4043 url("../images/home/footer.jpg") no-repeat right top;
+  color: #fff;
+  padding-right: 20px;
+  text-align: right;
+  width: 295px;
+}
+footer .izquierda .text {
+  width: 220px;
+}
+footer .izquierda span {
+  display: block;
+  margin-right: 20px;
+  text-align: left;
+}
+footer .izquierda span:nth-child(1) {
+  font-size: 20px;
+  letter-spacing: -1px;
+  margin-top: 20px;
+}
+footer .izquierda span:nth-child(2) {
+  font-family: Bold;
+  font-size: 12px;
+  font-weight: bold;
+}
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+/*h1 a img
+		height 96px
+		width 295px*/
+}
+header #maestros {
+  margin-left: 450px;
+  padding-top: 17px;
+  position: absolute;
+  top: 0;
+  width: 110px;
+/*img
+			width 110px*/
+}
+header #cristalab {
+  margin-left: 770px;
+  padding-top: 17px;
+  position: absolute;
+  top: 0;
+  width: 110px;
+/*img
+			width 110px*/
+}
+header div {
+  background: url("../images/adorno-logo.png") no-repeat 680px top;
+  border-top: 7px solid #fff;
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+  *width: auto;
+}
+h3 {
+  color: #3d4043;
+  font-family: Bold;
+  font-size: 45px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+img {
+  border: none;
+}
+strong {
+  font-family: 'Bold';
+}
+/*#cuerpo	section
+		width 100%*/
+#anteriores {
+  background: #fff;
+  min-width: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+#anteriores .todos {
+  background: #fff url("../images/home/playall.jpg") no-repeat left top;
+  color: #3f4044;
+  position: absolute;
+  right: 0;
+  padding: 7px 20px 7px 30px;
+}
+#anteriores .todos a {
+  color: #3f4044;
+  font-size: 14px;
+  font-family: Bold;
+}
+#anteriores h3 {
+  margin-left: 80px;
+  text-align: left;
+}
+#anteriores .capitulo:nth-child(5) {
+  margin-right: 0;
+}
+#anteriores .capitulo {
+  *display: inline;
+  border-right: 1px solid #fff;
+  display: inline-block;
+  height: 157px;
+  margin: 0 21px 0 0;
+  vertical-align: top;
+  width: 230px;
+  zoom: 1;
+}
+#anteriores .capitulo p {
+  background: rgba(0,0,0,0.50);
+  display: inline;
+}
+#anteriores .capitulo .hora {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+}
+#anteriores .capitulo h2 {
+  background: rgba(0,0,0,0.50);
+  display: inline;
+}
+#anteriores .capitulo .block {
+  display: block;
+  margin-top: 5px;
+}
+#anteriores .capitulo .cap {
+  font-family: Bold;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+#anteriores .capitulo .imagen {
+  position: absolute;
+  z-index: 1;
+}
+#anteriores .capitulo .imagen img {
+  width: 230px;
+  height: 157px;
+}
+#anteriores .capitulo .texto {
+  line-height: 20px;
+  padding: 15px 15px 0 15px;
+  position: relative;
+  text-align: left;
+  text-transform: none;
+  word-break: break-word;
+  z-index: 2;
+}
+#anteriores .capitulo article:nth-child(1) {
+  border-left: 2px solid #fff;
+}
+#anteriores .capitulo article:nth-child(4) {
+  border-right: 2px solid #fff;
+}
+#anteriores .capitulo:hover .hora {
+  opacity: 1;
+}
+#anteriores .tit {
+  font-size: 23px;
+}
+#cuerpo,
+hgroup,
+footer {
+  background: #fff;
+  margin: 0 auto;
+  width: 1000px;
+}
+#cursos {
+  background: #fff;
+  padding-top: 65px;
+  text-transform: uppercase;
+}
+#cursos h3 {
+  margin-left: 80px;
+}
+#cursos a {
+  color: #fff;
+}
+#cursos a:hover {
+  text-decoration: none;
+}
+#cursos a:hover h5 {
+  text-decoration: underline;
+}
+#cursos .azulclaro {
+  background: #0073e8;
+}
+#cursos .azuloscuro {
+  background: #0186b8;
+}
+#cursos .verdeclaro {
+  background: #04a764;
+}
+#cursos .verdeoscuro {
+  background: #03978d;
+}
+#cursos .pais {
+  height: 56px;
+  margin-top: 3px;
+  position: relative;
+}
+#cursos .pais div {
+  *display: inline;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+}
+#cursos .pais .imagen img {
+  height: 56px;
+}
+#cursos .pais .fecha {
+  margin-left: 25px;
+}
+#cursos .pais .fecha h4 {
+  font-family: Bold;
+  font-size: 15px;
+  margin: 7px 0 -7px 3px;
+}
+#cursos .pais .fecha p {
+  font-size: 32px;
+}
+#cursos .pais .fecha strong {
+  font-weight: normal;
+  font-family: Light;
+}
+#cursos .pais .nombre {
+  font-size: 32px;
+  padding-top: 18px;
+  text-align: left;
+  width: 656px;
+  margin-left: 5px;
+  position: relative;
+}
+#cursos .pais .nombre a {
+  position: relative;
+}
+#cursos .pais .tec {
+  background: url("../images/home/fondo-logo-tec.png");
+  height: 66px;
+  position: absolute;
+  right: 0;
+  width: 115px;
+}
+#cursos .pais .tec img {
+  margin-left: 60px;
+  margin-top: -5px;
+  vertical-align: middle;
+}
+#cursos .pais .tec:after {
+  display: block;
+  clear: both;
+}
+#proximo {
+  background: #fff;
+  color: #3d4043;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 25px;
+}
+#proximo h3 {
+  font-family: Light;
+  font-size: 35px;
+  font-weight: normal;
+  letter-spacing: 15px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+#proximo span {
+  display: block;
+  font-size: 12px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+#proximo span:nth-child(6) {
+  margin-left: 2px;
+}
+#proximo .cuenta {
+  display: inline-block;
+  *display: inline;
+  vertical-align: top;
+  zoom: 1;
+}
+#proximo .cuenta div {
+  background: #3d4043;
+  font-family: Bold;
+  font-size: 50px;
+  height: 64px;
+  min-width: 10px;
+  padding: 0 10px;
+  position: relative;
+}
+#proximo .cuenta div span {
+  color: #fff;
+  font-size: 57px;
+  position: relative;
+}
+#proximo .cuenta div .linea {
+  background: #fff;
+  display: none;
+  height: 2px;
+  margin-left: -10px;
+  margin-top: 50%;
+  position: absolute;
+  width: 100%;
+}
+#proximo .cuenta:nth-child(even) {
+  margin: 0 80px;
+}
+#social {
+  margin: -50px auto 0 auto;
+  width: 400px;
+  position: absolute;
+  margin-left: 310px;
+  z-index: 5;
+}
+#social div {
+  display: inline-block;
+  *display: inline;
+  margin-left: 40px;
+  vertical-align: top;
+  zoom: 1;
+}
+#social div:nth-child(1) {
+  margin-left: 0;
+}
+#social .btn_youtube:after,
+#social .btn_twitter:after,
+#social .btn_facebook:after,
+#social .btn_googlemas:after {
+  background: #fff;
+  border-radius: 5px;
+  content: "";
+  height: 30px;
+  margin-left: -5px;
+  margin-top: -28px;
+  display: block;
+  width: 60px;
+}
+#social .btn_youtube:after {
+  width: 70px;
+}
+#social .btn_twitter:after {
+  width: 80px;
+}
+#social .btn_facebook,
+#social .btn_googlemas {
+  width: 55px;
+}
+#social .btn_facebook:after {
+  margin-top: -25px;
+  width: 55px;
+}
+#ultimo {
+  height: 500px;
+  width: 100%;
+}
+#ultimo .absolute {
+  height: 500px;
+  position: absolute;
+  width: 1000px;
+  z-index: 1;
+}
+#ultimo .datos {
+  position: relative;
+  z-index: 4;
+}
+#ultimo .datos .titulo {
+  -webkit-transition: 0.3s;
+  margin-right: 20px;
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 50px;
+  margin-top: 5px;
+  max-width: 90%;
+}
+#ultimo .datos .titulo:hover {
+  text-shadow: 0 0 20px rgba(255,255,255,0.50);
+  text-decoration: none;
+}
+#ultimo .tela {
+  background: rgba(0,0,0,0.50);
+  position: absolute;
+  z-index: 2;
+  width: 1000px;
+  height: 500px;
+}
+#ultimo .boton,
+#ultimo .fecha,
+#ultimo .horario,
+#ultimo .titulo {
+  clear: both;
+  display: block;
+  float: right;
+  margin-right: 40px;
+  text-align: right;
+}
+#ultimo .boton {
+  font-weight: bold;
+  font-family: Bold;
+  margin-top: 10px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+#ultimo .boton:hover {
+  text-shadow: 0 0 10px #fff;
+}
+#ultimo .fecha {
+  font-size: 15px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+#ultimo .horario {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin: 115px 40px 0 0;
+  text-transform: uppercase;
+}
+#ultimo .horario .block {
+  display: block;
+}
+#ultimo .horario .big {
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.cinta {
+  background: url("../images/home/countdown_separador.jpg");
+  background-size: 100%;
+  border-bottom: 1px solid #fff;
+  height: 32px;
+  width: 100%;
+}
+/***********crossbrowser************/
+.ie8 #ultimo .datos .titulo {
+  max-width: none !important;
+  padding-left: 30px !important;
+}
+.ie8 .tela {
+  background: url("../images/home/tela.png");
+}
+.ie8 .block .tit {
+  background: url("../images/home/tela.png");
+}
+
+
+#envivo{
+  
+  background:black;
+  height:60px;
+  margin:0 auto;
+  width:1000px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+@-webkit-keyframes envivo{
+  to{-webkit-transform:translateX(0);}
+  from{-webkit-transform:translateX(-1000px);}
+}
+@-moz-keyframes envivo{
+  to{-moz-transform:translateX(0);}
+  from{-moz-transform:translateX(-1000px);}
+}
+#envivo .patron{
+  -webkit-animation:25s envivo infinite linear;
+  -moz-animation:25s envivo infinite linear;
+  background:url("../images/patron.jpg") repeat-x;
+  width:2000px;
+  height:60px;
+  position: relative;
+  z-index:1;
+}
+#envivo .vivo{
+  position: absolute;
+  right:0;
+  top:0;
+  display: block;
+  z-index:2;
+}

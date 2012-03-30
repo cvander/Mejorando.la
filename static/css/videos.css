@@ -1,0 +1,135 @@
+body {
+  background: #3c4043;
+}
+footer {
+  padding-top: 0;
+}
+#archivo {
+  position: relative;
+  float: right;
+  text-align: right;
+}
+#anteriores {
+  background: none;
+  margin-bottom: 160px;
+  text-align: center;
+/*.capitulo:nth-child(odd)
+		background red
+	.capitulo:nth-child(even)
+		background blue*/
+}
+#anteriores .capitulo:nth-child(1) {
+  margin-right: 30px;
+  margin-left: 600px;
+  display: block;
+}
+#anteriores .capitulo:nth-child(2) {
+  display: block;
+  margin-left: 352px;
+}
+#anteriores .capitulo:nth-child(3),
+#anteriores .capitulo:nth-child(6),
+#anteriores .capitulo:nth-child(9),
+#anteriores .capitulo:nth-child(12),
+#anteriores .capitulo:nth-child(15) {
+  float: right;
+  margin-right: 30px;
+}
+#anteriores .capitulo:nth-child(4),
+#anteriores .capitulo:nth-child(7),
+#anteriores .capitulo:nth-child(10),
+#anteriores .capitulo:nth-child(13),
+#anteriores .capitulo:nth-child(16) {
+  float: right;
+  margin-right: 16px;
+}
+#anteriores .capitulo:nth-child(5),
+#anteriores .capitulo:nth-child(8),
+#anteriores .capitulo:nth-child(11),
+#anteriores .capitulo:nth-child(14),
+#anteriores .capitulo:nth-child(17) {
+  display: block;
+  margin-left: 352px;
+  clear: both;
+}
+#anteriores .art1 {
+  margin-right: 30px;
+}
+#anteriores .art2 {
+  margin-left: 30px;
+  margin-right: 60px;
+}
+#anteriores .capitulo {
+  border: none;
+  height: 167px;
+  width: 480px;
+}
+#anteriores .capitulo .block {
+  margin-top: 5px;
+}
+#anteriores .capitulo .cintaver {
+  background: url("../images/archivo/deco_video.png");
+  display: inline-block;
+  height: 167px;
+  margin-right: 2px;
+  width: 16px;
+}
+#anteriores .capitulo .imagen img {
+  height: 167px;
+  width: 230px;
+}
+#anteriores .capitulo h2 {
+  font-size: 20px;
+}
+#anteriores .capitulo a {
+  height: 167px;
+  width: 230px;
+  display: inline-block;
+  *display: inline;
+  vertical-align: top;
+  zoom: 1;
+}
+#anteriores .capitulo .desc {
+  *display: inline;
+  background: none;
+  color: #ddd;
+  display: inline-block;
+  font-size: 12.5px;
+  line-height: 16.5px;
+  margin: 0 15px 55px 0;
+  text-align: right;
+  text-transform: none;
+  vertical-align: bottom;
+  width: 189px;
+  zoom: 1;
+}
+#anteriores .capitulo .texto {
+  padding: 20px 5px 0 10px;
+}
+#cuerpo {
+  background: none;
+  box-shadow: 0 0 150px rgba(0,0,0,0.80) inset;
+  overflow: hidden;
+  padding-top: 180px;
+}
+.mes {
+  background: url("../images/archivo/deco_headline.png") no-repeat right 0;
+  margin-bottom: 25px;
+}
+.mes h5 {
+  display: inline-block;
+  font-size: 112px;
+  height: 112px;
+  margin-top: -15px;
+  margin-right: 20px;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.mes span {
+  font-size: 20px;
+  letter-spacing: -2px;
+  margin-right: 15px;
+  margin-top: 20px;
+  vertical-align: top;
+}

@@ -1,0 +1,245 @@
+body {
+  overflow-y: scroll;
+}
+#contdes {
+  background: url("../images/post/cont-post.jpg") no-repeat left top, url("../images/post/cont-post2.jpg") no-repeat right bottom;
+  padding-bottom: 50px;
+  width: 100%;
+}
+#contdes .desc {
+  color: #3d4043;
+  font-family: Arial;
+  letter-spacing: -0.2;
+  line-height: 20px;
+  margin: 0 auto;
+  text-align: left;
+  width: 550px;
+}
+
+#contdes .desc p {
+	margin:1em 0;
+}
+
+#contdes .desc strong {
+  font-weight:normal;
+}
+#contdes .desc .cap {
+  display: none;
+}
+#contdes .desc .fehca {
+  color: #3d4043;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin: 40px auto 10px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+#contdes .desc .intro {
+  color: #3d4043;
+  font-family: Arial;
+  letter-spacing: -0.2;
+  line-height: 20px;
+  margin: 0 auto;
+  text-align: left;
+  width: 550px;
+}
+#contdes .desc h3 {
+  font-size: 18px;
+  text-transform: none;
+}
+#contdes .desc a, .logged-in-as a {
+  color: #0073e8;
+}
+#contdes .desc ul {
+  margin: 10px auto;
+}
+#contdes .desc ul li {
+  margin-bottom: 5px;
+  text-align: left;
+  list-style: none;
+}
+#contdes .desc img {
+  display: block;
+  margin: 0 auto;
+}
+#post {
+  margin: 0 auto;
+  width: 1000px;
+  background: #fff;
+}
+#video h2 {
+  font-size: 40px;
+  line-height: 38px;
+  text-align: right;
+  margin: 10px 0;
+}
+#video .contvideo {
+  width: 682px;
+  height: 416px;
+  position: relative;
+  z-index: 1;
+}
+#video .contvideo	iframe,
+#video .contvideo object,
+#video .contvideo embed {
+  border: 10px solid rgba(255,255,255,0.30);
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#video .absolute {
+  position: absolute;
+  z-index: 1;
+  width: 1000px;
+  height: 549px;
+}
+#video .cont {
+  padding-top: 115px;
+  margin: 0 auto;
+  position: relative;
+  width: 682px;
+  z-index: 2;
+}
+#video .patron {
+  background: url("../images/post/pattern-post.png");
+  height: 549px;
+  position: absolute;
+  width: 1000px;
+  z-index: 2;
+}
+#comentarios {
+  background: #fff;
+  color: #3d4043;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0 auto;
+  width: 1000px;
+}
+#comentarios #commentform,
+#comentarios .comentario {
+  width: 682px;
+  margin: 0 auto;
+}
+#comentarios #commentform {
+  position: relative;
+  padding-bottom: 50px;
+}
+#comentarios #commentform label {
+  background: #6b6e71 url("../images/post/form_post.png") no-repeat right bottom;
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  height: 33px;
+  line-height: 31px;
+  margin-bottom: 5px;
+  padding-left: 12px;
+  position: relative;
+  text-transform: uppercase;
+  width: 129px;
+  z-index: 2;
+}
+#comentarios #commentform input {
+  background-origin: border-box;
+  border: none;
+  border-bottom: 1px solid #97989a;
+  border-right: 1px solid #97989a;
+  border-top: 1px solid #97989a;
+  display: inline-block;
+  height: 30px;
+  outline: 0;
+  position: relative;
+  top: 1px;
+  width: 536px;
+  z-index: 1;
+}
+#comentarios #commentform .coment {
+  background: #6b6e71 url("../images/post/form_post2.png") no-repeat right bottom;
+}
+#comentarios #commentform .comentar {
+  display: inline-block;
+  border: 1px solid #97989a;
+  max-width: 530px;
+  min-height: 168px;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  width: 530px;
+}
+#comentarios #commentform .publicar, #comentarios #commentform #submit {
+  background: #0073e8 url("../images/post/button_post.jpg") no-repeat left top;
+  border: none;
+  color: #fff;
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+  height: 34px;
+  line-height: 34px;
+  margin-right: 4px;
+  margin-top: -35px;
+  text-transform: uppercase;
+  width: 142px;
+}
+#comentarios .comentario {
+  margin: 0 auto;
+  width: 689px;
+}
+#comentarios .comentario div {
+  display: inline-block;
+  vertical-align: top;
+}
+#comentarios .comentario .top {
+  width: 100%;
+}
+#comentarios .comentario .top .avatar {
+  width: 45px;
+}
+#comentarios .comentario .top .avatar img {
+  height: 45px;
+  width: 45px;
+}
+#comentarios .comentario .top .derecha {
+  background: #ccced0;
+  font-size: 17px;
+  height: 45px;
+  line-height: 45px;
+  text-transform: uppercase;
+  width: 640px;
+}
+
+#comentarios .comentario .top .derecha a small {
+	text-transform:lowercase;
+}
+#comentarios .comentario .top .derecha h5 {
+  display: inline;
+  font-size: 17px;
+  margin-left: 20px;
+}
+#comentarios .comentario .top .bla {
+  width: 600px;
+  padding: 10px 20px 25px 20px;
+  float: right;
+}
+/**************** crossbowser *************/
+.ie #comentarios #commentform .comentar {
+  max-width: 535px;
+  width: 535px;
+}
+.ie #comentarios #commentform .publicar, .ie #submit {
+  margin-right: 0;
+  margin-top: -34px;
+}
+.ie8 #comentarios #commentform .publicar, .ie8 #submit {
+  margin-top: -27px;
+}
+.ie8 #comentarios #commentform input {
+  top: -6px;
+}
+
+#comentarios h2 {
+  margin-left:154px;
+  margin-bottom:20px;
+}
