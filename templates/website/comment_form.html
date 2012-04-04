@@ -1,5 +1,5 @@
-<div id="respond">
-  <form action="{{ video.get_absolute_url }}" method="post" id="commentform">
+ <div class="respond">
+  <form action="{{ video.get_absolute_url }}" method="post" class="commentform">
     <label class="nom" for="author">nombre</label>{{ form.autor }}
     {{ form.autor.errors }}
     <label class="mail" for="email">mail</label>{{ form.autor_email }}
@@ -7,6 +7,6 @@
     <label class="web" for="url">website</label>{{ form.autor_url }}
     <label class="coment" for="comment">comentario</label>{{ form.content }}
     {{ form.content.errors }}
-    <input name="submit" type="submit" id="submit" value="Publicar">
+    <input name="submit" type="submit" class="submit" value="Publicar">
   </form>
 </div>
