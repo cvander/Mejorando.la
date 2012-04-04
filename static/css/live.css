@@ -10,7 +10,6 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
   height: 100%;
-  max-width: 1920px;
 }
 .ie8 footer {
   display: none;
@@ -325,7 +324,7 @@ header div {
   #contenido #col1 #social {
     float: right;
     margin-top: 10px;
-    position: relative;
+    position: absolute;
     width: 183px;
   }
   #contenido #col1 #social div:nth-child(3) {
@@ -341,7 +340,7 @@ header div {
     margin-right: -6px;
   }
   .ipad #contenido #col1 #social {
-    position: relative;
+    position: absolute;
     margin-left: 140px;
     float: none;
   }
@@ -409,9 +408,12 @@ header div {
     top: 40px;
   }
   #contenido #col2 {
-    width: 48%;
+    width: 47%;
   }
 }
+.ipad #contenido #col1 #social {
+  position: relative;
+  }
 .ipad #contenido #col1 #mail input[type=text] {
   top: 34px;
 }

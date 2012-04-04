@@ -118,9 +118,21 @@ body {
   margin: 0 auto;
   width: 1000px;
 }
+
+.errorlist {
+  display: block;
+  list-style: none;
+  color: red;
+  padding-left: 0;
+}
 #comentarios #commentform,
 #comentarios .comentario {
   width: 682px;
+  margin: 0 auto;
+}
+.ipad #comentarios #commentform,
+#comentarios .comentario {
+  width: 690px;
   margin: 0 auto;
 }
 #comentarios #commentform {
@@ -144,10 +156,11 @@ body {
 }
 #comentarios #commentform input {
   background-origin: border-box;
-  border: none;
   border-bottom: 1px solid #97989a;
+  border-radius:0;
   border-right: 1px solid #97989a;
   border-top: 1px solid #97989a;
+  border: none;
   display: inline-block;
   height: 30px;
   outline: 0;
@@ -160,17 +173,21 @@ body {
   background: #6b6e71 url("../images/post/form_post2.png") no-repeat right bottom;
 }
 #comentarios #commentform textarea {
-  display: inline-block;
+  border-radius:0;
   border: 1px solid #97989a;
+  display: inline-block;
+  font-family:Arial;
   max-width: 530px;
-  min-height: 168px;
+  min-height: 134px;
   outline: 0;
+  padding-bottom:34px;
   position: relative;
   vertical-align: top;
   width: 530px;
 }
 #comentarios #commentform .publicar, #comentarios #commentform #submit {
   background: #0073e8 url("../images/post/button_post.jpg") no-repeat left top;
+  border-radius:0;
   border: none;
   color: #fff;
   float: right;
@@ -241,5 +258,5 @@ body {
 
 #comentarios h2 {
   margin-left:154px;
-  margin-bottom:20px;
+  padding-bottom:20px;
 }
