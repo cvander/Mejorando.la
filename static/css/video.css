@@ -159,7 +159,7 @@ body {
 #comentarios #commentform .coment {
   background: #6b6e71 url("../images/post/form_post2.png") no-repeat right bottom;
 }
-#comentarios #commentform .comentar {
+#comentarios #commentform textarea {
   display: inline-block;
   border: 1px solid #97989a;
   max-width: 530px;

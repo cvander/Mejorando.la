@@ -3,16 +3,15 @@
 {% block body %}
 <section id="cuerpo">
   <article id="ultimo">
-    <div class="tela">
-    </div>
+    <div class="tela"></div>
     
-    <img src="http://dev.mejorando.la/resizer.php?s=h&amp;u={{ ultimo_video.imagen }}" alt="{{ ultimo_video.titulo }}" width="999" height="442" class="absolute"/>
+    <img src="{{ ultimo_video.get_home_image_url }}" alt="{{ ultimo_video.titulo }}" width="999" height="442" class="absolute"/>
     
     <div class="datos">
       <p class="horario"><span class="block">todos los jueves - <strong>en vivo </strong></span><span class="big">{{ horario.pais }} /</span><strong class="big"> {{ horario.hora }}</strong>
-      </p><a href="/videos/{{ ultimo_video.url }}" title="{{ ultimo_video.titulo }}" class="titulo">
+      </p><a href="{{ ultimo_video.get_absolute_url }}" title="{{ ultimo_video.titulo }}" class="titulo">
         <h2 class="titulo">{{ ultimo_video.titulo }}</h2></a><span class="fecha">{{ ultimo_video.fecha|date:"F • j" }}</span>
-        <a href="/videos/{{ ultimo_video.url }}" title="{{ ultimo_video.titulo }}" class="boton">&#62; ver capitulo &#60;</a>
+        <a href="{{ ultimo_video.get_absolute_url }}" title="{{ ultimo_video.titulo }}" class="boton">&#62; ver capitulo &#60;</a>
     </div>
   </article>
   <aside id="social">
@@ -57,13 +56,13 @@
     </div>
 
     {% for video in videos %}
-    <article class="capitulo"><a href="{{ video.url }}" title="{{ video.titulo }}">
+    <article class="capitulo"><a href="{{ video.get_absolute_url }}" title="{{ video.titulo }}">
         <div class="imagen">
-        	<img src="http://dev.mejorando.la/resizer.php?s=t&amp;u={{ video.imagen }}" alt="{{ video.titulo }}" width="245" height="176"/>
+        	<img src="{{ video.get_thumb_image_url }}" alt="{{ video.titulo }}" width="245" height="176"/>
         </div>
         <div class="texto">
           <div class="block">
-            <h2 class="tit">{{ video.titulo }}</h2>
+            <h2 class="tit">{{ video.titulo|truncatechars:40 }}</h2>
           </div>
         </div></a>
     </article>

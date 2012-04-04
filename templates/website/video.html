@@ -1,1 +1,65 @@
 {% extends "website/base.html" %}
+
+{% block title %}{{video.titulo}} | Mejorando la Web{% endblock %}
+
+{% block head %}
+<link href="{{ STATIC_PREFIX }}/css/video.css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+<section id="post">
+  <article id="video">
+    <div class="patron"></div>
+
+    <img src="{{ video.get_single_image_url }}" 
+        alt="{{ video.titulo }}" class="absolute"/>
+    <div class="cont">
+      <h2 class="titulo">{{ video.titulo }}</h2>
+      <div class="contvideo">{{ video.embed_code|safe }}</div>
+    </div>
+  </article>
+  <div id="contdes">
+    <article class="desc"><span class="fehca">{{ video.fecha|date:"F.j" }}</span>
+      <div class="intro">
+        {{ video.descripcion|safe|linebreaks }}
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="comentarios">
+
+  {% include "website/comment_form.html" %}
+
+  {% if comentarios|length == 1 %}
+  <h2>1 Comentario</h2>
+  {% elif comentarios|length > 0 %}
+  <h2>{{ comentarios|length }} Comentarios</h2>
+  {% else %}
+  <h2>Sin comentarios</h2>
+  {% endif %}
+
+  {% load gravatar %}
+  {% for comentario in comentarios %}
+  <article class="comentario" id="comment-{{ comentario.id }}">
+    <div class="top">
+      <div class="avatar">{% gravatar_img_for_email comentario.autor_email 45 %}</div>
+      <div class="derecha">
+        <h5 class="nombre">{{ comentario.autor }}</h5><span class="fecha">/ {{ comentario.fecha|date:"F.d" }} </span> 
+    {% if comentario.autor_url %}
+    <a href="{{ comentario.autor_url }}" target="_blank"><small>{{ comentario.autor_url|cut:"http://" }}</small></a>
+    {% endif %}
+      </div>
+      <div class="bla">
+        {{ comentario.content|linebreaks }}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+
+  {% if comentarios|length > 5 %}
+    {% include "website/comment_form.html" %}
+  {% endif %}
+</section>
+
+{% endblock %}

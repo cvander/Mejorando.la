@@ -1,1 +1,37 @@
 {% extends "website/base.html" %}
+
+{% block title %}Videos | Mejorando la Web{% endblock %}
+
+{% block head %}
+<link href="{{ STATIC_PREFIX }}/css/videos.css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+<section id="cuerpo">
+  <section id="archivo">
+	{% for mes in meses %}
+		<div class="mes">
+	      <h5>{{ mes.fecha|date:"F" }}</h5><span>{{ mes.fecha|date:"Y" }}</span>
+	    </div>
+
+	    <section id="anteriores">
+	      {% for video in mes.videos %}
+	      <article class="capitulo">
+	        <p class="desc">{{ video.descripcion|striptags|truncatechars:120 }}</p>
+	        <div class="cintaver">
+	        </div><a href="{{ video.get_absolute_url }}" title="{{ video.titulo }}">
+	          
+	          <div class="imagen"><img src="{{ video.get_thumb_image_url }}" alt="{{ video.titulo }}"/></div>
+	          <div class="texto">
+	            <div class="block">
+	              <h2 class="tit">{{ video.titulo|truncatechars:40 }}</h2>
+	            </div>
+	          </div></a>
+	      </article>
+		  {% endfor %}
+	    </section>
+	{% endfor %}
+    
+  </section>
+</section>
+{% endblock %}
