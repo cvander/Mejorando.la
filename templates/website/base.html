@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width , initial-scale=1 ,maximum-scale=1" />
     <title>{% block title %}Mejorando.la Web | un show en vivo de gente que crea Internet, todos los jueves a las 4pm GMT-5{% endblock %}</title>
     
-    <link rel="shortcut icon" href="{{ STATIC_PREFIX }}/images/favicon.ico" />
+    <link rel="shortcut icon" href="{{ STATIC_PREFIX }}images/favicon.ico" />
+
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{% url feed %}" />
 
     <meta property="fb:page_id" content="198868566791554" />
     <meta property="og:title" content="Mejorando.la" />
@@ -16,7 +18,7 @@
     <meta property="og:site_name" content="http://mejorando.la/" />
     <meta property="fb:admins" content="1030603473" />  
 
-    <link rel="stylesheet" href="{{ STATIC_PREFIX }}/css/base.css?2903" />
+    <link rel="stylesheet" href="{{ STATIC_PREFIX }}css/base.css?2903" />
 
     {% block head %}{% endblock %}
 
@@ -24,13 +26,13 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
 
     <script src="https://apis.google.com/js/plusone.js"></script>
-    <script src="{{ STATIC_PREFIX }}/js/index.js"></script>
-    <script src="{{ STATIC_PREFIX }}/js/css_browser_selector.js"></script>
+    <script src="{{ STATIC_PREFIX }}js/index.js"></script>
+    <script src="{{ STATIC_PREFIX }}js/css_browser_selector.js"></script>
 
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]>
-    <script src="{{ STATIC_PREFIX }}/js/selectivizr-min.js"></script>
-    <script src="{{ STATIC_PREFIX }}/js/respond.min.js"></script>
+    <script src="{{ STATIC_PREFIX }}js/selectivizr-min.js"></script>
+    <script src="{{ STATIC_PREFIX }}js/respond.min.js"></script>
     <noscript>
       <link rel="stylesheet" href="[fallback css]">
     </noscript><![endif]-->
@@ -39,8 +41,8 @@
     {% block letrero %}{% endblock %}
     <header>
       <div>
-        <h1><a href="{% url website.views.home %}" title="mejorando.la"><img src="{{ STATIC_PREFIX }}/images/logos/mejorandola.png" alt="mejorando.la"></a>
-        </h1><a id="maestros" href="http://maestrosdelweb.com" target="_blank" title="maestros del web"><img src="{{ STATIC_PREFIX }}/images/logos/maestros.png" alt="maestros del web"></a><a id="cristalab" href="http://cristalab.com" target="_blank" title="cristalab"><img src="{{ STATIC_PREFIX }}/images/logos/cristalab.png" alt="cristalab"></a>
+        <h1><a href="{% url website.views.home %}" title="mejorando.la"><img src="{{ STATIC_PREFIX }}images/logos/mejorandola.png" alt="mejorando.la"></a>
+        </h1><a id="maestros" href="http://maestrosdelweb.com" target="_blank" title="maestros del web"><img src="{{ STATIC_PREFIX }}images/logos/maestros.png" alt="maestros del web"></a><a id="cristalab" href="http://cristalab.com" target="_blank" title="cristalab"><img src="{{ STATIC_PREFIX }}images/logos/cristalab.png" alt="cristalab"></a>
       </div>
     </header>
 

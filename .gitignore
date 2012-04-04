@@ -37,3 +37,6 @@ Thumbs.db
 
 # Settings files
 settings.py
+
+# archivos de la bd
+media/*

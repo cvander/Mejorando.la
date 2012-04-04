@@ -4,30 +4,37 @@ from django.conf import settings
 
 # para guardar opciones del sitio (aka switches)
 class Setting(models.Model):
-	value = models.CharField(max_length=100)
+	value = models.BooleanField(default=False)
 	key   = models.CharField(max_length=50)
+
+	def __unicode__(self):
+		return self.key
 
 # el archivo de videos
 class Video(models.Model):
 	titulo 		= models.CharField(max_length=150)
 	slug	    = models.CharField(max_length=300)
-	imagen 	    = models.ImageField(upload_to='static/videos')
+	imagen 	    = models.ImageField(upload_to='media/videos')
 	fecha 	    = models.DateField()
 	embed_code  = models.TextField()
 	descripcion = models.TextField()
 
+	def __unicode__(self):
+		return self.titulo
+
 	# el permalink
 	def get_absolute_url(self):
 		return '/%svideo/%s/' % (settings.URL_PREFIX, self.slug)
+
 	# los diferentes imagenes para el sitio
 	def get_home_image_url(self):
-		return 'http://dev.mejorando.la/resizer.php?s=h&u=http://mejorando.la/wp-content/uploads/%s' % self.imagen
+		return 'http://dev.mejorando.la/resizer.php?s=h&u=%s' % settings.MEDIA_URL+str(self.imagen)
 
 	def get_thumb_image_url(self):
-		return 'http://dev.mejorando.la/resizer.php?s=t&u=http://mejorando.la/wp-content/uploads/%s' % self.imagen
+		return 'http://dev.mejorando.la/resizer.php?s=t&u=%s' % settings.MEDIA_URL+str(self.imagen)
 
 	def get_single_image_url(self):
-		return 'http://dev.mejorando.la/resizer.php?s=p&u=http://mejorando.la/wp-content/uploads/%s' % self.imagen
+		return 'http://dev.mejorando.la/resizer.php?s=p&u=%s' % settings.MEDIA_URL+str(self.imagen)
 
 # comentarios de los videos
 class VideoComentario(models.Model):

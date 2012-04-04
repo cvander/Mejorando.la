@@ -10,7 +10,7 @@ import GeoIP
 def home(solicitud):
 	# checar si estamos transmitiendo en vivo
 	# regresar la vista de "vivo" de ser asi
-	if ('live' in solicitud.GET and solicitud.GET['live'] == '1') or (Setting.objects.get(key='en_vivo').value == '1'):
+	if ('live' in solicitud.GET and solicitud.GET['live'] == '1') or Setting.objects.get(key='en_vivo').value:
 		return render_to_response('website/live.html')
 
 	# plantilla
