@@ -2,3 +2,5 @@ dependencias:
 
 gravatar https://github.com/nvie/django-gravatar
 MySQLdb http://sourceforge.net/projects/mysql-python/
+GeoIP C http://www.maxmind.com/app/c
+GeoIP Python http://www.maxmind.com/app/python

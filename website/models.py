@@ -1,5 +1,6 @@
 from django.db import models
 from django.forms import ModelForm
+from django.conf import settings
 
 # para guardar opciones del sitio (aka switches)
 class Setting(models.Model):
@@ -17,7 +18,7 @@ class Video(models.Model):
 
 	# el permalink
 	def get_absolute_url(self):
-		return '/video/%s/' % self.slug
+		return '/%svideo/%s/' % (settings.URL_PREFIX, self.slug)
 	# los diferentes imagenes para el sitio
 	def get_home_image_url(self):
 		return 'http://dev.mejorando.la/resizer.php?s=h&u=http://mejorando.la/wp-content/uploads/%s' % self.imagen
