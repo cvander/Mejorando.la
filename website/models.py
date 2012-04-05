@@ -14,7 +14,7 @@ class Setting(models.Model):
 class Video(models.Model):
 	titulo 		= models.CharField(max_length=150)
 	slug	    = models.CharField(max_length=300)
-	imagen 	    = models.ImageField(upload_to='media/videos')
+	imagen 	    = models.ImageField(upload_to='videos')
 	fecha 	    = models.DateField()
 	embed_code  = models.TextField()
 	descripcion = models.TextField()
@@ -24,7 +24,7 @@ class Video(models.Model):
 
 	# el permalink
 	def get_absolute_url(self):
-		return '/%svideo/%s/' % (settings.URL_PREFIX, self.slug)
+		return '/%svideos/%s/' % (settings.URL_PREFIX, self.slug)
 
 	# los diferentes imagenes para el sitio
 	def get_home_image_url(self):
@@ -44,6 +44,9 @@ class VideoComentario(models.Model):
 	fecha 		= models.DateField(auto_now_add=True)
 	content 	= models.TextField()
 	video 		= models.ForeignKey(Video)
+
+	def __unicode__(self):
+		return '%s dijo: %s' % (self.autor, self.content[:100])
 
 # el formulario para agregar un comentario al video
 class VideoComentarioForm(ModelForm):

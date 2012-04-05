@@ -125,21 +125,21 @@ body {
   color: red;
   padding-left: 0;
 }
-#comentarios #commentform,
+#comentarios .commentform,
 #comentarios .comentario {
   width: 682px;
   margin: 0 auto;
 }
-.ipad #comentarios #commentform,
+.ipad #comentarios .commentform,
 #comentarios .comentario {
   width: 690px;
   margin: 0 auto;
 }
-#comentarios #commentform {
+#comentarios .commentform {
   position: relative;
   padding-bottom: 50px;
 }
-#comentarios #commentform label {
+#comentarios .commentform label {
   background: #6b6e71 url("../images/post/form_post.png") no-repeat right bottom;
   color: #fff;
   display: inline-block;
@@ -154,13 +154,13 @@ body {
   width: 129px;
   z-index: 2;
 }
-#comentarios #commentform input {
+#comentarios .commentform input {
   background-origin: border-box;
   border-bottom: 1px solid #97989a;
   border-radius:0;
   border-right: 1px solid #97989a;
   border-top: 1px solid #97989a;
-  border: none;
+  border-left: none;
   display: inline-block;
   height: 30px;
   outline: 0;
@@ -169,10 +169,10 @@ body {
   width: 536px;
   z-index: 1;
 }
-#comentarios #commentform .coment {
+#comentarios .commentform .coment {
   background: #6b6e71 url("../images/post/form_post2.png") no-repeat right bottom;
 }
-#comentarios #commentform textarea {
+#comentarios .commentform textarea {
   border-radius:0;
   border: 1px solid #97989a;
   display: inline-block;
@@ -185,7 +185,7 @@ body {
   vertical-align: top;
   width: 530px;
 }
-#comentarios #commentform .publicar, #comentarios #commentform #submit {
+#comentarios .commentform .publicar, #comentarios .commentform .submit {
   background: #0073e8 url("../images/post/button_post.jpg") no-repeat left top;
   border-radius:0;
   border: none;
@@ -241,18 +241,18 @@ body {
   float: right;
 }
 /**************** crossbowser *************/
-.ie #comentarios #commentform .comentar {
+.ie #comentarios .commentform .comentar {
   max-width: 535px;
   width: 535px;
 }
-.ie #comentarios #commentform .publicar, .ie #submit {
+.ie #comentarios .commentform .publicar, .ie .submit {
   margin-right: 0;
   margin-top: -34px;
 }
-.ie8 #comentarios #commentform .publicar, .ie8 #submit {
+.ie8 #comentarios .commentform .publicar, .ie8 .submit {
   margin-top: -27px;
 }
-.ie8 #comentarios #commentform input {
+.ie8 #comentarios .commentform input {
   top: -6px;
 }
 
