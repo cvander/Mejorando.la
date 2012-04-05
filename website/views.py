@@ -78,7 +78,7 @@ def get_horario(ip):
 
 		if country == 'mx':
 			horario['pais'] = 'México'
-			horario['hora'] = '3pm'
+			horario['hora'] = '4pm'
 		elif country == 've':
 			horario['pais'] = 'Venezuela'
 			horario['hora'] = '3:30pm'
@@ -105,12 +105,12 @@ def get_horario(ip):
 			horario['hora'] = '6pm'
 		elif country == 'uy':
 			horario['pais'] = 'Uruguay'
-			horario['hora'] = '7pm'
+			horario['hora'] = '6pm'
 		elif country == 'br':
 			horario['pais'] = 'Brasil'
 			horario['hora'] = '7pm'
 		elif country == 'es':
 			horario['pais'] = 'España'
-			horario['hora'] = '10pm'
+			horario['hora'] = '11pm'
 	
 	return horario

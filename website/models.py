@@ -14,7 +14,7 @@ class Setting(models.Model):
 class Video(models.Model):
 	titulo 		= models.CharField(max_length=150)
 	slug	    = models.CharField(max_length=300)
-	imagen 	    = models.ImageField(upload_to='media/videos')
+	imagen 	    = models.ImageField(upload_to='videos')
 	fecha 	    = models.DateField()
 	embed_code  = models.TextField()
 	descripcion = models.TextField()
