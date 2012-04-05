@@ -16,7 +16,7 @@ def home(solicitud):
 	# plantilla
 	return render_to_response('website/home.html', {
 		'ultimo_video': Video.objects.latest('fecha'), # el ultimo video
-		'videos'	  : Video.objects.all()[1:5], # ultimos 4 videos
+		'videos'	  : Video.objects.all().order_by('-fecha')[1:5], # ultimos 4 videos
 		'horario'	  : get_horario(solicitud.META['REMOTE_ADDR']), # el horario del programa localizado
 	})
 
