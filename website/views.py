@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, redirect, get_object_or_404
 from models import Setting, Video, VideoComentario, VideoComentarioForm
 from django.forms.models import model_to_dict
+from django.conf import settings
+from akismet import Akismet
 import GeoIP
 
 # La vista del home muestra el ultimo video destacado
@@ -35,7 +37,7 @@ def videos(solicitud):
 # tambien procesa +1 comentario
 def video(solicitud, video_slug):
 	# video por slug (nombre)
-	video = Video.objects.get(slug=video_slug)
+	video = get_object_or_404(Video, slug=video_slug)
 	
 	# si son datos del formulario de comentarios
 	if solicitud.method == 'POST':
@@ -43,10 +45,19 @@ def video(solicitud, video_slug):
 
 		# validar los datos
 		if(form.is_valid()):
-			# asignar el video y guardar
+			# asignar el video
 			comentario = form.save(commit=False)
 			comentario.video = video
-			comentario.save()
+
+			# detectar spam
+			api = Akismet(key=settings.AKISMET_API_KEY, blog_url=settings.AKISMET_URL, agent=settings.AKISMET_AGENT)
+			if api.verify_key():
+				if not api.comment_check(comment=comentario.content, data={
+						'user_ip'	: solicitud.META['REMOTE_ADDR'],
+						'user_agent': solicitud.META['HTTP_USER_AGENT']
+					}):
+					# guardar el video
+					comentario.save()
 	else:
 		form = VideoComentarioForm()
 
@@ -59,6 +70,9 @@ def video(solicitud, video_slug):
 # plantilla de transmision en vivo
 def live(solicitud):
 	return render_to_response('website/live.html')
+
+def handler404(solicitud):
+	return redirect('website.views.home')
 
 # devuelve el horario del programa
 # localizado por pais gracias a la 
