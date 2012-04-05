@@ -245,12 +245,12 @@ body {
   max-width: 535px;
   width: 535px;
 }
-.ie #comentarios .commentform .publicar, .ie .submit {
+.ie #comentarios .commentform .submit {
   margin-right: 0;
-  margin-top: -34px;
+  margin-top: -34px ;
 }
-.ie8 #comentarios .commentform .publicar, .ie8 .submit {
-  margin-top: -27px;
+.ie8 #comentarios .submit {
+  margin-top: -27px !important;
 }
 .ie8 #comentarios .commentform input {
   top: -6px;
