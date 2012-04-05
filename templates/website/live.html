@@ -4,6 +4,7 @@
 
 {% block head %}
 <link href="{{ STATIC_PREFIX }}css/live.css" rel="stylesheet" />
+<script src="{{ STATIC_PREFIX }}js/codiguito.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -16,7 +17,7 @@
       </div>
     </div>
     <div id="fila2">
-      <div id="mail"><form action="/mailchimp.php" method="POST" id="formulario" >
+      <div id="mail"><form action="http://mejorando.la/mailchimp.php" method="POST" id="formulario" >
 <label class="tit">¡Enterate de nuestros eventos! <p id="confirmacion" style="display:none"><strong>¡Revisa tu mail!</strong></p></label>
 <label class="txt">nombre</label><input type="text" id="nombre" name="nombre" class="text-field"  required  />
 <label class="txt">mail</label><input type="email" name="email" class="text-field" required  />
