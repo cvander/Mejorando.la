@@ -126,7 +126,7 @@ header div {
   height: 0;
   overflow: hidden;
 }
-#contenido #col1 #video	iframe,
+#contenido #col1 #video iframe,
 #contenido #col1 #video object,
 #contenido #col1 #video embed {
   position: absolute;

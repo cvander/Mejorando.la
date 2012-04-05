@@ -17,7 +17,7 @@ body {
 }
 
 #contdes .desc p {
-	margin:1em 0;
+  margin:1em 0;
 }
 
 #contdes .desc strong {
@@ -80,7 +80,7 @@ body {
   position: relative;
   z-index: 1;
 }
-#video .contvideo	iframe,
+#video .contvideo iframe,
 #video .contvideo object,
 #video .contvideo embed {
   border: 10px solid rgba(255,255,255,0.30);
@@ -229,7 +229,7 @@ body {
 }
 
 #comentarios .comentario .top .derecha a small {
-	text-transform:lowercase;
+  text-transform:lowercase;
 }
 #comentarios .comentario .top .derecha h5 {
   display: inline;
