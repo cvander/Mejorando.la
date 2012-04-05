@@ -20,14 +20,14 @@
 
     <link rel="stylesheet" href="{{ STATIC_PREFIX }}css/base.css?2903" />
 
-    {% block head %}{% endblock %}
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
 
     <script src="https://apis.google.com/js/plusone.js"></script>
     <script src="{{ STATIC_PREFIX }}js/index.js"></script>
     <script src="{{ STATIC_PREFIX }}js/css_browser_selector.js"></script>
+
+    {% block head %}{% endblock %}
 
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!--[if (gte IE 6)&(lte IE 8)]>
