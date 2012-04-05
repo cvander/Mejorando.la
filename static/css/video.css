@@ -146,7 +146,7 @@ body {
   font-size: 13px;
   font-weight: bold;
   height: 33px;
-  line-height: 31px;
+  line-height: 33px;
   margin-bottom: 5px;
   padding-left: 12px;
   position: relative;
@@ -157,15 +157,16 @@ body {
 #comentarios .commentform input {
   background-origin: border-box;
   border-bottom: 1px solid #97989a;
+  border-left: none;
   border-radius:0;
   border-right: 1px solid #97989a;
   border-top: 1px solid #97989a;
-  border-left: none;
   display: inline-block;
-  height: 30px;
+  height: 29px;
+  line-height:33px;
   outline: 0;
+  padding: 1px 0;
   position: relative;
-  top: 1px;
   width: 536px;
   z-index: 1;
 }
@@ -180,7 +181,7 @@ body {
   max-width: 530px;
   min-height: 134px;
   outline: 0;
-  padding-bottom:34px;
+  padding:2px 2px 34px;
   position: relative;
   vertical-align: top;
   width: 530px;
