@@ -744,10 +744,10 @@ footer {
   #cursos .pais .imagen img {
     height: 19px;
   }
-  #cursos .pais .azuloscuro .fecha {
+  .pais .azuloscuro .fecha {
     background:url("../images/home/azulo_scuro.jpg") no-repeat right;
   }
-  #cursos .pais .azulclaro .fecha {
+  .pais .azulclaro .fecha {
     background:url("../images/home/azulo_claro.jpg") no-repeat right;
   }
   #cursos .pais .fecha {
