@@ -554,15 +554,18 @@ footer {
     padding-bottom:5px;
   }
   footer .derecha {
-    width: 100%;
-    text-align: center;
     background: #3D4043;
+    color: white;
+    text-align: center;
+    width: 100%;
   }
   footer .derecha span:nth-child(1){
     display: none;
   }
   footer .derecha a {
-    margin: 0 10%;
+    display: inline-block;
+    margin: 0;
+    width:40%;
   }
   footer .izquierda {
     background: white;
