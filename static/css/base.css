@@ -732,24 +732,35 @@ footer {
     margin-left: 20px;
   }  
   #cursos .pais {
-    height: auto;
+    height: 65px;
     padding-bottom:10px;
   }
   #cursos .pais .imagen{
     left: 70%;
     position: absolute;
     top: 40%;
+    z-index:2;
   }
   #cursos .pais .imagen img {
     height: 19px;
   }
+  #cursos .pais .azuloscuro .fecha {
+    background:url("../images/home/azulo_scuro.jpg") no-repeat right;
+  }
+  #cursos .pais .azulclaro .fecha {
+    background:url("../images/home/azulo_claro.jpg") no-repeat right;
+  }
   #cursos .pais .fecha {
-    float: right;
+    background-size:100%;
+    height:50px;
     margin-left: 0;
-    margin-right: 2%;
-    margin-top: 10px;
+    padding-right: 2%;
+    padding-top:10px;
+    position: absolute;
+    right:0;
     text-align: right;
     width: 28%;
+    z-index:1;
   }
   #cursos .pais .fecha p {
     font-size: 15px;
@@ -760,7 +771,7 @@ footer {
    display: none;
   }
   #cursos .pais .nombre {
-    font-size: 28px;
+    font-size: 20px;
     width: 63%;
     margin-left: 2%;
   }
@@ -788,9 +799,10 @@ footer {
   #ultimo {
     overflow: hidden;
     position: relative;
+    height:370px;
   }
   #ultimo .datos {
-    height:350px;
+    height:220px;
     position: relative;
     z-index: 4;
   }
@@ -814,14 +826,14 @@ footer {
     text-align: center;
   }
   #ultimo .boton {
-   bottom:70px;
+   bottom:0;
    font-size:20px;
    position: absolute;
    width:100%;
   }
 
   #ultimo .fecha {
-    bottom:50px;
+    bottom:-20px;
     font-size: 18px;
     position: absolute;
     width:100%;
