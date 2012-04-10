@@ -745,13 +745,12 @@ footer {
     height: 19px;
   }
   .pais.azuloscuro .fecha {
-    background:url("../images/home/azulo_scuro.jpg") no-repeat right;
+    background:#01729e url("../images/home/azulo_oscuro.jpg") no-repeat left;
   }
   .pais.azulclaro .fecha {
-    background:url("../images/home/azul_claro.jpg") no-repeat right;
+    background:#0062c5 url("../images/home/azul_claro.jpg") no-repeat left;
   }
   #cursos .pais .fecha {
-    background-size:100%;
     height:50px;
     margin-left: 0;
     padding:10px 2% 15px 0;
