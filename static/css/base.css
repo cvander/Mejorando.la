@@ -565,6 +565,33 @@ footer {
     min-width:320px;
     width: auto;
   }
+  #anteriores {
+   height:148px;
+  }
+
+  #anteriores .capitulo {
+    border-right: 1px solid #fff;
+    height: 115px;
+    margin: 0;
+    width: 156px;
+  }
+  #anteriores .capitulo .imagen img {
+    width: 156px;
+    height: 115px;
+  }
+  #anteriores .capitulo .texto {
+    padding: 10px;
+  }
+  #anteriores .capitulo article:nth-child(1) {
+    border-left: 0;
+  }
+  #anteriores .capitulo article:nth-child(2) {
+    border-right: 0;
+  }
+  #anteriores .tit {
+    font-size: 20px;
+    word-break:break-all;
+  }
   #proximo {
     padding-top: 1px;
   }
@@ -572,9 +599,7 @@ footer {
     font-size: 22px;
     letter-spacing: 2px;
   }
-  #proximo span {
-    font-size: 12px !important;
-  }
+
   #proximo .cuenta:nth-child(even) {
     margin: 0 30px;
   }
@@ -593,6 +618,7 @@ footer {
   #ultimo .datos .titulo {
     font-size: 30px;
     line-height:35px;
+    margin-right:auto;
     margin-top: 35px;
     max-width: 100%;
   }
