@@ -543,6 +543,49 @@ footer {
   z-index:2;
 }
 @media screen and (max-width:800px){
+  footer {
+    padding-top: 10px;
+  }
+  footer a {
+    color: white;
+  }
+  footer div {
+    min-height: auto;
+    padding-bottom:5px;
+  }
+  footer .derecha {
+    width: 100%;
+    text-align: center;
+    background: #3D4043;
+  }
+  footer .derecha span:nth-child(1){
+    display: none;
+  }
+  footer .derecha a {
+    margin: 0 10%;
+  }
+  footer .izquierda {
+    background: white;
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+  }
+  footer .izquierda .text {
+    color: #3D4043;
+    width: 100%;
+  }
+  footer .izquierda span {
+    display: inline-block;
+    margin-right: 4px;
+  }
+  footer .izquierda span:nth-child(1) {
+    letter-spacing:0;
+  }
+  footer .izquierda span:nth-child(2) {
+    font-family: "Light",Arial,Sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+  }
   header #maestros,header #cristalab {
    display: none;
   }
@@ -555,6 +598,11 @@ footer {
   }
   header h1 a img{
     width:230px;
+  }
+  h3 {
+    font-family: "Light",Arial,Sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
   }
   #cuerpo,
   hgroup,
@@ -592,6 +640,53 @@ footer {
     font-size: 20px;
     word-break:break-all;
   }
+
+  #cursos {
+    padding-top: 10px;
+  }
+  #cursos h3 {
+    margin-left: 20px;
+  }  
+  #cursos .pais {
+    height: auto;
+    padding-bottom:10px;
+  }
+  #cursos .pais .imagen{
+    left: 70%;
+    position: absolute;
+    top: 40%;
+  }
+  #cursos .pais .imagen img {
+    height: 19px;
+  }
+  #cursos .pais .fecha {
+    float: right;
+    margin-left: 0;
+    margin-right: 2%;
+    margin-top: 10px;
+    text-align: right;
+    width: 28%;
+  }
+  #cursos .pais .fecha p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  #cursos .pais .fecha strong {
+   display: none;
+  }
+  #cursos .pais .nombre {
+    font-size: 28px;
+    width: 63%;
+    margin-left: 2%;
+  }
+  #cursos .pais .nombre a {
+    position: relative;
+  }
+  #cursos .pais .tec {
+    display: none;
+  }
+ 
   #proximo {
     padding-top: 1px;
   }
