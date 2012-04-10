@@ -542,6 +542,77 @@ footer {
   display: block;
   z-index:2;
 }
+@media screen and (min-width:801px) and (max-width:1000px){
+  footer .izquierda {
+    padding-right: 3%;
+    width: 25%;
+    }
+  footer .derecha {
+    line-height: 200%;
+    width: 70%;
+    text-align: center;
+  }
+  footer .derecha a {
+    margin: 0;
+    display: inline-block;
+    width: 40%;
+  }
+  footer .derecha span:nth-child(1) {
+    display: none;
+  }
+  header #maestros{
+   margin-left:50%;
+  }
+  header #cristalab {
+    margin-left:80%;
+  }
+  header div {
+    background: url("../images/adorno-logo.png") no-repeat 75% top;
+    width: auto;
+    max-width:1000px;
+    min-width:800px;
+  }
+  #cuerpo,
+  hgroup,
+  footer {
+    max-width:1000px;
+    min-width:800px;
+    width: auto;
+  }
+  #anteriores{
+    height:190px;
+  }
+  #cursos .pais .nombre {
+    width:60%;
+    font-size:25px;
+  }
+  #cursos .pais .fecha p {
+    font-size:25px;
+  }
+  #social{
+    position: relative;
+    margin-left:auto;
+  }
+  #ultimo {
+    overflow: hidden;
+    position: relative;
+  }
+  #ultimo .tela {
+    width: 100%;
+  }
+  #ultimo .boton {
+   bottom:70px;
+   position: absolute;
+   width:100%;
+  }
+
+  #ultimo .fecha {
+    bottom:50px;
+    position: absolute;
+    width:100%;
+  }
+
+}
 @media screen and (max-width:800px){
   footer {
     padding-top: 10px;
@@ -550,7 +621,7 @@ footer {
     color: white;
   }
   footer div {
-    min-height: auto;
+    min-height: 0;
     padding-bottom:5px;
   }
   footer .derecha {
@@ -582,11 +653,12 @@ footer {
     margin-right: 4px;
   }
   footer .izquierda span:nth-child(1) {
+    font-size: 15px;
     letter-spacing:0;
   }
   footer .izquierda span:nth-child(2) {
     font-family: "Light",Arial,Sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: normal;
   }
   header #maestros,header #cristalab {
@@ -610,8 +682,6 @@ footer {
   #cuerpo,
   hgroup,
   footer {
-    background: #fff;
-    margin: 0 auto;
     max-width:800px;
     min-width:320px;
     width: auto;
