@@ -597,18 +597,26 @@ footer {
     overflow: hidden;
     position: relative;
   }
+  #ultimo .datos {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    height: 500px;
+  }
   #ultimo .tela {
     width: 100%;
   }
   #ultimo .boton {
-   bottom:70px;
+   bottom:80px;
    position: absolute;
+   right:20px;
    width:100%;
   }
 
   #ultimo .fecha {
-    bottom:50px;
+    bottom:60px;
     position: absolute;
+    right:20px;
     width:100%;
   }
 
