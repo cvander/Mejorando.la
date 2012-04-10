@@ -549,78 +549,78 @@ footer {
   z-index:2;
 }
 @media screen and(max-width:800px){
-header {
-  position: absolute;
-  width: 100%;
-  z-index: 3;
-}
-header #maestros {
- display: none;
-}
-header #cristalab {
-  display: none;
-}
-header div {
-  background: none;
-  border-top: none;
-  width: auto;
-  max-width:800px;
-  min-width:320px;
-}
-#cuerpo,
-hgroup,
-footer {
-  background: #fff;
-  margin: 0 auto;
-  max-width:800px;
-  min-width:320px;
-  width: auto;
-}
-#ultimo {
-  overflow: hidden;
-  position: relative;
-}
-#ultimo .absolute {
-  width: 100%;
-}
-#ultimo .datos {
-  height:350px;
-  position: relative;
-  z-index: 4;
-}
-#ultimo .datos .titulo {
-  font-size: 45px;
-  max-width: 100%;
-  margin-top: 50px;
-}
+  header {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+  }
+  header #maestros {
+   display: none;
+  }
+  header #cristalab {
+    display: none;
+  }
+  header div {
+    background: none;
+    border-top: none;
+    width: auto;
+    max-width:800px;
+    min-width:320px;
+  }
+  #cuerpo,
+  hgroup,
+  footer {
+    background: #fff;
+    margin: 0 auto;
+    max-width:800px;
+    min-width:320px;
+    width: auto;
+  }
+  #ultimo {
+    overflow: hidden;
+    position: relative;
+  }
+  #ultimo .absolute {
+    width: 100%;
+  }
+  #ultimo .datos {
+    height:350px;
+    position: relative;
+    z-index: 4;
+  }
+  #ultimo .datos .titulo {
+    font-size: 45px;
+    max-width: 100%;
+    margin-top: 50px;
+  }
 
-#ultimo .tela {
-  width: 100%;
-}
-#ultimo .boton,
-#ultimo .fecha,
-#ultimo .horario,
-#ultimo .titulo {
-  float: none;
-  margin-right: auto;
-  text-align: center;
-}
-#ultimo .boton {
- bottom:75px;
- font-size:25px;
- position: absolute;
- width:100%;
-}
+  #ultimo .tela {
+    width: 100%;
+  }
+  #ultimo .boton,
+  #ultimo .fecha,
+  #ultimo .horario,
+  #ultimo .titulo {
+    float: none;
+    margin-right: auto;
+    text-align: center;
+  }
+  #ultimo .boton {
+   bottom:75px;
+   font-size:25px;
+   position: absolute;
+   width:100%;
+  }
 
-#ultimo .fecha {
-  bottom:50px;
-  font-size: 20px;
-  position: absolute;
-  width:100%;
-}
-#ultimo .horario {
+  #ultimo .fecha {
+    bottom:50px;
+    font-size: 20px;
+    position: absolute;
+    width:100%;
+  }
+  #ultimo .horario {
 
-  margin: 150px auto 0 auto;
+    margin: 150px auto 0 auto;
 
-}
+  }
 }
