@@ -543,6 +543,9 @@ footer {
   z-index:2;
 }
 @media screen and (min-width:801px) and (max-width:1000px){
+  body{
+    overflow-x:hidden;
+  }
   footer .izquierda {
     padding-right: 3%;
     width: 25%;
