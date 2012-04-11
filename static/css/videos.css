@@ -14,9 +14,9 @@ footer {
   margin-bottom: 160px;
   text-align: center;
 /*.capitulo:nth-child(odd)
-		background red
-	.capitulo:nth-child(even)
-		background blue*/
+    background red
+  .capitulo:nth-child(even)
+    background blue*/
 }
 #anteriores .capitulo:nth-child(1) {
   margin-right: 30px;

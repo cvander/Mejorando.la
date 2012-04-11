@@ -126,7 +126,7 @@ header div {
   height: 0;
   overflow: hidden;
 }
-#contenido #col1 #video	iframe,
+#contenido #col1 #video iframe,
 #contenido #col1 #video object,
 #contenido #col1 #video embed {
   position: absolute;
@@ -189,7 +189,7 @@ header div {
   background: url("../images/live/label02.png") no-repeat right;
   color: #535456;
   display: block;
-  font-family: Bold;
+  font-family: "Bold",Arial,Sans-serif;
   font-size: 13px;
   height: 33px;
   line-height: 33px;
@@ -203,7 +203,7 @@ header div {
 }
 #contenido #col1 #mail .tit {
   display: block;
-  font-family: Bold;
+  font-family: "Bold",Arial,Sans-serif;
   font-size: 13px;
   margin: 10px 0;
 }
