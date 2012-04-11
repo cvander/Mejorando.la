@@ -146,7 +146,7 @@ strong {
   text-transform: uppercase;
 }
 #anteriores .todos {
-  background: #fff url("../images/home/playall_r.png") no-repeat left top;
+  background:url("../images/home/playall_r.png") no-repeat left top;
   color: #3f4044;
   position: absolute;
   right: 0;
