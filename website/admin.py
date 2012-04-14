@@ -11,6 +11,10 @@ class VideoAdmin(admin.ModelAdmin):
 			'%swymeditor/jquery.wymeditor.min.js' % settings.STATIC_URL, 
 			'%sjs/admin.js' % settings.STATIC_URL
 		)
+		
+		css = {
+			'all' : ( 'css/admin.css', )
+		}
 
 class VideoComentarioAdmin(admin.ModelAdmin):
 	ordering = ('-fecha',)
