@@ -265,9 +265,6 @@ body {
   padding-bottom:20px;
 }
 @media screen and (max-width:700px){
-  #contdes .desc {
-    width:100%;
-  }
   #contdes .desc .intro {
     width:95%;
   }
@@ -275,10 +272,16 @@ body {
     position: relative;
     overflow: hidden;
   }
-  #comentarios .commentform, #comentarios .comentario{
+  #comentarios h2{
+    margin-left:0;
+    text-align:right;
+    margin-right:20px;
+  }
+  #contdes .desc,#comentarios .commentform, #comentarios .comentario{
     width:100%;
   }
-  #comentarios .commentform label {
+  #comentarios .commentform label,
+  #comentarios .commentform .coment {
     background:#6B6E71;
 
   }
@@ -289,9 +292,6 @@ body {
     margin-bottom:5px;
     padding:0;
   }
-  #comentarios .commentform .coment{
-    background:#6B6E71;
-  }
   #comentarios .commentform textarea{
     width:98%;
     max-width:98%;
@@ -301,8 +301,17 @@ body {
   #comentarios .comentario .top .derecha{
     position: absolute;
   }
+  #comentarios .comentario .top .derecha a small {
+    display: none;
+  }
   #comentarios .comentario .top .bla{
     width:90%;
+  }
+  #video{
+    height:520px;
+  }
+  #video h2{
+    font-size:30px;
   }
 }
 @media screen and (max-width:1000px){
