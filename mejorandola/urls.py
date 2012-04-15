@@ -8,13 +8,22 @@ admin.autodiscover()
 handler404 = 'website.views.handler404'
 
 urlpatterns = patterns('',
-	url(r'^%s$' % settings.URL_PREFIX, 		   'website.views.home'), # home
-	url(r'^%svideos/?$' % settings.URL_PREFIX, 'website.views.videos'), # archivo de videos
-	url(r'^%svideos/(?P<video_slug>.+?)/?$' % settings.URL_PREFIX, 'website.views.video'), # video individual
-    url(r'^%slive/?$' % settings.URL_PREFIX,   'website.views.live'),  # transmision en vivo
+	url(r'^$', 		   'website.views.home'), # home
+	url(r'^videos/?$', 'website.views.videos'), # archivo de videos
+	url(r'^videos/(?P<video_slug>.+?)/?$', 'website.views.video'), # video individual
+    url(r'^live/?$',   'website.views.live'),  # transmision en vivo
 
-    url(r'^%sfeed/?$' % settings.URL_PREFIX, VideoFeed(), name='feed'), # feed de videos
+    url(r'^feed/?$', VideoFeed(), name='feed'), # feed de videos
+    url(r'^regenerate/?$', 'website.views.regenerate'),
 
-    url(r'^%supdate/?$' % settings.URL_PREFIX, 'github.views.update'), # actualizar el codigo
-    url(r'^%sadmin/' % settings.URL_PREFIX, include(admin.site.urls)),
+    url(r'^update/?$', 'github.views.update'), # actualizar el codigo
+
+    url(r'^admin/', include(admin.site.urls)),
 )
+
+if settings.DEBUG:
+	urlpatterns += patterns('', 
+		url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {
+            'document_root': settings.MEDIA_ROOT,
+        }),
+	)
