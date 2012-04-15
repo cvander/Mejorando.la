@@ -75,10 +75,12 @@ body {
   margin: 10px 0;
 }
 #video .contvideo {
-  width: 682px;
-  height: 416px;
+  border-radius:10px;
+  border:10px solid rgba(255, 255, 255, 0.30);
   position: relative;
   z-index: 1;
+  padding-bottom:56.25%;
+
 }
 #video .contvideo iframe,
 #video .contvideo object,
@@ -94,10 +96,11 @@ body {
   height: 549px;
 }
 #video .cont {
-  padding-top: 115px;
   margin: 0 auto;
+  max-width: 682px;
+  padding-top: 115px;
   position: relative;
-  width: 682px;
+  width:100%;
   z-index: 2;
 }
 #video .patron {
@@ -114,7 +117,8 @@ body {
   font-size: 14px;
   line-height: 19px;
   margin: 0 auto;
-  width: 1000px;
+  max-width: 1000px;
+  width:100%;
 }
 
 .errorlist {
@@ -277,26 +281,28 @@ body {
     text-align:right;
     margin-right:20px;
   }
-  #contdes .desc,#comentarios .commentform, #comentarios .comentario{
+  #contdes .desc,#comentarios .commentform, #comentarios .comentario,#contdes .desc img{
     width:100%;
   }
   #comentarios .commentform label,
   #comentarios .commentform .coment {
     background:#6B6E71;
-
   }
   #comentarios .commentform input {
-    width:98%;
     border:1px solid #97989A;
-    margin-left:1%;
     margin-bottom:5px;
+    margin-left:1%;
     padding:0;
+    width:98%;
   }
   #comentarios .commentform textarea{
-    width:98%;
-    max-width:98%;
     margin-left:1%;
+    max-width:98%;
     padding:0;
+    width:98%;
+  }
+  #comentarios .commentform .publicar, #comentarios .commentform .submit{
+    margin-right:1%;
   }
   #comentarios .comentario .top .derecha{
     position: absolute;
@@ -307,11 +313,21 @@ body {
   #comentarios .comentario .top .bla{
     width:90%;
   }
-  #video{
-    height:520px;
-  }
   #video h2{
     font-size:30px;
+  }
+  #video .patron {
+    height:44%;
+  }
+  #video .absolute {
+    width: 150%;
+    height: auto;
+  }
+  #video .contvideo{
+  border:5px solid rgba(255, 255, 255, 0.30);
+  }
+  .fecha{
+    display:inline;
   }
 }
 @media screen and (max-width:1000px){
@@ -325,29 +341,11 @@ body {
     position: relative;
     z-index:10;
   }
-  #comentarios{
-    width:100%;
-  }
   #video{
     width:100%
   }
   #video h2 {
     text-align:center;
   }
-  #video .cont{
-    width:100%;
-    max-width:682px;
-  }
-  #video .contvideo {
-    height:auto;
-    width:auto;
-    padding-bottom:56.25%;
-    border:10px solid rgba(255, 255, 255, 0.30);
-    border-radius:10px;
-  }
-  #video .contvideo iframe, 
-  #video .contvideo object, 
-  #video .contvideo embed{
-
-  }
+  
 }
