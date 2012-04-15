@@ -28,32 +28,22 @@ def resize(type, imagen):
 	try:
 		image = Image.open(path)
 
+		# sizes
 		(width, height)       = image.size
 		(newWidth, newHeight) = size
 
-		# convertir los valores a float??
-		width     = float(width)
-		height    = float(height)
-		newWidth  = float(newWidth)
-		newHeight = float(newHeight)
+		# relacion size actual, size nuevo
+		ratioW = float(width)/newWidth
+		ratioH = float(height)/newHeight
+		ratio = ratioW if ratioW < ratioH else ratioH
 
-		# calcular la relacion entre nuevos y viejos tamanos
-		heightRatio = height / newHeight
-		widthRatio  = width / newWidth
+		cropH, cropW = int(newHeight*ratio), int(newWidth*ratio)
 
-		# calcular la relacion total
-		if heightRatio < widthRatio:
-			optimalRatio = heightRatio
-		else:
-			optimalRatio = widthRatio
+		offsetX = (width - cropW) / 2
+		offsetY = (height - cropH) / 2
 
-		# calcular los tamanos optimos para hacer el cambio
-		optiomalHeight = height / optimalRatio
-		optimalWidth   = width / optimalRatio
-
-		# cambiar el tamano y recortar	
-		image = image.resize((int(optimalWidth), int(optiomalHeight)), Image.ANTIALIAS)
-		image = image.crop((0, 0, int(newWidth), int(newHeight)))
+		image = image.crop((offsetX, offsetY, cropW+offsetX, cropH+offsetY))
+		image = image.resize((newWidth, newHeight), Image.ANTIALIAS)
 
 		# convertir a escala de grises
 		if type == SINGLE: image = image.convert('L')
