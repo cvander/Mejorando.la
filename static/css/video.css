@@ -13,7 +13,7 @@ body {
   line-height: 20px;
   margin: 0 auto;
   text-align: left;
-  width: 550px;
+  width: 650px;
 }
 
 #contdes .desc p {
@@ -42,7 +42,7 @@ body {
   line-height: 20px;
   margin: 0 auto;
   text-align: left;
-  width: 550px;
+  width: 650px;
 }
 #contdes .desc h3 {
   font-size: 18px;
@@ -83,8 +83,6 @@ body {
 #video .contvideo iframe,
 #video .contvideo object,
 #video .contvideo embed {
-  border: 10px solid rgba(255,255,255,0.30);
-  border-radius: 10px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -265,4 +263,91 @@ body {
 #comentarios h2 {
   margin-left:154px;
   padding-bottom:20px;
+}
+@media screen and (max-width:700px){
+  #contdes .desc .intro {
+    width:95%;
+  }
+  #comentarios{
+    position: relative;
+    overflow: hidden;
+  }
+  #comentarios h2{
+    margin-left:0;
+    text-align:right;
+    margin-right:20px;
+  }
+  #contdes .desc,#comentarios .commentform, #comentarios .comentario{
+    width:100%;
+  }
+  #comentarios .commentform label,
+  #comentarios .commentform .coment {
+    background:#6B6E71;
+
+  }
+  #comentarios .commentform input {
+    width:98%;
+    border:1px solid #97989A;
+    margin-left:1%;
+    margin-bottom:5px;
+    padding:0;
+  }
+  #comentarios .commentform textarea{
+    width:98%;
+    max-width:98%;
+    margin-left:1%;
+    padding:0;
+  }
+  #comentarios .comentario .top .derecha{
+    position: absolute;
+  }
+  #comentarios .comentario .top .derecha a small {
+    display: none;
+  }
+  #comentarios .comentario .top .bla{
+    width:90%;
+  }
+  #video{
+    height:520px;
+  }
+  #video h2{
+    font-size:30px;
+  }
+}
+@media screen and (max-width:1000px){
+  #post{
+    width:100%;
+    position: relative;
+    overflow:hidden;
+  }
+  #contdes{
+    background:none;
+    position: relative;
+    z-index:10;
+  }
+  #comentarios{
+    width:100%;
+  }
+  #video{
+    width:100%
+  }
+  #video h2 {
+    text-align:center;
+  }
+  #video .cont{
+    width:100%;
+    max-width:682px;
+  }
+  #video .contvideo {
+    height:auto;
+    width:auto;
+    padding-bottom:56.25%;
+    border:10px solid rgba(255, 255, 255, 0.30);
+    border-radius:10px;
+  }
+  #video .contvideo iframe, 
+  #video .contvideo object, 
+  #video .contvideo embed{
+
+  }
 }
