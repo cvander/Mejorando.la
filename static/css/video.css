@@ -317,11 +317,11 @@ body {
     font-size:30px;
   }
   #video .patron {
-    height:44%;
+    height:400px;
   }
   #video .absolute {
-    width: 150%;
-    height: auto;
+    width: auto;
+    height: 400px;
   }
   #video .contvideo{
   border:5px solid rgba(255, 255, 255, 0.30);
