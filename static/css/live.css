@@ -248,7 +248,7 @@ header div {
 #contenido #col2 .chat iframe {
   bottom: 0;
   position: absolute;
-  top: 80px;
+  top: 110px;
   width: 35%;
 }
 .webkit #col2 .chat iframe {
@@ -421,7 +421,7 @@ header div {
 .ipad #contenido #col1 #mail input[type=email] {
   top: 72px;
 }
-@media screen and (max-height:760px) {
+@media screen and (max-height:760px) and (min-width:1218px) {
   body {
     height: auto;
   }
@@ -449,6 +449,9 @@ header div {
   }
   #contenido #col1 #social {
     margin-top: 10px;
+  }
+  #contenido #col2 .chat iframe {
+    top: 80px;
   }
   #contenido #col2 {
     width: 37%;
@@ -487,6 +490,10 @@ header div {
     display: none;
   }
   #contenido #col2 {
+    width: 100%;
+  }
+  #contenido #col2 .chat iframe {
+    position: none;
     width: 100%;
   }
 }
