@@ -268,6 +268,11 @@ body {
   margin-left:154px;
   padding-bottom:20px;
 }
+@media screen and (max-width:400px){
+  #comentarios .comentario .top .derecha h5 {
+    line-height:25px;
+  }
+}
 @media screen and (max-width:700px){
   #contdes .desc .intro {
     width:95%;
@@ -314,7 +319,7 @@ body {
   }
   #comentarios .comentario .top .derecha{
     display: inline;
-    line-height:25px;
+    line-height:45px;
   }
   #comentarios .comentario .top .derecha h5 {
     margin-left:0;
