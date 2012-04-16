@@ -6,9 +6,9 @@ class VideoAdmin(admin.ModelAdmin):
 	prepopulated_fields = {'slug': ('titulo',)}
 	ordering = ('-fecha',)
 
+	# agregar editor de texto
 	class Media:
-		js = ('http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js', 
-			'%swymeditor/jquery.wymeditor.min.js' % settings.STATIC_URL, 
+		js = ('%stiny_mce/tiny_mce.js' % settings.STATIC_URL, 
 			'%sjs/admin.js' % settings.STATIC_URL
 		)
 		
