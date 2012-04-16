@@ -43,10 +43,10 @@ footer .derecha .cvander {
 footer .izquierda {
   background: url("../images/live/footer.png") no-repeat right top;
   color: #3d4043;
-  width: 25%;
-  position: relative;
   left: 0;
   max-width: 280px;
+  position: relative;
+  width: 25%;
 }
 footer .izquierda span:nth-child(1) {
   margin-top: 15px;
@@ -60,9 +60,9 @@ header {
   z-index: 3;
 }
 header h1 {
-  width: 30%;
-  min-width: 252px;
   display: inline-block;
+  min-width: 252px;
+  width: 30%;
 }
 header h1 a img {
   width: 252px;
@@ -126,7 +126,7 @@ header div {
   height: 0;
   overflow: hidden;
 }
-#contenido #col1 #video iframe,
+#contenido #col1 #video	iframe,
 #contenido #col1 #video object,
 #contenido #col1 #video embed {
   position: absolute;
@@ -135,9 +135,9 @@ header div {
   width: 100%;
   height: 100%;
 }
-#contenido #col1 #fila2{
+#contenido #col1 #fila2 {
   clear: both;
-  content:"";
+  content: "";
 }
 #contenido #col1 #mail {
   margin-left: 10px;
@@ -181,7 +181,6 @@ header div {
   line-height: 31px;
   padding: 0;
   text-align: center;
-  text-align: center;
   text-transform: uppercase;
   width: 145px;
 }
@@ -189,8 +188,8 @@ header div {
   background: url("../images/live/label02.png") no-repeat right;
   color: #535456;
   display: block;
-  font-family: "Bold",Arial,Sans-serif;
   font-size: 13px;
+  font-weight: bold;
   height: 33px;
   line-height: 33px;
   margin-bottom: 5px;
@@ -203,7 +202,7 @@ header div {
 }
 #contenido #col1 #mail .tit {
   display: block;
-  font-family: "Bold",Arial,Sans-serif;
+  font-family: "Bold", Arial, Sans-serif;
   font-size: 13px;
   margin: 10px 0;
 }
@@ -415,9 +414,6 @@ header div {
     width: 47%;
   }
 }
-/*.ipad #contenido #col1 #social {
-  position: relative !important;
-  }*/
 .ipad #contenido #col1 #mail input[type=text] {
   top: 34px;
 }
@@ -483,9 +479,6 @@ header div {
   }
   #contenido #col1 #social {
     display: none;
-  }
-  #contenido #col2 {
-    width: 100%;
   }
   #contenido #col2 {
     width: 100%;

@@ -5,21 +5,21 @@ Description: El mejor tema que mejorando.la ha tenido
 Version: 1.0
 Author: Mejorando.la Team: @freddier, @dual3nigma, @LeonidasEsteban, @sp3ncer
 */
-
 @font-face {
-  font-family: 'Bold';
-  src: url("../fonts/opensans-bold-webfont.eot");
-  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-bold-webfont.woff") format('woff'), url("../fonts/opensans-bold-webfont.ttf") format('truetype'), url("../fonts/opensans-bold-webfont.svg#OpenSansBold") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Light';
+  font-family: 'open sans';
   src: url("../fonts/opensans-light-webfont.eot");
   src: url("../fonts/opensans-light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-light-webfont.woff") format('woff'), url("../fonts/opensans-light-webfont.ttf") format('truetype'), url("../fonts/opensans-light-webfont.svg#OpenSansLight") format('svg');
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'open sans';
+  src: url("../fonts/opensans-bold-webfont.eot");
+  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-bold-webfont.woff") format('woff'), url("../fonts/opensans-bold-webfont.ttf") format('truetype'), url("../fonts/opensans-bold-webfont.svg#OpenSansBold") format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
 * {
   margin: 0;
 }
@@ -33,13 +33,16 @@ a {
 a:hover {
   text-decoration: underline;
 }
+h2,h5{
+  font-weight:normal;
+}
 p {
   margin: 0;
 }
 body {
   background: #3c4043;
   color: #fff;
-  font-family: 'Light', Arial;
+  font-family: 'open sans', Arial, Sans-serif;
   font-size: 16px;
 }
 footer {
@@ -49,8 +52,8 @@ footer {
 }
 footer a {
   color: #3d4043;
-  text-decoration: underline;
   text-transform: lowercase;
+  text-decoration: underline;
 }
 footer div {
   display: inline-block;
@@ -60,8 +63,8 @@ footer div {
   zoom: 1;
 }
 footer .derecha {
-  font-family: "Bold",Arial,Sans-serif;
   font-size: 25px;
+  font-weight: bold;
   height: 50px;
   line-height: 70px;
 }
@@ -89,7 +92,6 @@ footer .izquierda span:nth-child(1) {
   margin-top: 20px;
 }
 footer .izquierda span:nth-child(2) {
-  font-family: "Bold",Arial,Sans-serif;
   font-size: 12px;
   font-weight: bold;
 }
@@ -97,7 +99,6 @@ header {
   position: absolute;
   width: 100%;
   z-index: 3;
-
 }
 header #maestros {
   margin-left: 450px;
@@ -105,7 +106,6 @@ header #maestros {
   position: absolute;
   top: 0;
   width: 110px;
-
 }
 header #cristalab {
   margin-left: 770px;
@@ -113,7 +113,6 @@ header #cristalab {
   position: absolute;
   top: 0;
   width: 110px;
-
 }
 header div {
   background: url("../images/adorno-logo.png") no-repeat 680px top;
@@ -121,12 +120,11 @@ header div {
   display: block;
   margin: 0 auto;
   width: 1000px;
-  *width: auto;
 }
 h3 {
   color: #3d4043;
-  font-family: "Bold",Arial,Sans-serif;
   font-size: 45px;
+  font-weight: bold;
   letter-spacing: -1px;
   text-transform: uppercase;
 }
@@ -134,9 +132,8 @@ img {
   border: none;
 }
 strong {
-  font-family: "Bold",Arial,Sans-serif;
+  font-weight: bold;
 }
-
 #anteriores {
   background: #fff;
   min-width: 100%;
@@ -146,7 +143,7 @@ strong {
   text-transform: uppercase;
 }
 #anteriores .todos {
-  background:url("../images/home/playall_largo.png") no-repeat left top;
+  background: url("../images/home/playall_largo.png") no-repeat left top;
   color: #3f4044;
   position: absolute;
   right: 0;
@@ -155,7 +152,7 @@ strong {
 #anteriores .todos a {
   color: #3f4044;
   font-size: 14px;
-  font-family: "Bold",Arial,Sans-serif;
+  font-weight: bold;
 }
 #anteriores h3 {
   margin-left: 80px;
@@ -165,7 +162,6 @@ strong {
   margin-right: 0;
 }
 #anteriores .capitulo {
-  *display: inline;
   border-right: 1px solid #fff;
   display: inline-block;
   height: 157px;
@@ -191,8 +187,8 @@ strong {
   margin-top: 5px;
 }
 #anteriores .capitulo .cap {
-  font-family: "Bold",Arial,Sans-serif;
   font-size: 14px;
+  font-weight: bold;
   margin-bottom: 12px;
 }
 #anteriores .capitulo .imagen {
@@ -278,8 +274,8 @@ footer {
   margin-left: 25px;
 }
 #cursos .pais .fecha h4 {
-  font-family: "Bold",Arial,Sans-serif;
   font-size: 15px;
+  font-weight: bold;
   margin: 7px 0 -7px 3px;
 }
 #cursos .pais .fecha p {
@@ -287,7 +283,6 @@ footer {
 }
 #cursos .pais .fecha strong {
   font-weight: normal;
-  font-family: "Light",Arial,Sans-serif;
 }
 #cursos .pais .nombre {
   font-size: 32px;
@@ -320,11 +315,10 @@ footer {
   background: #fff;
   color: #3d4043;
   margin-bottom: 20px;
-  text-align: center;
   padding-top: 25px;
+  text-align: center;
 }
 #proximo h3 {
-  font-family: "Light",Arial,Sans-serif;
   font-size: 35px;
   font-weight: normal;
   letter-spacing: 15px;
@@ -348,10 +342,9 @@ footer {
 }
 #proximo .cuenta div {
   background: #3d4043;
-  font-family: "Bold",Arial,Sans-serif;
   font-size: 50px;
+  font-weight: bold;
   height: 64px;
-  /*min-width: 10px;*/
   padding: 0 10px;
   position: relative;
 }
@@ -374,9 +367,9 @@ footer {
 }
 #social {
   margin: -50px auto 0 auto;
-  width: 400px;
-  position: absolute;
   margin-left: 310px;
+  position: absolute;
+  width: 400px;
   z-index: 5;
 }
 #social div {
@@ -462,7 +455,6 @@ footer {
 }
 #ultimo .boton {
   font-weight: bold;
-  font-family: "Bold",Arial,Sans-serif;
   margin-top: 10px;
   text-transform: uppercase;
   transition: 0.5s;
@@ -494,6 +486,7 @@ footer {
   background-size: 100%;
   border-bottom: 1px solid #fff;
   height: 32px;
+  width: 100%;
 }
 /***********crossbrowser************/
 .ie8 #ultimo .datos .titulo {
@@ -506,51 +499,58 @@ footer {
 .ie8 .block .tit {
   background: url("../images/home/tela.png");
 }
-
-
-#envivo{
-  
-  background:black;
-  height:60px;
-  margin:0 auto;
-  width:1000px;
+#envivo {
+  background: #000;
+  height: 60px;
+  margin: 0 auto;
+  width: 1000px;
   position: relative;
   overflow: hidden;
   display: block;
 }
-@-webkit-keyframes envivo{
-  to{-webkit-transform:translateX(0);}
-  from{-webkit-transform:translateX(-1000px);}
+@-webkit-keyframes envivo {
+  100% {
+    -webkit-transform: translateX(0);
+  }
+
+  0% {
+    -webkit-transform: translateX(-1000px);
+  }
 }
-@-moz-keyframes envivo{
-  to{-moz-transform:translateX(0);}
-  from{-moz-transform:translateX(-1000px);}
+@-moz-keyframes envivo {
+  100% {
+    -moz-transform: translateX(0);
+  }
+
+  0% {
+    -moz-transform: translateX(-1000px);
+  }
 }
-#envivo .patron{
-  -webkit-animation:25s envivo infinite linear;
-  -moz-animation:25s envivo infinite linear;
-  background:url("../images/patron.jpg") repeat-x;
-  width:2000px;
-  height:60px;
+#envivo .patron {
+  -webkit-animation: 25s envivo infinite linear;
+  -moz-animation: 25s envivo infinite linear;
+  background: url("../images/patron.jpg") repeat-x;
+  width: 2000px;
+  height: 60px;
   position: relative;
-  z-index:1;
+  z-index: 1;
 }
-#envivo .vivo{
+#envivo .vivo {
   position: absolute;
-  right:0;
-  top:0;
+  right: 0;
+  top: 0;
   display: block;
-  z-index:2;
+  z-index: 2;
 }
-@media screen and (min-width:801px) and (max-width:1000px){
-  body{
-    overflow-x:hidden;
+@media screen and (min-width:801px) and (max-width:1000px) {
+  body {
+    overflow-x: hidden;
   }
   footer .izquierda {
-    padding-left:15px;
+    padding-left: 15px;
     padding-right: 3%;
     width: 25%;
-    }
+  }
   footer .derecha {
     float: right;
     line-height: 200%;
@@ -565,38 +565,38 @@ footer {
   footer .derecha span:nth-child(1) {
     display: none;
   }
-  header #maestros{
-   margin-left:50%;
+  header #maestros {
+    margin-left: 50%;
   }
   header #cristalab {
-    margin-left:80%;
+    margin-left: 80%;
   }
   header div {
     background: url("../images/adorno-logo.png") no-repeat 75% top;
     width: auto;
-    max-width:1000px;
-    min-width:800px;
+    max-width: 1000px;
+    min-width: 800px;
   }
   #cuerpo,
   hgroup,
   footer {
-    max-width:1000px;
-    min-width:800px;
+    max-width: 1000px;
+    min-width: 800px;
     width: auto;
   }
-  #anteriores{
-    height:190px;
+  #anteriores {
+    height: 190px;
   }
   #cursos .pais .nombre {
-    width:60%;
-    font-size:25px;
+    width: 60%;
+    font-size: 25px;
   }
   #cursos .pais .fecha p {
-    font-size:25px;
+    font-size: 25px;
   }
-  #social{
+  #social {
     position: relative;
-    margin-left:auto;
+    margin-left: auto;
   }
   #ultimo {
     overflow: hidden;
@@ -612,53 +612,51 @@ footer {
     width: 100%;
   }
   #ultimo .boton {
-   bottom:80px;
-   position: absolute;
-   right:20px;
-   width:100%;
-  }
-
-  #ultimo .fecha {
-    bottom:60px;
+    bottom: 80px;
     position: absolute;
-    right:20px;
-    width:100%;
+    right: 20px;
+    width: 100%;
   }
-
+  #ultimo .fecha {
+    bottom: 60px;
+    position: absolute;
+    right: 20px;
+    width: 100%;
+  }
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
   footer {
     padding-top: 10px;
   }
   footer a {
-    color: white;
+    color: #fff;
   }
   footer div {
     min-height: 0;
-    padding-bottom:5px;
+    padding-bottom: 5px;
   }
   footer .derecha {
-    background: #3D4043;
-    color: white;
+    background: #3d4043;
+    color: #fff;
     text-align: center;
     width: 100%;
   }
-  footer .derecha span:nth-child(1){
+  footer .derecha span:nth-child(1) {
     display: none;
   }
   footer .derecha a {
     display: inline-block;
     margin: 0;
-    width:40%;
+    width: 40%;
   }
   footer .izquierda {
-    background: white;
+    background: #fff;
     padding-right: 0;
     text-align: center;
     width: 100%;
   }
   footer .izquierda .text {
-    color: #3D4043;
+    color: #3d4043;
     width: 100%;
   }
   footer .izquierda span {
@@ -667,42 +665,41 @@ footer {
   }
   footer .izquierda span:nth-child(1) {
     font-size: 15px;
-    letter-spacing:0;
+    letter-spacing: 0;
   }
   footer .izquierda span:nth-child(2) {
-    font-family: "Light",Arial,Sans-serif;
     font-size: 15px;
     font-weight: normal;
   }
-  header #maestros,header #cristalab {
-   display: none;
+  header #maestros,
+  header #cristalab {
+    display: none;
   }
   header div {
     background: none;
     border-top: none;
     width: auto;
-    max-width:800px;
-    min-width:320px;
+    max-width: 800px;
+    min-width: 320px;
   }
-  header h1 a img{
-    width:230px;
+  header h1 a img {
+    width: 230px;
   }
   h3 {
-    font-family: "Light",Arial,Sans-serif;
     font-size: 30px;
+    font-weight: normal;
     letter-spacing: 2px;
   }
   #cuerpo,
   hgroup,
   footer {
-    max-width:800px;
-    min-width:320px;
+    max-width: 800px;
+    min-width: 320px;
     width: auto;
   }
   #anteriores {
-   height:148px;
+    height: 148px;
   }
-
   #anteriores .capitulo {
     border-right: 1px solid #fff;
     height: 115px;
@@ -724,43 +721,42 @@ footer {
   }
   #anteriores .tit {
     font-size: 20px;
-    word-break:break-all;
+    word-break: break-all;
   }
-
   #cursos {
     padding-top: 10px;
   }
   #cursos h3 {
     margin-left: 20px;
-  }  
+  }
   #cursos .pais {
     height: 65px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
   }
-  #cursos .pais .imagen{
+  #cursos .pais .imagen {
     left: 65%;
     position: absolute;
     top: 40%;
-    z-index:2;
+    z-index: 2;
   }
   #cursos .pais .imagen img {
     height: 19px;
   }
   .pais.azuloscuro .fecha {
-    background:#01729e url("../images/home/azul_oscuro.jpg") no-repeat left;
+    background: #01729e url("../images/home/azul_oscuro.jpg") no-repeat left;
   }
   .pais.azulclaro .fecha {
-    background:#0062c5 url("../images/home/azul_claro.jpg") no-repeat left;
+    background: #0062c5 url("../images/home/azul_claro.jpg") no-repeat left;
   }
   #cursos .pais .fecha {
-    height:50px;
+    height: 50px;
     margin-left: 0;
-    padding:10px 2% 15px 0;
+    padding: 10px 2% 15px 0;
     position: absolute;
-    right:0;
+    right: 0;
     text-align: right;
     width: 35%;
-    z-index:1;
+    z-index: 1;
   }
   #cursos .pais .fecha p {
     font-size: 15px;
@@ -768,7 +764,7 @@ footer {
     margin-top: 5px;
   }
   #cursos .pais .fecha strong {
-   display: none;
+    display: none;
   }
   #cursos .pais .nombre {
     font-size: 20px;
@@ -781,7 +777,6 @@ footer {
   #cursos .pais .tec {
     display: none;
   }
- 
   #proximo {
     padding-top: 1px;
   }
@@ -789,33 +784,31 @@ footer {
     font-size: 22px;
     letter-spacing: 2px;
   }
-
   #proximo .cuenta:nth-child(even) {
     margin: 0 30px;
   }
-  #social{
+  #social {
     display: none;
   }
   #ultimo {
     overflow: hidden;
     position: relative;
-    height:370px;
+    height: 370px;
   }
   #ultimo .datos {
-    height:220px;
+    height: 220px;
     position: relative;
     z-index: 4;
   }
   #ultimo .datos .titulo {
     font-size: 30px;
-    line-height:35px;
-    margin-right:auto;
+    line-height: 35px;
+    margin-right: auto;
     position: absolute;
     top: 35px;
     max-width: 100%;
-    width:100%;
+    width: 100%;
   }
-
   #ultimo .tela {
     width: 100%;
   }
@@ -828,28 +821,24 @@ footer {
     text-align: center;
   }
   #ultimo .boton {
-   bottom:0;
-   font-size:20px;
-   position: absolute;
-   width:100%;
+    bottom: 0;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
   }
-
   #ultimo .fecha {
-    bottom:-20px;
+    bottom: -20px;
     font-size: 18px;
     position: absolute;
-    width:100%;
+    width: 100%;
   }
   #ultimo .horario {
-
     margin: 120px auto 0 auto;
-
   }
-  #ultimo .horario strong:nth-child(1){
-    font-family:"Light",Arial,Sans-serif;
-    font-weight:normal;
+  #ultimo .horario strong:nth-child(1) {
+    font-weight: normal;
   }
   #ultimo .horario .big {
-    font-size: 30px;  
+    font-size: 30px;
   }
 }
