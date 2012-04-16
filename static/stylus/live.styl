@@ -210,7 +210,10 @@ header
 			background #3d4043
 			width 100%
 			iframe 
-				min-height 400px
+				bottom 0
+				position absolute
+				top 80px
+				width 35%
 			
 .webkit #col2 .chat iframe {
   height: 75% !important;
@@ -379,6 +382,9 @@ header
 .ipad #contenido #col1 #mail input[type=email] {
   top: 72px;
 }
+@media screen and (max-height:760px) 
+	body
+		height auto
 @media screen and (max-height:767px) 
 	footer 
 		display none
@@ -413,7 +419,7 @@ header
 	body 
 		onverflow-x hidden
 		overflow-y scroll
-	
+
 	header 
 		display none
 	
