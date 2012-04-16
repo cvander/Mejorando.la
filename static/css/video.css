@@ -268,9 +268,9 @@ body {
   margin-left:154px;
   padding-bottom:20px;
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:500px){
   #comentarios .comentario .top .derecha{
-    line-height:25px;
+    line-height:25px !important;
   }
 }
 @media screen and (max-width:700px){
