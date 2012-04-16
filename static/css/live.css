@@ -350,14 +350,23 @@ header div {
   body {
     background: #fff url("../images/live/background.jpg") repeat-y;
   }
+  footer {
+    overflow: hidden;
+    background: #3d4043;
+  }
   footer .izquierda {
     width: 50%;
+    background: #fff;
+  }
+  footer .izquierda .text {
+    line-height: 40px;
   }
   footer .derecha {
     width: 450px;
   }
   footer .derecha a {
     margin: 0 10%;
+    width: auto;
   }
   header h1 a img {
     height: auto;
@@ -410,6 +419,10 @@ header div {
   }
   #contenido #col2 {
     width: 47%;
+  }
+  #contenido #col2 .chat iframe {
+    top: 160px;
+    width: 45%;
   }
 }
 .ipad #contenido #col1 #mail input[type=text] {

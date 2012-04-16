@@ -312,15 +312,20 @@ header
 @media screen and (min-height:769px) and (max-width:768px) 
 	body
 		background: #fff url("../images/live/background.jpg") repeat-y
-	
+	footer
+		overflow hidden
+		background #3D4043
 	footer .izquierda 
 		width: 50%
-	
+		background:white
+		.text
+			line-height 40px
 	footer .derecha 
 		width: 450px
 	
 		a 
-			margin: 0 10%
+			margin 0 10%
+			width auto
 	
 	header 
 		h1 a img 
@@ -372,6 +377,10 @@ header
 	
 		#col2 
 			width 47%
+			.chat
+				iframe
+					top 160px
+					width 45%
 
 .ipad #contenido #col1 #mail input[type=text] {
   top: 34px;
