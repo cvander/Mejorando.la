@@ -1,6 +1,7 @@
 from django.db import models
 from django.forms import ModelForm
 from django.conf import settings
+import image
 
 # para guardar opciones del sitio (aka switches)
 class Setting(models.Model):
@@ -22,19 +23,28 @@ class Video(models.Model):
 	def __unicode__(self):
 		return self.titulo
 
+	def save(self, *args, **kwargs):
+		super(Video, self).save(*args, **kwargs)
+		
+		if not self.id and not self.imagen: return
+
+		image.resize(image.THUMB, self.imagen)
+		image.resize(image.SINGLE, self.imagen)
+		image.resize(image.HOME, self.imagen)
+
 	# el permalink
 	def get_absolute_url(self):
-		return '/%svideos/%s/' % (settings.URL_PREFIX, self.slug)
+		return '/videos/%s/' % self.slug
 
 	# los diferentes imagenes para el sitio
 	def get_home_image_url(self):
-		return 'http://dev.mejorando.la/resizer.php?s=h&u=%s' % settings.MEDIA_URL+str(self.imagen)
+		return image.get_url_by(image.HOME, self.imagen)
 
 	def get_thumb_image_url(self):
-		return 'http://dev.mejorando.la/resizer.php?s=t&u=%s' % settings.MEDIA_URL+str(self.imagen)
+		return image.get_url_by(image.THUMB, self.imagen)
 
 	def get_single_image_url(self):
-		return 'http://dev.mejorando.la/resizer.php?s=p&u=%s' % settings.MEDIA_URL+str(self.imagen)
+		return image.get_url_by(image.SINGLE, self.imagen)
 
 # comentarios de los videos
 class VideoComentario(models.Model):

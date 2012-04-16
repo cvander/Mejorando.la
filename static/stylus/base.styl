@@ -1,0 +1,767 @@
+verdeclaro=#04a764
+azulclaro=#0073e8
+verdeoscuro=#03978d
+azuloscuro=#0186b8
+/*
+Theme Name: Mejorando.la
+Theme URI: http://mejorando.la
+Description: El mejor tema que mejorando.la ha tenido
+Version: 1.0
+Author: Mejorando.la Team: @freddier, @dual3nigma, @LeonidasEsteban, @sp3ncer
+*/
+
+@font-face 
+  font-family: 'Bold'
+  src: url("../fonts/opensans-bold-webfont.eot")
+  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-bold-webfont.woff") format('woff'), url("../fonts/opensans-bold-webfont.ttf") format('truetype'), url("../fonts/opensans-bold-webfont.svg#OpenSansBold") format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face 
+  font-family: 'Light'
+  src: url("../fonts/opensans-light-webfont.eot")
+  src: url("../fonts/opensans-light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-light-webfont.woff") format('woff'), url("../fonts/opensans-light-webfont.ttf") format('truetype'), url("../fonts/opensans-light-webfont.svg#OpenSansLight") format('svg')
+  font-weight: normal
+  font-style: normal
+
+*{margin:0}
+::selection
+	
+	text-shadow 0 0 20px #017ecd, 1px 1px 1px gray
+a
+	color white
+	text-decoration none
+a:hover 
+	text-decoration underline
+p
+	margin 0
+
+body
+	background #3C4043 
+	color white
+	font-family: 'Light', Arial
+	font-size 16px
+footer
+	color #3d4043 
+	padding-top 75px
+	text-transform uppercase
+	a
+		color #3d4043
+		text-transform lowercase
+		text-decoration underline
+	div
+		display inline-block
+		*display inline
+		min-height 70px
+		vertical-align top
+		zoom 1
+	.derecha
+		font-family "Bold",Arial,Sans-serif
+		font-size 25px
+		height 50px
+		line-height 70px
+		a
+			margin 0 85px
+	.izquierda
+		background #3d4043 url("../images/home/footer.jpg") no-repeat right top
+		color white
+		padding-right 20px
+		text-align right
+		width 295px
+		.text
+			width 220px
+		span
+			display block
+			margin-right 20px
+			text-align left
+		span:nth-child(1)
+			font-size 20px
+			letter-spacing -1px
+			margin-top 20px
+		span:nth-child(2)
+			font-family "Bold",Arial,Sans-serif
+			font-size 12px
+			font-weight bold
+header
+	position absolute
+	width 100%
+	z-index 3
+	#maestros
+		margin-left 450px
+		padding-top 17px
+		position absolute
+		top 0
+		width 110px
+	#cristalab
+		margin-left 770px
+		padding-top 17px
+		position absolute
+		top 0
+		width 110px
+	div
+		background url(../images/adorno-logo.png) no-repeat 680px top
+		border-top 7px solid white
+		display block
+		margin 0 auto
+		width 1000px
+		
+h3
+	color #3d4043
+	font-family "Bold",Arial,Sans-serif
+	font-size 45px
+	letter-spacing -1px
+	text-transform uppercase
+
+img
+	border none
+
+
+strong
+	font-family: 'Bold',Arial,Sans-serif
+
+
+#anteriores
+	background white
+	min-width 100%
+	overflow hidden
+	position relative
+	text-align center
+	text-transform uppercase
+	.todos
+		background  url("../images/home/playall_largo.png") no-repeat left top
+		color #3f4044
+		position absolute
+		right 0
+		padding 7px 20px 7px 30px
+
+		a
+			color #3f4044
+			font-size 14px
+			font-family "Bold",Arial,Sans-serif
+
+	h3
+		margin-left 80px
+		text-align left
+	.capitulo:nth-child(5)
+		margin-right 0
+	.capitulo
+		border-right 1px solid white
+		display inline-block
+		height 157px
+		margin 0 21px 0 0
+		vertical-align top
+		width 230px
+		zoom 1
+		p
+			background rgba(0,0,0,.5)
+			display inline
+		.hora
+			opacity 0
+			-webkit-transition .3s
+		h2
+			background rgba(0,0,0,.5)
+			display inline
+		.block
+			display block	
+			margin-top 5px
+		.cap
+			font-family "Bold",Arial,Sans-serif
+			font-size 14px
+			margin-bottom 12px
+		.imagen
+			position absolute
+			z-index 1
+			img
+				width 230px
+				height 157px
+		.texto
+			line-height 20px
+			padding 15px 15px 0 15px
+			position relative
+			text-align left
+			text-transform none
+			word-break break-word
+			z-index 2
+	.capitulo article:nth-child(1) 
+  		border-left 2px solid #fff
+	.capitulo article:nth-child(4) 
+  		border-right 2px solid #fff
+	.capitulo:hover .hora
+		opacity 1	
+	.tit
+		font-size 23px
+
+
+#cuerpo,hgroup,footer
+	background white
+	margin 0 auto
+	width 1000px
+
+#cursos
+	background white
+	padding-top 65px
+	text-transform uppercase
+
+	h3
+		margin-left 80px
+	a
+		color white
+	a:hover
+		text-decoration none
+	a:hover h5
+		text-decoration underline
+	.azulclaro
+		background azulclaro
+	.azuloscuro
+		background azuloscuro
+	.verdeclaro 
+		background verdeclaro
+	.verdeoscuro
+		background verdeoscuro
+	.pais
+		height 56px
+		margin-top 3px
+		position relative
+		div
+			*display inline
+			display inline-block
+			vertical-align top
+			zoom 1
+		.imagen
+			img 
+				height 56px
+		.fecha
+			margin-left 25px
+			h4
+				font-family "Bold",Arial,Sans-serif
+				font-size 15px
+				margin 7px 0 -7px 3px	
+			p
+				font-size 32px
+			strong
+				font-weight normal
+				font-family "Light",Arial,Sans-serif
+		.nombre
+			font-size 32px
+			padding-top 18px
+			text-align left
+			width 656px
+			margin-left 5px
+			position relative
+			a
+				position relative
+
+
+		.tec
+			background url("../images/home/fondo-logo-tec.png")
+			height 66px
+			position absolute
+			right 0
+			width 115px
+			
+			img
+				
+				margin-left 60px
+				margin-top -5px
+				vertical-align middle
+
+			
+		.tec:after
+			display block
+			clear both
+#proximo
+	background white
+	color #3d4043
+	margin-bottom 20px
+	padding-top 25px
+	text-align center
+	h3
+		font-family "Light",Arial,Sans-serif
+		font-size 35px
+		font-weight normal
+		letter-spacing 15px
+		margin-top 10px
+		text-transform uppercase
+	span
+		display block
+		font-size 12px
+		margin-top 10px
+		text-transform uppercase
+	span:nth-child(6)
+		margin-left 2px
+	.cuenta
+		display inline-block
+		*display inline
+		vertical-align top 
+		zoom 1
+		div
+			background #3d4043
+			font-family "Bold",Arial,Sans-serif
+			font-size 50px
+			height 64px
+			padding 0 10px
+			position relative
+			span 
+				color white
+				font-size 57px
+				position relative
+			.linea
+				background white
+				display none
+				height 2px
+				margin-left -10px
+				margin-top 50%
+				position absolute
+				width 100%
+
+	.cuenta:nth-child(even) 
+		margin 0 80px
+
+
+#social
+	margin -50px auto 0 auto
+	margin-left 310px
+	position absolute
+	width 400px
+	z-index 5
+	div
+		display inline-block
+		*display inline
+		margin-left 40px
+		vertical-align top
+		zoom 1
+	div:nth-child(1)
+		margin-left 0
+	.btn_youtube:after,.btn_twitter:after,.btn_facebook:after,.btn_googlemas:after
+		background white
+		border-radius 5px
+		content ""
+		height 30px
+		margin-left -5px
+		margin-top -28px
+		display block
+		width 60px
+	.btn_youtube:after
+		width 70px
+	.btn_twitter:after
+		width 80px
+	.btn_facebook,.btn_googlemas
+		width 55px
+	.btn_facebook:after
+		margin-top -25px
+		width 55px
+
+
+#ultimo
+	height 500px
+	width 100%
+	.absolute
+		height 500px
+		position absolute
+		width 1000px
+		z-index 1
+	 	
+	.datos
+		position relative
+		z-index 4
+		.titulo
+			-webkit-transition.3s
+			margin-right 20px
+			font-size 60px
+			font-weight normal
+			line-height 50px
+			margin-top 5px
+			max-width 90%
+		.titulo:hover
+			text-shadow 0 0 20px rgba(255,255,255,.5)
+			text-decoration none
+	.tela
+		background rgba(0,0,0,.5)
+		position absolute
+		z-index 2
+		width 1000px
+		height 500px
+	.boton,.fecha,.horario,.titulo
+		clear both
+		display block
+		float right
+		margin-right 40px
+		text-align right
+	.boton
+		font-weight bold
+		font-family "Bold",Arial,Sans-serif
+		margin-top 10px
+		text-transform uppercase
+		transition .5s
+	.boton:hover
+		text-shadow 0 0 10px white
+	.fecha
+		font-size 15px
+		letter-spacing 10px
+		text-transform uppercase
+	.horario
+		display block
+		font-size 11px
+		letter-spacing 3px
+		margin 115px 40px 0 0
+		text-transform uppercase
+		.block
+			display block
+		.big
+			font-size 40px
+			letter-spacing 1px
+		
+.cinta
+	background url("../images/home/countdown_separador.jpg")
+	background-size 100%
+	border-bottom 1px solid white
+	height 32px
+	width 100%
+
+/***********crossbrowser************/
+.ie8 #ultimo .datos .titulo 
+  max-width none !important
+  padding-left 30px !important
+.ie8 .tela 
+  background url("../images/home/tela.png")
+.ie8 .block .tit 
+  background url("../images/home/tela.png")
+
+#envivo
+  background black
+  height 60px
+  margin 0 auto
+  width 1000px
+  position relative
+  overflow hidden
+  display block
+
+@-webkit-keyframes envivo
+  to{-webkit-transform:translateX(0)}
+  from{-webkit-transform:translateX(-1000px)}
+
+@-moz-keyframes envivo
+  to{-moz-transform:translateX(0)}
+  from{-moz-transform:translateX(-1000px)}
+
+#envivo .patron
+  -webkit-animation 25s envivo infinite linear
+  -moz-animation 25s envivo infinite linear
+  background url("../images/patron.jpg") repeat-x
+  width 2000px
+  height 60px
+  position relative
+  z-index 1
+
+#envivo .vivo
+  position absolute
+  right 0
+  top 0
+  display block
+  z-index 2
+
+@media screen and (min-width:801px) and (max-width:1000px)
+  body
+    overflow-x hidden
+  footer .izquierda 
+    padding-left 15px
+    padding-right 3%
+    width 25%
+    
+  footer .derecha 
+    float  right
+    line-height 200%
+    text-align center
+    width 65%
+  
+  footer .derecha a 
+    margin 0
+    display inline-block
+    width 40%
+  
+  footer .derecha span:nth-child(1) 
+    display none
+  
+  header #maestros
+   margin-left 50%
+  
+  header #cristalab 
+    margin-left 80%
+  
+  header div 
+    background: url("../images/adorno-logo.png") no-repeat 75% top
+    width auto
+    max-width 1000px
+    min-width 800px
+  
+  #cuerpo,
+  hgroup,
+  footer 
+    max-width:1000px
+    min-width:800px
+    width: auto
+  
+  #anteriores{
+    height:190px
+  }
+  #cursos .pais .nombre {
+    width:60%
+    font-size:25px
+  }
+  #cursos .pais .fecha p {
+    font-size:25px
+  }
+  #social{
+    position: relative
+    margin-left:auto
+  }
+  #ultimo {
+    overflow: hidden
+    position: relative
+  }
+  #ultimo .datos {
+    position: relative
+    z-index: 4
+    width: 100%
+    height: 500px
+  }
+  #ultimo .tela {
+    width: 100%
+  }
+  #ultimo .boton {
+   bottom:80px
+   position: absolute
+   right:20px
+   width:100%
+  }
+
+  #ultimo .fecha 
+    bottom 60px
+    position  absolute
+    right 20px
+    width 100%
+  
+
+
+@media screen and (max-width:800px)
+  footer 
+    padding-top 10px
+  
+  footer a 
+    color white
+  
+  footer div 
+    min-height 0
+    padding-bottom 5px
+  
+  footer .derecha 
+    background #3D4043
+    color white
+    text-align center
+    width 100%
+  
+  footer .derecha span:nth-child(1)
+    display none
+  
+  footer .derecha a 
+    display inline-block
+    margin 0
+    width 40%
+  
+  footer .izquierda 
+    background white
+    padding-right 0
+    text-align center
+    width 100%
+  
+  footer .izquierda .text 
+    color #3D4043
+    width 100%
+  
+  footer .izquierda span 
+    display inline-block
+    margin-right 4px
+  
+  footer .izquierda span:nth-child(1) 
+    font-size 15px
+    letter-spacing 0
+  
+  footer .izquierda span:nth-child(2) 
+    font-family "Light",Arial,Sans-serif
+    font-size 15px
+    font-weight normal
+  
+  header #maestros,header #cristalab 
+   display none
+  
+  header div 
+    background none
+    border-top none
+    width auto
+    max-width 800px
+    min-width 320px
+  
+  header h1 a img
+    width 230px
+  
+  h3 
+    font-family "Light",Arial,Sans-serif
+    font-size 30px
+    letter-spacing 2px
+  
+  #cuerpo,
+  hgroup,
+  footer 
+    max-width:800px
+    min-width:320px
+    width: auto
+  
+  #anteriores 
+   height 148px
+  
+
+  #anteriores .capitulo 
+    border-right 1px solid #fff
+    height 115px
+    margin 0
+    width 156px
+  
+  #anteriores .capitulo .imagen img 
+    width 156px
+    height 115px
+  
+  #anteriores .capitulo .texto 
+    padding 10px
+  
+  #anteriores .capitulo article:nth-child(1) 
+    border-left 0
+  
+  #anteriores .capitulo article:nth-child(2) 
+    border-right 0
+  
+  #anteriores .tit 
+    font-size 20px
+    word-break break-all
+  
+
+  #cursos 
+    padding-top 10px
+  
+  #cursos h3 
+    margin-left 20px
+  
+  #cursos .pais 
+    height 65px
+    padding-bottom 10px
+  
+  #cursos .pais .imagen
+    left 65%
+    position absolute
+    top 40%
+    z-index 2
+  
+  #cursos .pais .imagen img 
+    height 19px
+  
+  .pais.azuloscuro .fecha 
+    background #01729e url("../images/home/azul_oscuro.jpg") no-repeat left
+  
+  .pais.azulclaro .fecha 
+    background #0062c5 url("../images/home/azul_claro.jpg") no-repeat left
+  
+  #cursos .pais .fecha 
+    height 50px
+    margin-left 0
+    padding 10px 2% 15px 0
+    position absolute
+    right 0
+    text-align right
+    width 35%
+    z-index 1
+  
+  #cursos .pais .fecha p 
+    font-size 15px
+    font-weight bold
+    margin-top 5px
+  
+  #cursos .pais .fecha strong 
+   display none
+  
+  #cursos .pais .nombre 
+    font-size 20px
+    width 61%
+    margin-left 2%
+  
+  #cursos .pais .nombre a 
+    position: relative
+  
+  #cursos .pais .tec 
+    display: none
+  
+ 
+  #proximo 
+    padding-top: 1px
+  
+  #proximo h3 
+    font-size 22px
+    letter-spacing 2px
+  
+
+  #proximo .cuenta:nth-child(even) 
+    margin 0 30px
+  
+  #social
+    display none
+  
+  #ultimo 
+    overflow hidden
+    position relative
+    height 370px
+ 
+  #ultimo .datos 
+    height 220px
+    position relative
+    z-index 4
+  
+  #ultimo .datos .titulo 
+    font-size 30px
+    line-height 35px
+    margin-right auto
+    margin-top 35px
+    max-width 100%
+  
+
+  #ultimo .tela
+    width 100%
+
+  #ultimo .boton,
+  #ultimo .fecha,
+  #ultimo .horario,
+  #ultimo .titulo 
+    float none
+    margin-right auto
+    text-align center
+  #ultimo .boton 
+   bottom 0
+   font-size 20px
+   position absolute
+   width 100%
+
+  #ultimo .fecha
+    bottom -20px
+    font-size 18px
+    position absolute
+    width 100%
+  
+  #ultimo .horario 
+    margin: 120px auto 0 auto
+
+  
+  #ultimo .horario strong:nth-child(1)
+    font-family "Light",Arial,Sans-serif
+    font-weight normal
+  
+  #ultimo .horario .big 
+    font-size 30px  
+  
+

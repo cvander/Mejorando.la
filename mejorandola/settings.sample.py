@@ -145,10 +145,15 @@ LOGGING = {
     }
 }
 
+# imagen que aparece por default cuando el usuario no tiene gravatar
 GRAVATAR_DEFAULT_IMAGE = ""
 
-URL_PREFIX = ''
-
+# credenciales para la api akismet
 AKISMET_API_KEY = ''
 AKISMET_URL = ''
 AKISMET_AGENT = ''
+
+
+IMG_SIZE_THUMB  = (230, 167)
+IMG_SIZE_SINGLE = (1000, 550)
+IMG_SIZE_HOME   = (1000, 500)

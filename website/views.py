@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 
 from django.shortcuts import render_to_response, redirect, get_object_or_404
-from models import Setting, Video, VideoComentario, VideoComentarioForm
 from django.forms.models import model_to_dict
 from django.conf import settings
+from django.contrib.auth.decorators import login_required
 from akismet import Akismet
 import GeoIP
+import image
+from models import Setting, Video, VideoComentario, VideoComentarioForm
 
 # La vista del home muestra el ultimo video destacado
 # y 4 videos mas, + el horario localizado
@@ -70,6 +72,17 @@ def video(solicitud, video_slug):
 # plantilla de transmision en vivo
 def live(solicitud):
 	return render_to_response('website/live.html')
+
+# volver a generar las imagenes de video
+# en todos sus sizes
+@login_required()
+def regenerate(solicitud):
+	for video in Video.objects.all():
+		image.resize(image.THUMB, video.imagen)
+		image.resize(image.SINGLE, video.imagen)
+		image.resize(image.HOME, video.imagen)
+
+	return redirect('/')
 
 def handler404(solicitud):
 	return redirect('website.views.home')
