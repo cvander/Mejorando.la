@@ -11,14 +11,14 @@ Author: Mejorando.la Team: @freddier, @dual3nigma, @LeonidasEsteban, @sp3ncer
 */
 
 @font-face 
-  font-family: 'Bold'
+  font-family: 'open sans'
   src: url("../fonts/opensans-bold-webfont.eot")
   src: url("../fonts/opensans-bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-bold-webfont.woff") format('woff'), url("../fonts/opensans-bold-webfont.ttf") format('truetype'), url("../fonts/opensans-bold-webfont.svg#OpenSansBold") format('svg')
-  font-weight: normal
+  font-weight: bold
   font-style: normal
 
 @font-face 
-  font-family: 'Light'
+  font-family: 'open sans'
   src: url("../fonts/opensans-light-webfont.eot")
   src: url("../fonts/opensans-light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-light-webfont.woff") format('woff'), url("../fonts/opensans-light-webfont.ttf") format('truetype'), url("../fonts/opensans-light-webfont.svg#OpenSansLight") format('svg')
   font-weight: normal
@@ -39,7 +39,7 @@ p
 body
 	background #3C4043 
 	color white
-	font-family: 'Light', Arial
+	font-family: 'open sans', Arial,Sans-serif
 	font-size 16px
 footer
 	color #3d4043 
@@ -56,8 +56,8 @@ footer
 		vertical-align top
 		zoom 1
 	.derecha
-		font-family "Bold",Arial,Sans-serif
 		font-size 25px
+		font-weight bold
 		height 50px
 		line-height 70px
 		a
@@ -79,7 +79,6 @@ footer
 			letter-spacing -1px
 			margin-top 20px
 		span:nth-child(2)
-			font-family "Bold",Arial,Sans-serif
 			font-size 12px
 			font-weight bold
 header
@@ -107,8 +106,8 @@ header
 		
 h3
 	color #3d4043
-	font-family "Bold",Arial,Sans-serif
 	font-size 45px
+	font-weight bold
 	letter-spacing -1px
 	text-transform uppercase
 
@@ -117,7 +116,7 @@ img
 
 
 strong
-	font-family: 'Bold',Arial,Sans-serif
+	font-weight bold
 
 
 #anteriores
@@ -137,7 +136,7 @@ strong
 		a
 			color #3f4044
 			font-size 14px
-			font-family "Bold",Arial,Sans-serif
+			font-weight bold
 
 	h3
 		margin-left 80px
@@ -165,8 +164,8 @@ strong
 			display block	
 			margin-top 5px
 		.cap
-			font-family "Bold",Arial,Sans-serif
 			font-size 14px
+			font-weight bold
 			margin-bottom 12px
 		.imagen
 			position absolute
@@ -233,14 +232,13 @@ strong
 		.fecha
 			margin-left 25px
 			h4
-				font-family "Bold",Arial,Sans-serif
 				font-size 15px
+				font-weight bold
 				margin 7px 0 -7px 3px	
 			p
 				font-size 32px
 			strong
 				font-weight normal
-				font-family "Light",Arial,Sans-serif
 		.nombre
 			font-size 32px
 			padding-top 18px
@@ -276,7 +274,6 @@ strong
 	padding-top 25px
 	text-align center
 	h3
-		font-family "Light",Arial,Sans-serif
 		font-size 35px
 		font-weight normal
 		letter-spacing 15px
@@ -296,8 +293,8 @@ strong
 		zoom 1
 		div
 			background #3d4043
-			font-family "Bold",Arial,Sans-serif
 			font-size 50px
+			font-weight bold
 			height 64px
 			padding 0 10px
 			position relative
@@ -389,7 +386,6 @@ strong
 		text-align right
 	.boton
 		font-weight bold
-		font-family "Bold",Arial,Sans-serif
 		margin-top 10px
 		text-transform uppercase
 		transition .5s
@@ -461,307 +457,307 @@ strong
   z-index 2
 
 @media screen and (min-width:801px) and (max-width:1000px)
-  body
-    overflow-x hidden
-  footer .izquierda 
-    padding-left 15px
-    padding-right 3%
-    width 25%
-    
-  footer .derecha 
-    float  right
-    line-height 200%
-    text-align center
-    width 65%
-  
-  footer .derecha a 
-    margin 0
-    display inline-block
-    width 40%
-  
-  footer .derecha span:nth-child(1) 
-    display none
-  
-  header #maestros
-   margin-left 50%
-  
-  header #cristalab 
-    margin-left 80%
-  
-  header div 
-    background: url("../images/adorno-logo.png") no-repeat 75% top
-    width auto
-    max-width 1000px
-    min-width 800px
-  
-  #cuerpo,
-  hgroup,
-  footer 
-    max-width:1000px
-    min-width:800px
-    width: auto
-  
-  #anteriores{
-    height:190px
-  }
-  #cursos .pais .nombre {
-    width:60%
-    font-size:25px
-  }
-  #cursos .pais .fecha p {
-    font-size:25px
-  }
-  #social{
-    position: relative
-    margin-left:auto
-  }
-  #ultimo {
-    overflow: hidden
-    position: relative
-  }
-  #ultimo .datos {
-    position: relative
-    z-index: 4
-    width: 100%
-    height: 500px
-  }
-  #ultimo .tela {
-    width: 100%
-  }
-  #ultimo .boton {
-   bottom:80px
-   position: absolute
-   right:20px
-   width:100%
-  }
+	body
+		overflow-x hidden
+	footer
+		.izquierda 
+			padding-left 15px
+			padding-right 3%
+			width 25%
 
-  #ultimo .fecha 
-    bottom 60px
-    position  absolute
-    right 20px
-    width 100%
+		.derecha 
+			float  right
+			line-height 200%
+			text-align center
+			width 65%
+
+		.derecha a 
+			margin 0
+			display inline-block
+			width 40%
+
+		.derecha span:nth-child(1) 
+			display none
+
+	header #maestros
+		margin-left 50%
+
+	header #cristalab 
+		margin-left 80%
+
+	header div 
+		background: url("../images/adorno-logo.png") no-repeat 75% top
+		width auto
+		max-width 1000px
+		min-width 800px
+  
+	#cuerpo,
+	hgroup,
+	footer 
+		max-width 1000px
+		min-width 800px
+		width auto
+
+	#anteriores
+		height:190px
+	
+	#cursos .pais .nombre 
+		width 60%
+		font-size 25px
+	
+	#cursos .pais .fecha p 
+		font-size 25px
+	
+	#social
+		position relative
+		margin-left auto
+	
+	#ultimo 
+		overflow hidden
+		position relative
+	
+		.datos 
+			position relative
+			z-index 4
+			width 100%
+			height 500px
+		
+		.tela 
+			width 100%
+		
+		.boton 
+			bottom 80px
+			position absolute
+			right 20px
+			width 100%
+		
+		.fecha 
+			bottom 60px
+			position  absolute
+			right 20px
+			width 100%
   
 
 
 @media screen and (max-width:800px)
-  footer 
-    padding-top 10px
+	footer 
+		padding-top 10px
+
+		a 
+			color white
+
+		div 
+			min-height 0
+			padding-bottom 5px
+
+		.derecha 
+			background #3D4043
+			color white
+			text-align center
+			width 100%
+
+			span:nth-child(1)
+				display none
+
+			a 
+				display inline-block
+				margin 0
+				width 40%
+
+		.izquierda 
+			background white
+			padding-right 0
+			text-align center
+			width 100%
+
+			.text 
+				color #3D4043
+				width 100%
+
+			span 
+				display inline-block
+				margin-right 4px
+
+			span:nth-child(1) 
+				font-size 15px
+				letter-spacing 0
+
+			span:nth-child(2)
+				font-size 15px
+				font-weight normal	
+
+	header #maestros,header #cristalab 
+		display none
   
-  footer a 
-    color white
+	header div 
+		background none
+		border-top none
+		width auto
+		max-width 800px
+		min-width 320px
+
+	header h1 a img
+		width 230px
+
+	h3 
+		font-size 30px
+		font-weight normal
+		letter-spacing 2px
   
-  footer div 
-    min-height 0
-    padding-bottom 5px
+	#cuerpo,
+	hgroup,
+	footer 
+		max-width:800px
+		min-width:320px
+		width: auto
   
-  footer .derecha 
-    background #3D4043
-    color white
-    text-align center
-    width 100%
-  
-  footer .derecha span:nth-child(1)
-    display none
-  
-  footer .derecha a 
-    display inline-block
-    margin 0
-    width 40%
-  
-  footer .izquierda 
-    background white
-    padding-right 0
-    text-align center
-    width 100%
-  
-  footer .izquierda .text 
-    color #3D4043
-    width 100%
-  
-  footer .izquierda span 
-    display inline-block
-    margin-right 4px
-  
-  footer .izquierda span:nth-child(1) 
-    font-size 15px
-    letter-spacing 0
-  
-  footer .izquierda span:nth-child(2) 
-    font-family "Light",Arial,Sans-serif
-    font-size 15px
-    font-weight normal
-  
-  header #maestros,header #cristalab 
-   display none
-  
-  header div 
-    background none
-    border-top none
-    width auto
-    max-width 800px
-    min-width 320px
-  
-  header h1 a img
-    width 230px
-  
-  h3 
-    font-family "Light",Arial,Sans-serif
-    font-size 30px
-    letter-spacing 2px
-  
-  #cuerpo,
-  hgroup,
-  footer 
-    max-width:800px
-    min-width:320px
-    width: auto
-  
-  #anteriores 
-   height 148px
+	#anteriores 
+		height 148px
+
+
+		.capitulo 
+			border-right 1px solid #fff
+			height 115px
+			margin 0
+			width 156px
+
+			.imagen img 
+				width 156px
+				height 115px
+
+			.texto 
+				padding 10px
+
+			article:nth-child(1) 
+				border-left 0
+
+			article:nth-child(2) 
+				border-right 0
+
+		.tit 
+			font-size 20px
+			word-break break-all
   
 
-  #anteriores .capitulo 
-    border-right 1px solid #fff
-    height 115px
-    margin 0
-    width 156px
-  
-  #anteriores .capitulo .imagen img 
-    width 156px
-    height 115px
-  
-  #anteriores .capitulo .texto 
-    padding 10px
-  
-  #anteriores .capitulo article:nth-child(1) 
-    border-left 0
-  
-  #anteriores .capitulo article:nth-child(2) 
-    border-right 0
-  
-  #anteriores .tit 
-    font-size 20px
-    word-break break-all
-  
+	#cursos 
+		padding-top 10px
 
-  #cursos 
-    padding-top 10px
+		h3 
+			margin-left 20px
+
+		.pais 
+			height 65px
+			padding-bottom 10px
+
+			.imagen
+				left 65%
+				position absolute
+				top 40%
+				z-index 2
+
+				img 
+					height 19px
   
-  #cursos h3 
-    margin-left 20px
+	.pais.azuloscuro .fecha 
+		background #01729e url("../images/home/azul_oscuro.jpg") no-repeat left
+
+	.pais.azulclaro .fecha 
+		background #0062c5 url("../images/home/azul_claro.jpg") no-repeat left
   
-  #cursos .pais 
-    height 65px
-    padding-bottom 10px
-  
-  #cursos .pais .imagen
-    left 65%
-    position absolute
-    top 40%
-    z-index 2
-  
-  #cursos .pais .imagen img 
-    height 19px
-  
-  .pais.azuloscuro .fecha 
-    background #01729e url("../images/home/azul_oscuro.jpg") no-repeat left
-  
-  .pais.azulclaro .fecha 
-    background #0062c5 url("../images/home/azul_claro.jpg") no-repeat left
-  
-  #cursos .pais .fecha 
-    height 50px
-    margin-left 0
-    padding 10px 2% 15px 0
-    position absolute
-    right 0
-    text-align right
-    width 35%
-    z-index 1
-  
-  #cursos .pais .fecha p 
-    font-size 15px
-    font-weight bold
-    margin-top 5px
-  
-  #cursos .pais .fecha strong 
-   display none
-  
-  #cursos .pais .nombre 
-    font-size 20px
-    width 61%
-    margin-left 2%
-  
-  #cursos .pais .nombre a 
-    position: relative
-  
-  #cursos .pais .tec 
-    display: none
+	#cursos .pais .fecha 
+		height 50px
+		margin-left 0
+		padding 10px 2% 15px 0
+		position absolute
+		right 0
+		text-align right
+		width 35%
+		z-index 1
+
+		p 
+			font-size 15px
+			font-weight bold
+			margin-top 5px
+
+		strong 
+			display none
+
+	#cursos .pais .nombre 
+		font-size 20px
+		width 61%
+		margin-left 2%
+
+	#cursos .pais .nombre a 
+		position: relative
+
+	#cursos .pais .tec 
+		display: none
   
  
-  #proximo 
-    padding-top: 1px
-  
-  #proximo h3 
-    font-size 22px
-    letter-spacing 2px
-  
+	#proximo 
+		padding-top: 1px
 
-  #proximo .cuenta:nth-child(even) 
-    margin 0 30px
+		h3 
+			font-size 22px
+			letter-spacing 2px
+
+
+		.cuenta:nth-child(even) 
+			margin 0 30px
+
+	#social
+		display none
   
-  #social
-    display none
-  
-  #ultimo 
-    overflow hidden
-    position relative
-    height 370px
+	#ultimo 
+		overflow hidden
+		position relative
+		height 370px
  
-  #ultimo .datos 
-    height 220px
-    position relative
-    z-index 4
-  
-  #ultimo .datos .titulo 
-    font-size 30px
-    line-height 35px
-    margin-right auto
-    margin-top 35px
-    max-width 100%
-  
+		.datos 
+			height 220px
+			position relative
+			z-index 4
 
-  #ultimo .tela
-    width 100%
+		.datos .titulo 
+			font-size 30px
+			line-height 35px
+			margin-right auto
+			position absolute
+			top 35px
+			max-width 100%
+			width 100%
 
-  #ultimo .boton,
-  #ultimo .fecha,
-  #ultimo .horario,
-  #ultimo .titulo 
-    float none
-    margin-right auto
-    text-align center
-  #ultimo .boton 
-   bottom 0
-   font-size 20px
-   position absolute
-   width 100%
 
-  #ultimo .fecha
-    bottom -20px
-    font-size 18px
-    position absolute
-    width 100%
-  
-  #ultimo .horario 
-    margin: 120px auto 0 auto
+		.tela
+			width 100%
 
-  
-  #ultimo .horario strong:nth-child(1)
-    font-family "Light",Arial,Sans-serif
-    font-weight normal
-  
-  #ultimo .horario .big 
-    font-size 30px  
+		.boton,
+		.fecha,
+		.horario,
+		.titulo 
+			float none
+			margin-right auto
+			text-align center
+		.boton 
+			bottom 0
+			font-size 20px
+			position absolute
+			width 100%
+
+		.fecha
+			bottom -20px
+			font-size 18px
+			position absolute
+			width 100%
+
+		.horario 
+			margin 120px auto 0 auto
+
+
+		.horario strong:nth-child(1)
+			font-weight normal
+
+		.horario .big 
+			font-size 30px  
   
 

@@ -1,0 +1,339 @@
+body
+	overflow-y scroll
+#contdes
+	background url(../images/post/cont-post.jpg) no-repeat left top, url(../images/post/cont-post2.jpg) no-repeat right bottom
+	padding-bottom 50px
+	width 100%
+
+	.desc
+		color #3d4043
+		font-family Arial
+		letter-spacing -0.20
+		line-height 20px
+		margin 0 auto
+		text-align left
+		width 650px
+		p
+			margin 1em 0
+		strong 
+			font-weight bold
+		h3
+			font-size 18px
+			text-transform none
+		a
+			color #0073e8
+		img 
+			display block
+			margin 0 auto
+		ul 
+			margin 10px auto
+			li 
+				margin-bottom 5px
+				text-align left
+				list-style none
+		.cap 
+			display none
+		.fehca
+			color #3d4043
+			display block 
+			font-weight bold
+			letter-spacing 5px
+			margin 40px auto 10px auto
+			text-align center
+			text-transform uppercase
+		.intro
+			color #3d4043
+			font-family Arial
+			letter-spacing -0.20
+			line-height 20px
+			margin 0 auto
+			text-align left
+			width 650px
+		
+#post
+	margin 0 auto
+	width 1000px
+	background white
+#video
+	h2
+		font-size 40px
+		line-height 38px
+		margin 10px 0
+		text-align right
+	.contvideo
+		border-radius 10px
+		border 10px solid rgba(255, 255, 255, 0.30)
+		padding-bottom:56.25%
+		position relative
+		z-index 1
+	.contvideo	iframe, .contvideo object, .contvideo embed 
+		position: absolute
+		width: 100%
+		height: 100%
+	.absolute 
+		height 549px
+		position absolute
+		width 1000px
+		z-index 1
+	.cont
+		margin 0 auto
+		max-width 682px
+		padding-top 115px
+		position relative
+		width 100%
+		z-index 2
+	.patron
+		background url("../images/post/pattern-post.png")
+		height 549px
+		position absolute
+		width 1000px
+		z-index 2
+
+
+.ipad #comentarios .commentform,
+.ipad #comentarios .comentarios{
+	width 690px
+  	margin 0 auto
+}
+#comentarios
+	background white
+	color #3d4043
+	font-family Arial
+	font-size 14px
+	line-height 19px
+	margin 0 auto
+	max-width 1000px 
+	width 100%
+	.errorlist 
+		display block
+		list-style none
+		color red
+		padding-left 0
+	.commentform,.comentario
+		width 682px
+		margin 0 auto
+	.commentform
+		position relative
+		padding-bottom 50px
+		label
+			background #6b6e71 url("../images/post/form_post.png") no-repeat right bottom
+			color white
+			display inline-block
+			font-size 13px
+			font-weight bold
+			height 33px
+			line-height 33px
+			margin-bottom 5px
+			padding-left 12px
+			position relative
+			text-transform uppercase
+			width 129px
+			z-index 2
+		
+		input
+			background-origin border-box
+			border-bottom 1px solid #97989a
+			border-left none
+			border-radius 0
+			border-right 1px solid #97989a
+			border-top 1px solid #97989a
+			display inline-block
+			height 29px
+			line-height 29px
+			outline 0
+			padding 1px 0
+			position relative
+			width 536px
+			z-index 1
+		.coment
+			background #6b6e71 url("../images/post/form_post2.png") no-repeat right bottom
+
+		textarea
+			display inline-block
+			border 1px solid #97989a
+			max-width 530px
+			min-height 168px
+			outline 0
+			position relative
+			vertical-align top
+			width 530px
+
+		.publicar,.submit
+			background #0073e8 url("../images/post/button_post.jpg") no-repeat left top 
+			border none
+			border-radius 0
+			color white
+			float right
+			font-size 12px
+			font-weight bold
+			height 34px
+			line-height 34px
+			margin-right 4px
+			margin-top -35px
+			text-transform uppercase
+			width 142px
+
+			
+	.comentario
+		margin 0 auto
+		width 689px
+		div
+			display inline-block 
+			vertical-align top
+		.top
+			width 100%
+			.avatar
+				width 45px
+				img 
+					height 45px
+					width 45px
+			.derecha
+				background #ccced0
+				font-size 17px
+				height 45px
+				line-height 45px
+				text-transform uppercase
+				width 640px
+				h5
+					display inline
+					font-size 17px
+					font-weight bold
+					margin-left 20px
+				a small
+					text-transform lowercase
+		.bla
+			width 600px
+			padding 10px 20px 25px 20px
+			float right
+
+/**************** crossbowser *************/
+.ie #comentarios .commentform textarea {
+  max-width: 535px
+  width: 535px
+}
+.ie #comentarios .commentform .submit {
+  margin-right: 0
+  margin-top: -34px 
+}
+.ie8 #comentarios .commentform input {
+  top: 3px
+}
+.ie8 #comentarios .submit {
+  margin-top: -27px !important
+  top:-6px
+}
+.ie9 #comentarios .commentform input {
+  top: 2px
+}
+#comentarios h2 {
+  margin-left:154px
+  padding-bottom:20px
+  font-weight:bold;
+}
+
+/********responsive*****************/
+
+@media screen and (max-width:500px)
+	#comentarios .comentario .top .derecha
+		line-height 25px !important
+  
+
+@media screen and (max-width:700px)
+	#contdes .desc .intro 
+		width 95% 
+
+	#contdes .desc,
+	#comentarios .commentform, 
+	#comentarios .comentario,
+	#contdes .desc img
+		width 100%
+
+	#comentarios
+		position relative
+		overflow hidden
+	
+		h2
+			margin-left 0
+			text-align right
+			margin-right 20px
+	
+		.commentform
+			label,.coment 
+				background:#6B6E71
+			
+			input 
+				border:1px solid #97989A
+				margin-bottom 5px
+				margin-left 1%
+				padding 0
+				width 98%
+			
+			textarea
+				margin-left 1%
+				max-width 98%
+				padding 0
+				width 98%
+		
+			.publicar,.submit
+				margin-right 1%
+		
+		.comentario 
+			.top
+				background #CCCED0
+			
+				.avatar
+					background white
+					float left
+					margin-right 10px
+				
+				.derecha
+					display inline
+					line-height 45px
+				
+					h5 
+						margin-left 0
+					
+					a small 
+						display none
+					
+			.bla
+				width 90%
+			
+	#video 
+		h2
+			font-size 30px
+		
+		.patron 
+			height 400px
+		
+		.absolute 
+			width auto
+			height 400px
+	
+		.contvideo
+			border 5px solid rgba(255, 255, 255, 0.30)
+		
+	.fecha 
+		display inline
+	
+
+@media screen and (max-width:1000px)
+	#post
+		width 100%
+		position relative
+		overflow hidden
+
+	#contdes
+		background none
+		position relative
+		z-index 10
+
+	#video
+		width 100%
+
+	#video h2 
+		text-align center
+  
+  
+	
+

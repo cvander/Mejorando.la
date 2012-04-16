@@ -13,10 +13,6 @@ footer {
   background: none;
   margin-bottom: 160px;
   text-align: center;
-/*.capitulo:nth-child(odd)
-    background red
-  .capitulo:nth-child(even)
-    background blue*/
 }
 #anteriores .capitulo:nth-child(1) {
   margin-right: 30px;
@@ -74,12 +70,12 @@ footer {
   margin-right: 2px;
   width: 16px;
 }
+#anteriores .capitulo h2 {
+  font-size: 20px;
+}
 #anteriores .capitulo .imagen img {
   height: 167px;
   width: 230px;
-}
-#anteriores .capitulo h2 {
-  font-size: 20px;
 }
 #anteriores .capitulo a {
   height: 167px;
@@ -90,7 +86,6 @@ footer {
   zoom: 1;
 }
 #anteriores .capitulo .desc {
-  *display: inline;
   background: none;
   color: #ddd;
   display: inline-block;
