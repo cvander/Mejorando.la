@@ -31,13 +31,7 @@
 
   {% include "website/comment_form.html" %}
 
-  {% if comentarios|length == 1 %}
-  <h2>1 Comentario</h2>
-  {% elif comentarios|length > 0 %}
-  <h2>{{ comentarios|length }} Comentarios</h2>
-  {% else %}
-  <h2>Sin comentarios</h2>
-  {% endif %}
+  <h2>{{ comentarios|length }} Comentario{{ comentarios|pluralize}}</h2>
 
   {% load gravatar %}
   {% for comentario in comentarios %}
