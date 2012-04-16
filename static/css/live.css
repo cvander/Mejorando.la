@@ -7,8 +7,6 @@ body {
   background-size: 100% 100%;
   box-shadow: 0 0 250px rgba(0,0,0,0.90) inset;
   position: relative;
-/*overflow-x hidden
-	overflow-y hidden*/
   height: 100%;
 }
 .ie8 footer {
