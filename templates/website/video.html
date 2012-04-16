@@ -50,10 +50,10 @@
     <a href="{{ comentario.autor_url }}" target="_blank"><small>{{ comentario.autor_url|cut:"http://" }}</small></a>
     {% endif %}
       </div>
+      </div>
       <div class="bla">
         {{ comentario.content|linebreaks }}
       </div>
-    </div>
   </article>
   {% endfor %}
 
