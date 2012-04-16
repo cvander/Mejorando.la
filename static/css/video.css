@@ -305,7 +305,18 @@ body {
     margin-right:1%;
   }
   #comentarios .comentario .top .derecha{
+    height:auto;
+    line-height:17px;
+    min-height:45px;
+    padding-left:5%;
     position: absolute;
+    width:95%;
+  }
+  #comentarios .comentario .top .derecha h5 {
+    display: inline-block;
+    line-height:auto;
+    margin-left:0;
+    margin-top:15px;
   }
   #comentarios .comentario .top .derecha a small {
     display: none;
