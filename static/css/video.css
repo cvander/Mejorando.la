@@ -269,7 +269,7 @@ body {
   padding-bottom:20px;
 }
 @media screen and (max-width:400px){
-  #comentarios .comentario .top .derecha h5 {
+  #comentarios .comentario .top .derecha{
     line-height:25px;
   }
 }
