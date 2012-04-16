@@ -202,8 +202,8 @@ header div {
 }
 #contenido #col1 #mail .tit {
   display: block;
-  font-family: "Bold", Arial, Sans-serif;
   font-size: 13px;
+  font-weight: bold;
   margin: 10px 0;
 }
 #contenido #col1 #social {

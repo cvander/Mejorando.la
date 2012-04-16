@@ -19,7 +19,7 @@ body {
   margin: 1em 0;
 }
 #contdes .desc strong {
-  font-weight: normal;
+  font-weight: bold;
 }
 #contdes .desc h3 {
   font-size: 18px;
@@ -69,8 +69,8 @@ body {
 #video h2 {
   font-size: 40px;
   line-height: 38px;
-  text-align: right;
   margin: 10px 0;
+  text-align: right;
 }
 #video .contvideo {
   border-radius: 10px;
@@ -226,6 +226,7 @@ body {
 #comentarios .comentario .top .derecha h5 {
   display: inline;
   font-size: 17px;
+  font-weight: bold;
   margin-left: 20px;
 }
 #comentarios .comentario .top .derecha a small {
@@ -258,6 +259,7 @@ body {
 #comentarios h2 {
   margin-left: 154px;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 /********responsive*****************/
 @media screen and (max-width:500px) {
