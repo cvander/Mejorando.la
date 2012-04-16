@@ -6,8 +6,6 @@ body
 	background-size 100% 100%
 	box-shadow 0 0 250px rgba(0,0,0,.9) inset
 	position relative
-	overflow-x hidden
-	overflow-y hidden
 	height 100%
 .ie8 footer 
 	display none
@@ -212,11 +210,11 @@ header
 			background #3d4043
 			width 100%
 			iframe 
-				min-height 400px
+				bottom 0
+				position absolute
+				top 110px
+				width 35%
 			
-.webkit #col2 .chat iframe {
-  height: 75% !important;
-}
 .ipad #contenido #col1 #mail input[type=text] {
   top: 34px;
   margin-right: -6px;
@@ -381,7 +379,10 @@ header
 .ipad #contenido #col1 #mail input[type=email] {
   top: 72px;
 }
-@media screen and (max-height:700px) 
+@media screen and (max-height:760px) and (min-width:1218px)
+	body
+		height auto
+@media screen and (max-height:767px) 
 	footer 
 		display none
 	
@@ -404,6 +405,10 @@ header
 			
 			#social 
 				margin-top 10px
+		#col2
+			.chat
+				iframe
+					top 80px
 	
 	#contenido #col2 
 		width 37%
@@ -415,7 +420,7 @@ header
 	body 
 		onverflow-x hidden
 		overflow-y scroll
-	
+
 	header 
 		display none
 	
@@ -442,6 +447,12 @@ header
 		
 		#col2 
 			width 100%
+			.chat
+				iframe
+					position relative
+					top 0
+					width 100%
+
 
 			
 

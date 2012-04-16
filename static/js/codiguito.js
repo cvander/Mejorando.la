@@ -27,9 +27,8 @@
 	
 	$('#formulario').ajaxForm(opciones); 
 
-	+function () {
+	/*+function () {
 		var alto = window.innerHeight;
-			/*$('.cuerpo').css('min-height',alto)*/
 			$('#col2 .chat iframe').css('height',alto-alto*0.25)
 			var alto1 = screen.height;
 			var x = true
@@ -46,5 +45,5 @@
 				}
 			}
 		}
-	}()
+	}()*/
 });
