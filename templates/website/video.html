@@ -3,9 +3,9 @@
 {% block title %}{{video.titulo}} | Mejorando la Web{% endblock %}
 
 {% block head %}
+<meta name="viewport" content="width=device-width , initial-scale=1 ,maximum-scale=1" />
 <link href="{{ STATIC_PREFIX }}css/video.css" rel="stylesheet" />
 {% endblock %}
-
 {% block body %}
 <section id="post">
   <article id="video">
@@ -50,10 +50,10 @@
     <a href="{{ comentario.autor_url }}" target="_blank"><small>{{ comentario.autor_url|cut:"http://" }}</small></a>
     {% endif %}
       </div>
+      </div>
       <div class="bla">
         {{ comentario.content|linebreaks }}
       </div>
-    </div>
   </article>
   {% endfor %}
 
