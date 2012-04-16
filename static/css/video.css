@@ -238,7 +238,7 @@ body {
   font-size: 17px;
   margin-left: 20px;
 }
-#comentarios .comentario .top .bla {
+#comentarios .comentario .bla {
   width: 600px;
   padding: 10px 20px 25px 20px;
   float: right;
@@ -304,24 +304,25 @@ body {
   #comentarios .commentform .publicar, #comentarios .commentform .submit{
     margin-right:1%;
   }
+  #comentarios .comentario .top{
+    background:#CCCED0;
+  }
+  #comentarios .comentario .top .avatar{
+    background:white;
+    float: left;
+    margin-right:10px;
+  }
   #comentarios .comentario .top .derecha{
-    height:auto;
-    line-height:17px;
-    min-height:45px;
-    padding-left:5%;
-    position: absolute;
-    width:95%;
+    display: inline;
+    line-height:25px;
   }
   #comentarios .comentario .top .derecha h5 {
-    display: inline-block;
-    line-height:auto;
     margin-left:0;
-    margin-top:15px;
   }
   #comentarios .comentario .top .derecha a small {
     display: none;
   }
-  #comentarios .comentario .top .bla{
+  #comentarios .comentario .bla{
     width:90%;
   }
   #video h2{
