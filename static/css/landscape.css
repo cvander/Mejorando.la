@@ -1,3 +1,8 @@
+#contenido {
+  padding-bottom: 0;
+}
+#wrapper,
+.wrap,
 #col2 {
   display: none;
 }
