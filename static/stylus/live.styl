@@ -123,9 +123,9 @@ input.text-field
 	margin 0
 	padding 0 5px
 	position absolute
-	right 0
+	left 0
 	top 0
-
+	width 100%
 	&:focus
 		outline 0
 
@@ -193,12 +193,10 @@ input.text-field
 	position relative
 
 #email-container
-	input
-		left 50px + 50
-
+	span
+		left 100px
 	.txt
 		width 50px
-
 #fila2
 	// bottom 0
 	// left 0
@@ -216,6 +214,11 @@ input.text-field
 	top 0
 	left 0
 	right 333px + 35
+
+	span
+		position absolute
+		left 120px
+		right 0
 
 	.tit
 		color #fff
@@ -250,9 +253,6 @@ input.text-field
 	left 50%
 
 #name-container
-	input
-		left 70px + 50
-
 	.txt
 		width 70px
 
