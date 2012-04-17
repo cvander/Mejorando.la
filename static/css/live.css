@@ -32,9 +32,10 @@ footer .izquierda .text{padding:15px 0 0 35px}
 footer .derecha{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:25px;font-weight:bold;padding-left:280px;line-height:68px;text-align:center;width:100%;max-width:1280px;}
 footer .derecha,footer .derecha a{color:#fff}
 footer .derecha a,footer .derecha span{margin:0 3%}
-header{border-top:7px solid #fff;margin-bottom:25px;position:relative;width:auto;}
+header{border-top:7px solid #fff;margin-bottom:10px;position:relative;width:auto;}
 header:before{background:url("../images/logos/adorno-logo.png") no-repeat 65% 0;content:" ";height:35px;left:60%;margin-left:103px;position:absolute;width:31px}
-header h1{margin:0}
+header h1{margin:0;}
+header h1 a img{width:252px}
 header img{vertical-align:bottom}
 html{margin:0;height:100%}
 input.text-field{background:#003e73;border:1px solid #409fd6;border-left:0;color:#fff;float:left;font:13px/30px 'open sans',sans-serif;height:30px;margin:0;padding:0 5px;position:absolute;right:0;top:0;}
@@ -67,3 +68,15 @@ input.text-field:focus{outline:0}
 #video img{height:auto;width:100%}
 #wrapper{min-height:100%;position:relative;}
 #wrapper:before{bottom:0;-o-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-ms-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-moz-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-webkit-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-webkit-background-clip:padding-box;content:" ";left:0;position:absolute;right:0;top:0}
+@media screen and (max-width:768px){header,footer,#social,#formulario{display:none}
+#contenido,#col1,#col2,#col2 iframe{width:100%}
+#fila2{height:auto;margin:0}
+#video{border:none;left:0}
+}@media screen and (max-height:700px){footer{display:none}
+header h1 a img{width:150px}
+#contenido{padding-bottom:0}
+#col2 iframe{height:95%}
+}@media screen and (max-width:1200px){#formulario{width:50%}
+#social > div:nth-child(3){clear:left;margin:10px 0 0 0;padding:10px 17px}
+#social > div:nth-child(4){margin:10px 0 0 10px;padding:10px 20px}
+}
