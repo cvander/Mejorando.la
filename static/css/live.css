@@ -59,7 +59,7 @@ input.text-field:focus{outline:0}
 #formulario .txt{background:url("../images/live/label_input.png") no-repeat right;color:#535456;float:left;clear:left;height:32px;line-height:32px;padding:0 35px 0 15px}
 #inscribete-btn{background:url("../images/live/button.png") no-repeat !important;border:0;display:block;clear:both;color:#fff;float:right;font:bold 13px 'open sans',sans-serif;height:31px;line-height:31px;padding:0 0 0 18px;text-transform:uppercase;width:158px}
 #maestros{left:50%}
-#name-container span{left:100px}
+#name-container span{left:120px}
 #name-container .txt{width:70px}
 #social{float:right;}
 #social > div{background:rgba(0,0,0,0.30);-o-border-radius:5px;-ms-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;float:left;height:62px;margin:0 0 0 10px;padding:10px;}
