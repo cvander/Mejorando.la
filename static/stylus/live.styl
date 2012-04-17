@@ -30,24 +30,16 @@ font_opensans = 'open sans', sans-serif
 body
 	background #fff url("../images/live/cinta_1920.jpg") repeat-y fixed
 	font-family font_opensans
+	height 100%
 	margin 0
 	padding 0
 
-	&:before
-		bottom 0
-		box-shadow 0 0 250px rgba(0,0,0,0.90) inset
-		content " "
-		left 0
-		position absolute
-		right 0
-		top 0
-
-
 footer
-	bottom 0
 	color #3D4043
-	left 0
-	position absolute
+	// left 0
+	margin-top -68px
+	position relative
+	// top 100%
 	width 100%
 
 	.izquierda
@@ -94,7 +86,7 @@ footer
 
 header
 	border-top 7px solid #fff
-	// margin-bottom 25px
+	margin-bottom 25px
 	position relative
 	width auto
 
@@ -115,6 +107,7 @@ header
 
 html
 	margin 0
+	height 100%
 
 input.text-field
 	background #003e73
@@ -140,22 +133,25 @@ input.text-field
 
 // ids
 #col1
-	bottom 0
-	left 0
-	position absolute
-	top 0
+	// bottom 0
+	// left 0
+	// position absolute
+	// top 0
+	float left
 	width 60%
 
 #col2
-	bottom 0
-	right 0
-	position absolute
-	top 0
+	// bottom 0
+	// right 0
+	// position absolute
+	// top 0
+	float right
 	width 35%
 
 	iframe
 		height 100%
-		width 100%
+		position absolute
+		width 35%
 
 #cristalab
 #maestros
@@ -169,11 +165,18 @@ input.text-field
 		height 28px
 
 #contenido
-	bottom 68px + 40
-	left 7.5%
-	position absolute
-	top 113px + 25
+	// bottom 68px + 40
+	// left 7.5%
+	// position absolute
+	// top 113px + 25
+	margin 0 auto
+	padding-bottom 68px
 	width 85%
+
+	.wrap
+		@extends .clearfix
+		position relative
+
 
 #cristalab
 	left 70%
@@ -193,11 +196,12 @@ input.text-field
 		width 50px
 
 #fila2
-	bottom 0
-	left 0
+	// bottom 0
+	// left 0
 	height 200px - 25
-	position absolute
-	width 100%
+	margin 25px 0 0
+	position relative
+	// width 100%
 
 #formulario
 	@extends .clearfix
@@ -266,14 +270,38 @@ input.text-field
 	background #000
 	border 6px solid #338ed3
 	border-radius()
-	bottom 200px
+	// bottom 200px
 	left -6px
-	position absolute
+	position relative
 	top 0
 	width 100%
+
+	embed
+	object
+		height 100%
+		left 0
+		position absolute
+		top 0
+		width 100%
+
+	img
+		height auto
+		width 100%
 
 	script
 		@extends .hidden
 
-	*
-		@extends #col2 iframe
+
+#wrapper
+	// padding-bottom 68px
+	min-height 100%
+	position relative
+
+	&:before
+		bottom 0
+		box-shadow 0 0 250px rgba(0,0,0,0.90) inset
+		content " "
+		left 0
+		position absolute
+		right 0
+		top 0

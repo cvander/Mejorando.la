@@ -11,43 +11,45 @@
 
 {% block body %}
 <section id="contenido">
-  <section id="col1">
-    <div id="contvideo">
-      <div id="video"><script src="http://embed.mediastre.am/e.js"></script>
-<script>config = {"mlw":[{stream:"livestream",size:"1920x?",aspect:"16:9",autoplay:true,zones:["us"]},{stream:"livestreamlow",size:"1920x?",aspect:"16:9",autoplay:true,zones:["us"]}]}; e = new MEmbed(config);</script>
+  <div class="wrap">
+    <section id="col1">
+      <div id="contvideo">
+        <div id="video"><script src="http://embed.mediastre.am/e.js"></script>
+  <script>config = {"mlw":[{stream:"livestream",size:"1920x?",aspect:"16:9",autoplay:true,zones:["us"]},{stream:"livestreamlow",size:"1920x?",aspect:"16:9",autoplay:true,zones:["us"]}]}; e = new MEmbed(config);</script>
+
+        </div>
+      </div>
+      <div id="fila2">
+        <div id="mail">
+          <form action="http://mejorando.la/mailchimp.php" method="POST" id="formulario" >
+            <label class="tit">¡Enterate de nuestros eventos! <p id="confirmacion" style="display:none"><strong>¡Revisa tu mail!</strong></p></label>
+            <p id="name-container"><label class="txt" for="nombre">nombre</label><input type="text" id="nombre" name="nombre" class="text-field"  required  /></p>
+            <p id="email-container"><label class="txt" for="email">mail</label><input type="email" id="email" name="email" class="text-field" required  /></p>
+            <input type="submit" value="suscribirme" id="inscribete-btn" />
+          </form>
+
+        </div>
+        <aside id="social">
+          <div class="btn_youtube"><a href="http://www.youtube.com/subscription_center?add_user=mejorandolaweb&amp;feature=creators_cornier-http%3A//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_64x64_red.png"><img src="{{ STATIC_PREFIX }}images/home/boton-youtube.png" alt="Subscribe to me on YouTube"/></a><img src="http://www.youtube-nocookie.com/gen_204?feature=creators_cornier-http%3A//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_64x64_red.png" style="display: none"/>
+
+          </div>
+          <div class="btn_twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Yo también sintonizo #mejorandola" data-url="http://mejorando.la/" data-count="vertical" data-related="mejorandolaweb">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+          </div>
+          <div id="fb-root" class="btn_facebook"><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://www.facebook.com/mejorandola" send="false" layout="box_count" width="80" show_faces="false" font=""></fb:like>
+
+          </div>
+          <div class="btn_googlemas"><g:plusone size="tall" href="http://mejorando.la/"></g:plusone>
+
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section id="col2">
+      <div class="chat"><iframe src="http://chat.mejorando.la" width="100%" height="75%" frameborder="0"></iframe>
 
       </div>
-    </div>
-    <div id="fila2">
-      <div id="mail">
-        <form action="http://mejorando.la/mailchimp.php" method="POST" id="formulario" >
-          <label class="tit">¡Enterate de nuestros eventos! <p id="confirmacion" style="display:none"><strong>¡Revisa tu mail!</strong></p></label>
-          <p id="name-container"><label class="txt" for="nombre">nombre</label><input type="text" id="nombre" name="nombre" class="text-field"  required  /></p>
-          <p id="email-container"><label class="txt" for="email">mail</label><input type="email" id="email" name="email" class="text-field" required  /></p>
-          <input type="submit" value="suscribirme" id="inscribete-btn" />
-        </form>
-
-      </div>
-      <aside id="social">
-        <div class="btn_youtube"><a href="http://www.youtube.com/subscription_center?add_user=mejorandolaweb&amp;feature=creators_cornier-http%3A//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_64x64_red.png"><img src="{{ STATIC_PREFIX }}images/home/boton-youtube.png" alt="Subscribe to me on YouTube"/></a><img src="http://www.youtube-nocookie.com/gen_204?feature=creators_cornier-http%3A//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_64x64_red.png" style="display: none"/>
-
-        </div>
-        <div class="btn_twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="Yo también sintonizo #mejorandola" data-url="http://mejorando.la/" data-count="vertical" data-related="mejorandolaweb">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-
-        </div>
-        <div id="fb-root" class="btn_facebook"><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://www.facebook.com/mejorandola" send="false" layout="box_count" width="80" show_faces="false" font=""></fb:like>
-
-        </div>
-        <div class="btn_googlemas"><g:plusone size="tall" href="http://mejorando.la/"></g:plusone>
-
-        </div>
-      </aside>
-    </div>
-  </section>
-  <section id="col2">
-    <div class="chat"><iframe src="http://chat.mejorando.la" width="100%" height="75%" frameborder="0"></iframe>
-
-    </div>
-  </section>
+    </section>
+  </div>
 </section>
 {% endblock %}

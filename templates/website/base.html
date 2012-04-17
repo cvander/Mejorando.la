@@ -51,24 +51,25 @@
     </script>
   </head>
   <body>
-    {% block letrero %}{% endblock %}
-    <header>
-      <div>
-        <h1><a href="{% url website.views.home %}" title="mejorando.la"><img src="{{ STATIC_PREFIX }}images/logos/mejorandola.png" alt="mejorando.la"></a>
-        </h1><a id="maestros" href="http://maestrosdelweb.com" target="_blank" title="maestros del web"><img src="{{ STATIC_PREFIX }}images/logos/maestros.png" alt="maestros del web"></a><a id="cristalab" href="http://cristalab.com" target="_blank" title="cristalab"><img src="{{ STATIC_PREFIX }}images/logos/cristalab.png" alt="cristalab"></a>
-      </div>
-    </header>
-
-    {% block body %}{% endblock %}
-
-    <footer>
-      <div class="izquierda">
-        <div class="text"><span>transmisión en vivo</span><span>cada jueves</span>
+    <div id="wrapper">
+      {% block letrero %}{% endblock %}
+      <header>
+        <div>
+          <h1><a href="{% url website.views.home %}" title="mejorando.la"><img src="{{ STATIC_PREFIX }}images/logos/mejorandola.png" alt="mejorando.la"></a>
+          </h1><a id="maestros" href="http://maestrosdelweb.com" target="_blank" title="maestros del web"><img src="{{ STATIC_PREFIX }}images/logos/maestros.png" alt="maestros del web"></a><a id="cristalab" href="http://cristalab.com" target="_blank" title="cristalab"><img src="{{ STATIC_PREFIX }}images/logos/cristalab.png" alt="cristalab"></a>
         </div>
-      </div>
-      <div class="derecha"><span>con</span><a href="http://twitter.com/freddier" title="@freddier" target="_blank">@freddier</a><span>+</span><a href="http://twitter.com/cvander" title="@cvander" target="_blank">@cvander</a>
-      </div>
-    </footer>
+      </header>
 
+      {% block body %}{% endblock %}
+
+      <footer>
+        <div class="izquierda">
+          <div class="text"><span>transmisión en vivo</span><span>cada jueves</span>
+          </div>
+        </div>
+        <div class="derecha"><span>con</span><a href="http://twitter.com/freddier" title="@freddier" target="_blank">@freddier</a><span>+</span><a href="http://twitter.com/cvander" title="@cvander" target="_blank">@cvander</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
