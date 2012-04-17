@@ -38,7 +38,7 @@ header h1{margin:0;}
 header h1 img{height:75px}
 header img{vertical-align:bottom}
 html{margin:0;height:100%}
-input.text-field{background:#003e73;border:1px solid #409fd6;border-left:0;color:#fff;float:left;font:13px/30px 'open sans',sans-serif;height:30px;margin:0;padding:0 5px;position:absolute;left:0;top:0;width:100%;}
+input.text-field{background:#003e73;border:1px solid #409fd6;border-left:0;color:#fff;float:left;font:13px/30px 'open sans',sans-serif;height:30px;margin:0;padding:0;position:absolute;left:0;top:0;width:100%;}
 input.text-field:focus{outline:0}
 .btn_facebook iframe{width:44px !important}
 #col1{float:left;width:60%}
@@ -50,7 +50,7 @@ input.text-field:focus{outline:0}
 #contenido .wrap{position:relative}
 #cristalab{left:70%;margin-left:103px}
 #email-container,#name-container{margin:0 0 15px;position:relative}
-#email-container span{left:100px}
+#email-container span{left:100px !important}
 #email-container .txt{width:50px}
 #fila2{height:175px;margin:25px 0 0;position:relative}
 #formulario{font-size:13px;font-weight:bold;text-transform:uppercase;position:absolute;top:0;left:0;right:368px;}
