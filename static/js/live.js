@@ -46,4 +46,43 @@
 			}
 		}
 	}()*/
+
+
+	function getViewportSize()
+	{
+		var e = window, a = 'inner';
+		if ( !( 'innerWidth' in window ) )
+		{
+			a = 'client';
+			e = document.documentElement || document.body;
+		}
+		return { width : e[ a + 'Width' ] , height : e[ a + 'Height' ] }
+	}
+
+	function resize()
+	{
+		var viewport = getViewportSize();
+		var $iframe = $('#col2 iframe');
+
+		// resize chat
+		if (viewport.width <= 768)
+		{
+			var height = viewport.height - $('#video').height();
+			$iframe.css('height', height);
+			$iframe.data('resized', true);
+		}
+		else {
+			if ($iframe.data('resized'))
+				$iframe.css('height', '');
+		}
+
+		// resize video
+		// var $video = $('#video');
+		// var height = $video.height();
+		// var width = $video.width();
+		// $video.find('object,embed').attr('height', height).attr('width', width);
+	}
+
+	resize();
+	$(window).on('load debouncedresize', resize);
 });
