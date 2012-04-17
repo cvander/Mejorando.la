@@ -1,470 +1,268 @@
-html
-	margin 0px
-	height 100%
-body
-	background white url(../images/live/cinta_1920.jpg) repeat-y
-	background-size 100% 100%
-	box-shadow 0 0 250px rgba(0,0,0,.9) inset
-	position relative
-	height 100%
-.ie8 footer 
-	display none
+// webfonts
+@css {
+@font-face {
+	font-family: 'open sans';
+	src: url("../fonts/opensans-light-webfont.eot");
+	src: url("../fonts/opensans-light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-light-webfont.woff") format('woff'), url("../fonts/opensans-light-webfont.ttf") format('truetype'), url("../fonts/opensans-light-webfont.svg#OpenSansLight") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
-.opera footer .derecha a 
-	margin 0 15%
+@font-face {
+	font-family: 'open sans';
+	src: url("../fonts/opensans-bold-webfont.eot");
+	src: url("../fonts/opensans-bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-bold-webfont.woff") format('woff'), url("../fonts/opensans-bold-webfont.ttf") format('truetype'), url("../fonts/opensans-bold-webfont.svg#OpenSansBold") format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+}
+
+
+// nib framework + custom mixins & classes
+@import "classes.styl"
+
+
+// variables
+font_opensans = 'open sans', sans-serif
+
+
+// global tags
+body
+	background #fff url("../images/live/cinta_1920.jpg") repeat-y fixed
+	font-family font_opensans
+	margin 0
+	padding 0
 
 footer
-	background none
 	bottom 0
-	color #3d4043
-	display block
-	height 60px
-	padding-top 0
+	color #3D4043
+	left 0
 	position absolute
 	width 100%
-	a
-		color white
-	.derecha
-		color white
-		width 60%
-		a
-			margin 0  17%
-		.cvander
-			margin 0  0 0 17%
+
 	.izquierda
-		background: url("../images/live/footer.png") no-repeat right top;
-		color #3d4043
+		@extends .clearfix
+		background url("../images/live/footer.png") no-repeat right top
+		height 68px
 		left 0
-		max-width 280px
-		position relative
-		width 25%
+		position absolute
+		text-transform uppercase
+		top 0
+		width 280px
 
+		span
+			display block
 
-		span:nth-child(1)
-			margin-top 15px
-		
-	div
-		min-height 60px	
+			&:first-child
+				font-size 20px
+				letter-spacing -1px
+
+				+ span
+					font-size 12px
+					font-weight bold
+
+		.text
+			padding 15px 0 0 35px
+
+	.derecha
+		box-sizing border-box
+		font-size 25px
+		font-weight bold
+		padding-left 280px
+		line-height 68px
+		text-align center
+		width 100%
+		max-width 1280px
+
+		&
+		a
+			color #fff
+
+		a
+		span
+			margin 0 3%
 
 header
-	display block
-	width 100%
-	z-index 3
-	h1
-		display inline-block
-		min-width 252px
-		width 30%
-		a img
-			width 252px
-	#maestros
-		display inline-block
-		margin-left 15%
-		padding-top 10px
-		position relative
-		vertical-align top
-		min-width 100px
-		img
-			width 101px
-	#cristalab
-		display inline-block
-		margin-left 20%
-		padding-top 10px
-		position relative
-		vertical-align top
-		min-width 100px
-		img
-			width 101px
-	.logo img 
-		width 258px
-		display block
-	div
-		background url("../images/logos/adorno-logo.png") no-repeat 65% top
-		width 100%
+	border-top 7px solid #fff
+	// margin-bottom 25px
+	position relative
+	width auto
 
-#col1,#col2,#mail,#social
-	display inline-block
-	vertical-align top
-#contenido
-	margin 0 auto
-	padding-top 110px
-	width 85%
-	#col1
-		width 60%
-		margin-right 2%
-		position relative
-		#contvideo
-			width 100%
-			#video
-				border 6px solid rgba(255,255,255,.2)
-				border-radius 10px
-				position: relative;
-				padding-bottom: 56.25%;
-				padding-top: 30px;
-				height: 0;
-				overflow: hidden;
-
-		 	#video	iframe, #video object, #video embed 
-					position: absolute
-					top: 0
-					left: 0
-					width: 100%
-					height: 100%
-			#fila2
-				clear both
-				content ""
-				
-		#mail
-			margin-left 10px
-			margin-top 10px
-			position relative
-			text-transform uppercase
-			width 250px
-			input[type=text],input[type=email]
-				background url("../images/live/form01.png") no-repeat left
-				border none
-				color #fff
-				display inline-block
-				font-size 13px
-				height 31px
-				outline 0
-				padding-left 20px
-				position absolute
-				right 0
-				top 36px
-				width 127px
-			input[type=email]
-				background url("../images/live/form02.png") no-repeat left
-				font-size 13px
-				top 74px
-				width 160px
-			
-			input[type=submit]
-				background url("../images/live/button.png") left
-				border none
-				border-radius 0
-				color #fff
-				cursor pointer
-				float right
-				font-family Arial
-				font-size 11px
-				font-weight bold
-				height 31px
-				line-height 31px
-				padding 0
-				text-align center
-				text-transform uppercase
-				width 145px
-			.txt
-				background url("../images/live/label02.png") no-repeat right
-				color #535456
-				display block
-				font-size 13px
-				font-weight bold
-				height 33px
-				line-height 33px
-				margin-bottom 5px
-				padding-left 5%
-				width 71px
-			.txt:nth-child(2)
-				background url(../images/live/label01.png) no-repeat right
-				width 105px
-			
-			.tit
-				display block
-				font-size 13px
-				font-weight bold
-				margin 10px 0
-
-		#social
-			margin 0
-			margin-top 15px
-			overflow hidden
-			position absolute
-			right 0
-			text-align right
-			width 380px
-			z-index: 2
-			div
-				background rgba(0,0,0,.3)
-				margin-left 10px
-				padding 7px 10px 5px 10px
-			div:after
-				display none
-			div:nth-child(1)
-				margin-left 0
-
-			.btn_facebook
-				padding-bottom 9px
-				width 45px
-			.btn_googlemas
-				padding-bottom 7px
-				width 48px
-			.btn_facebook:after
-				margin-top -25px
-				width 65px
-
-	#col2
-		width 35%
-		height 100%
-		.chat
-			background #3d4043
-			width 100%
-			iframe 
-				bottom 0
-				position absolute
-				top 110px
-				width 35%
-			
-.ipad #contenido #col1 #mail input[type=text] {
-  top: 34px;
-  margin-right: -6px;
-}
-.ipad #contenido #col1 #mail input[type=email] {
-  top: 72px;
-  margin-right: -6px;
-}
-@media screen and (max-width:1200px) and (min-width:1025px) 
-	#contenido #col1 
-		width 60%
-		margin-right 2%
-
-		#contvideo 
-			width 75%
-			margin-right 0
-
-		#mail 
-			margin-top 0
-
-		#social 
-			width 200px
-	 
-			div:nth-child(3) 
-				margin-left -3px
-				margin-top 10px
-				padding 7px 17px
-			
-			div:nth-child(4) 
-				margin-top 10px
-				padding 7px 20px
-				height 62px
-		
-	#contenido #col2 
-		width 35%
-  
-
-@media screen and (min-width:1500px) 
-	#contenido #col1 #mail 
-		width 355px
-	
-		input[type="text"],
-		input[type="email"] 
-			width 192px
-		
-		input[type="email"] 
-			width 239px
-		
-		.txt 
-			padding-left 20px
-			width 87px
-		
-		.txt:nth-child(2)
-			width 135px
-	
-@media screen and (max-width:1024px) and (min-width:768px) 
-	#contenido 
-		width 90%
-	
-	#contenido #col1 #mail 
-		margin-left 0
-		margin-top 0
-		width 230px
-	
-		.txt 
-			width 51px
-		
-		.txt:nth-child(2) 
-			width 85px
-	
-	#contenido #col1 #social 
-		float right
-		margin-top 10px
+	&:before
+		background url("../images/logos/adorno-logo.png") no-repeat 65% 0
+		content " "
+		height 35px
+		left 50% + 10
+		margin-left 103px
 		position absolute
-		width 183px
-	
-		div:nth-child(3) 
-			margin-left -3px
-			margin-top 10px
-			padding 7px 17px
+		width 31px
 
-		div:nth-child(4) 
-			margin-top 10px
-			padding 7px 20px
-	
-	.ipad #contenido #col1 #mail input[type=submit] 
-		margin-right -6px
-	
-	.ipad #contenido #col1 #social 
-		position relative
-		margin-left 120px
-		float none
-	
-	
-@media screen and (min-height:769px) and (max-width:768px) 
-	body
-		background: #fff url("../images/live/background.jpg") repeat-y
-	footer
-		overflow hidden
-		background #3D4043
-	footer .izquierda 
-		width: 50%
-		background:white
-		.text
-			line-height 40px
-	footer .derecha 
-		width: 450px
-	
-		a 
-			margin 0 10%
-			width auto
-	
-	header 
-		h1 a img 
-			height auto
-			width auto
-		div 
-			background url("../images/adorno-logo.png") no-repeat 550px top
-		
-		#maestros img 
-			width auto
-		
-		#cristalab 
-			margin-left 120px
-			img 
-				width auto
-	
-	#contenido 
-		width 95%
-		padding-top 160px
-	
-		#col1 
-			margin-right 2%
-			width 50%
-	
-			#mail 
-				overflow hidden
-				width 355px
-			
-				input[type="text"],
-				input[type="email"] 
-					width 192px
-				
-				input[type="email"] 
-					width 239px
-				
-				.txt 
-					padding-left 20px
-					width 87px
-				
-				.txt:nth-child(2) 
-					width 135px
-	
-			#social 
-				display block
-				float none
-				margin 0 auto
-				position relative !important
-				top 40px
-	
-		#col2 
-			width 47%
-			.chat
-				iframe
-					top 160px
-					width 45%
+	h1
+		margin 0
 
-.ipad #contenido #col1 #mail input[type=text] {
-  top: 34px;
-}
-.ipad #contenido #col1 #mail input[type=email] {
-  top: 72px;
-}
-@media screen and (max-height:636px)
-	html
-		height auto
-@media screen and (max-height:767px) 
-	footer 
-		display none
-	
-	header h1 a img 
-		width: 150px
-	
-	#contenido 
-		padding-top 80px
-	
-		#col1 
-			width 60%
-			margin-right 2%
-		
-			#contvideo 
-				width 100%
-				margin-right 2%
-			
-			#mail 
-				margin-top 0
-			
-			#social 
-				margin-top 10px
-		#col2
-			.chat
-				iframe
-					top 80px
-	
-	#contenido #col2 
-		width 37%
-	
-	#contenido #col2 iframe 
-		height 85%
+	img
+		vertical-align bottom
 
-@media screen and (max-width:767px) 
-	body 
-		onverflow-x hidden
-		overflow-y scroll
+html
+	margin 0
 
-	header 
-		display none
-	
-	footer 
-		display none
-	
-	#contenido 
+input.text-field
+	background #003e73
+	border 1px solid #409fd6
+	border-left 0
+	color #fff
+	float left
+	font 13px/30px font_opensans
+	height 30px
+	margin 0
+	padding 0 5px
+	position absolute
+	right 0
+	top 0
+
+	&:focus
+		outline 0
+
+// classnames
+.btn_facebook iframe
+	width 44px !important
+
+
+// ids
+#col1
+	bottom 0
+	left 0
+	position absolute
+	top 0
+	width 60%
+
+#col2
+	bottom 0
+	right 0
+	position absolute
+	top 0
+	width 35%
+
+	iframe
+		height 100%
 		width 100%
-		padding-top 0
-	
-		#col1 
-			width 100%
-			margin-bottom 0
-			margin-right 0
-		
-			#contvideo 
-				width 100%
-			
-			#mail 
-				display none
-			
-			 #social 
-				display none
-		
-		#col2 
-			width 100%
-			.chat
-				iframe
-					position relative
-					top 0
-					width 100%
 
+#cristalab
+#maestros
+	// descomenta esto para posicionar los logos verticalmente
+	// margin-top -(28px/2 + 10)
+	// top 50%
+	position absolute
+	top 10px
 
-			
+	img
+		height 28px
 
+#contenido
+	bottom 68px + 40
+	left 7.5%
+	position absolute
+	top 113px + 25
+	width 85%
 
+#cristalab
+	left 70%
+	margin-left 103px
 
-			
+#email-container
+#name-container
+	@extends .clearfix
+	margin 0 0 15px
+	position relative
+
+#email-container
+	input
+		left 50px + 50
+
+	.txt
+		width 50px
+
+#fila2
+	bottom 0
+	left 0
+	height 200px - 25
+	position absolute
+	width 100%
+
+#formulario
+	@extends .clearfix
+	font-size 13px
+	font-weight bold
+	text-transform uppercase
+	position absolute
+	top 0
+	left 0
+	right 333px + 50
+
+	.tit
+		color #fff
+		clear both
+		display block
+		margin-bottom 15px
+
+	.txt
+		background url("../images/live/label_input.png") no-repeat right
+		color #535456
+		float left
+		clear left
+		height 32px
+		line-height 32px
+		padding 0 35px 0 15px
+
+#inscribete-btn
+	background url("../images/live/button.png") no-repeat !important
+	border 0
+	display block
+	clear both
+	color #fff
+	float right
+	font bold 13px font_opensans
+	height 31px
+	line-height 31px
+	padding 0 0 0 18px
+	text-transform uppercase
+	width 158px
+
+#maestros
+	left 50%
+
+#name-container
+	input
+		left 70px + 50
+
+	.txt
+		width 70px
+
+#social
+	float right
+
+	> div
+		background rgba(#000, 0.3)
+		border-radius()
+		float left
+		height 62px
+		margin 0 0 0 10px
+		padding 10px
+
+		&:first-child
+			margin 0
+
+#video
+	border 6px solid #338ed3
+	border-radius()
+	bottom 200px
+	left -6px
+	position absolute
+	top 0
+	width 100%
+
+	script
+		@extends .hidden
+
+	*
+		@extends #col2 iframe

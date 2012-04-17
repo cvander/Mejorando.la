@@ -1,0 +1,161 @@
+@css {
+/*  CSS3 ✰ Classes  */
+}
+
+vendor-prefixes = o ms moz webkit official
+url ?= ''
+
+@import "nib/vendor.styl"
+@import "nib/gradients.styl"
+
+border-radius( arg = '' )
+	if arg == ''
+		vendor('border-radius', 5px)
+	else
+		pos = ()
+		augmented = false
+		for args in arguments
+			for arg in args
+				if arg is a 'ident'
+					append(pos, arg)
+					augmented = true
+				else
+					append(pos, arg)
+					if augmented
+						-apply-border-radius(pos)
+						pos = ()
+		vendor('border-radius', pos) unless augmented
+
+box-shadow( arg = '' )
+	value = arg == '' ? 0 0 5px rgba(#000, 0.10) : arguments
+	vendor('box-shadow', value)
+	-webkit-background-clip padding-box
+
+// box-sizing( arg = '' )
+// 	value = arg == '' ? border-box : arguments
+// 	vendor('box-sizing', value)
+// 	if arg == 'border-box'
+// 		*behavior: url(url + 'stylus/boxsizing.htc')
+
+display( arg = '' )
+	if arg == 'inline-block'
+		display arg
+		zoom 1
+		*display inline
+	else if arg == 'box'
+		display -moz-box
+		display -webkit-box
+		display box
+	else
+		display arg
+
+overflow( arg = '' )
+	if arg == 'auto'
+		overflow auto
+		-webkit-overflow-scrolling touch
+	else
+		overflow arg
+
+text-shadow( arg = '')
+	value = arg == '' ? 1px 1px 1px rgba(#000, 0.25) : arguments
+	text-shadow value
+
+transition( arg = '' )
+	value = arg == '' ? all 0.150s linear : arguments
+	vendor('transition', value)
+
+transition-property( arg = '' )
+	value = arg == '' ? all : arguments
+	vendor('transition-property', value)
+
+transform( arg = '' )
+	value = arg == '' ? translate3d(0,0,0) : arguments
+	vendor('transform', value)
+	
+	// -webkit-backface-visibility hidden
+	// -webkit-perspective 1000
+
+white-space( arg = 'pre-wrap' )
+	if arg == 'pre-wrap'
+		white-space pre-wrap
+		white-space -moz-pre-wrap
+		white-space -pre-wrap
+		white-space -o-pre-wrap
+		word-wrap break-word
+	
+	else
+		white-space arguments
+
+// Image replacement
+ir()
+	width = arguments ? arguments[0] : 100%
+	height = arguments && arguments[1] ? arguments[1] : false
+	height = height ? height : width
+
+	direction ltr
+	display block
+	height height
+	overflow hidden
+	position relative
+	text-align left
+	text-indent 100%
+	white-space nowrap
+	width width
+
+.ir
+	ir()
+
+// Accesible & Design hidden classes
+hidden()
+	display none
+
+.hidden
+	hidden()
+
+visuallyhidden()
+	left -9999px
+	position absolute !important
+	top -9999px
+
+.visuallyhidden
+	visuallyhidden()
+
+invisible()
+	visibility hidden
+	
+.invisible  
+	invisible()
+
+// Disable text selection
+noselect()
+	vendor('user-select', none)
+	-khtml-user-select: none;
+
+.noselect
+	noselect()
+
+// Clearing
+clearfix()
+	zoom 1
+
+	&:after  
+		clear both
+		content "\0020"
+		display block
+		height 0
+		visibility hidden
+
+.clearfix
+	clearfix()
+
+.clear
+	display block
+	clear both
+	zoom 1
+
+// nomargin
+nomargin()
+	margin 0 !important
+
+.nomargin
+	nomargin()
