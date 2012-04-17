@@ -47,6 +47,10 @@
 		}
 	}()*/
 
+	$(window).on('load', function(){
+		$('#col2').html('<div class="chat"><iframe src="about:blank" width="100%" height="75%" frameborder="0"></iframe>');
+	});
+
 
 	function getViewportSize()
 	{
