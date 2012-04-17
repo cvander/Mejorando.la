@@ -78,7 +78,7 @@ input.text-field:focus{outline:0}
 #col2 iframe{width:100%}
 #fila2{height:auto;margin:0}
 #video{border:0;-o-border-radius:0;-ms-border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;left:0}
-}@media screen and (max-width:768px) and (orientation:landscape){#contenido{padding-bottom:0}
+}@media screen and (max-width:768px) and (orientation:landscape){#contenido{padding-bottom:0 !important}
 #col2{display:none}
 #wrapper,.wrap,#video{position:static}
 }@media screen and (max-height:700px){footer{display:none}
