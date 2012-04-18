@@ -43,7 +43,7 @@ input.text-field:focus{outline:0}
 .btn_facebook iframe{width:44px !important}
 #col1{float:left;width:60%}
 #col2{float:right;width:35%;}
-#col2 iframe{background:#3d4043;height:100%;position:absolute;width:35%}
+#col2 iframe,#col2 video{background:#3d4043;height:100%;position:absolute;width:35%}
 #cristalab,#maestros{position:absolute;top:10px;}
 #cristalab img,#maestros img{height:28px}
 #contenido{margin:0 auto;padding-bottom:68px;width:85%;}

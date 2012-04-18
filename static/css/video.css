@@ -59,8 +59,8 @@
 #comentarios .commentform textarea{margin-left:1%;max-width:98%;padding:0;width:98%}
 #comentarios .commentform .publicar,#comentarios .commentform .submit{margin-right:1%}
 #comentarios .comentario .top{background:#ccced0;}
-#comentarios .comentario .top .avatar{background:#fff;float:left;margin-right:10px}
-#comentarios .comentario .top .derecha{display:inline;line-height:45px;}
+#comentarios .comentario .top .avatar{background:#fff;margin-right:10px}
+#comentarios .comentario .top .derecha{display:inline;float:none;line-height:45px;}
 #comentarios .comentario .top .derecha h5{margin-left:0}
 #comentarios .comentario .top .derecha a small{display:none}
 #comentarios .comentario .bla{width:90%}
