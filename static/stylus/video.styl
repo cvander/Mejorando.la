@@ -185,12 +185,17 @@ body
 		.top
 			width 100%
 			.avatar
+				@extends .clearfix
+				float left
 				width 45px
+
 				img 
 					height 45px
 					width 45px
 			.derecha
+				@extends .clearfix
 				background #ccced0
+				float right
 				font-size 17px
 				height 45px
 				line-height 45px
@@ -218,7 +223,8 @@ body
   margin-top: -27px !important
   top:-6px
 }
-
+.ie7 #comentarios .commentform input
+	top -1px
 #comentarios h2 {
   margin-left:154px
   padding-bottom:20px
