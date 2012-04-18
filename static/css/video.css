@@ -165,6 +165,7 @@ body {
   outline: 0;
   padding: 1px 0;
   position: relative;
+  vertical-align: top;
   width: 536px;
   z-index: 1;
 }
@@ -172,11 +173,12 @@ body {
   background: #6b6e71 url("../images/post/form_post2.png") no-repeat right bottom;
 }
 #comentarios .commentform textarea {
-  display: inline-block;
   border: 1px solid #97989a;
+  display: inline-block;
   max-width: 530px;
   min-height: 168px;
   outline: 0;
+  padding: 2px;
   position: relative;
   vertical-align: top;
   width: 530px;
