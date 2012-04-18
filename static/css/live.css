@@ -39,7 +39,7 @@ header h1 img{height:75px}
 header img{vertical-align:bottom}
 html{margin:0;height:100%}
 img{border:0}
-input.text-field{background:#003e73;border:1px solid #409fd6;border-left:0;color:#fff;float:left;font:13px/30px 'open sans',sans-serif;height:30px;margin:0;padding:0;position:absolute;left:0;top:0;width:100%;}
+input.text-field{background:#003e73;border:1px solid #409fd6;border-left:0;-o-border-radius:0;-ms-border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;color:#fff;float:left;font:13px/30px 'open sans',sans-serif;height:30px;left:0;margin:0;padding:0;position:absolute;top:0;width:100%;}
 input.text-field:focus{outline:0}
 .btn_facebook iframe{width:44px !important}
 #col1{float:left;width:60%}
@@ -58,7 +58,7 @@ input.text-field:focus{outline:0}
 #formulario{font-size:13px;font-weight:bold;text-transform:uppercase;position:absolute;top:0;left:0;right:368px;}
 #formulario .tit{color:#fff;clear:both;display:block;margin-bottom:15px}
 #formulario .txt{background:url("../images/live/label_input.png") no-repeat right;color:#535456;float:left;clear:left;height:32px;line-height:32px;padding:0 35px 0 15px}
-#inscribete-btn{background:url("../images/live/button.png") no-repeat !important;border:0;display:block;clear:both;color:#fff;float:right;font:bold 13px 'open sans',sans-serif;height:31px;line-height:31px;padding:0 0 0 18px;text-transform:uppercase;width:158px}
+#inscribete-btn{background:url("../images/live/button.png") no-repeat !important;border:0;-o-border-radius:0;-ms-border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;clear:both;color:#fff;cursor:pointer;display:block;float:right;font:bold 13px 'open sans',sans-serif;height:31px;line-height:31px;padding:0 0 0 18px;text-transform:uppercase;width:158px}
 #maestros{left:50%}
 #name-container span{left:120px}
 #name-container .txt{width:70px}
