@@ -7,7 +7,6 @@
 .clearfix:after{clear:both;content:"\0020";display:block;height:0;visibility:hidden}
 .clear{display:block;clear:both;zoom:1}
 .nomargin{margin:0 !important}
-body{overflow-y:scroll}
 #contdes{background:url("../images/post/cont-post.jpg") no-repeat left top,url("../images/post/cont-post2.jpg") no-repeat right bottom;padding-bottom:50px;width:100%;}
 #contdes .desc{color:#3d4043;font-family:Arial;letter-spacing:-.2;line-height:20px;margin:0 auto;text-align:left;width:650px;}
 #contdes .desc p{margin:1em 0}

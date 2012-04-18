@@ -35,6 +35,10 @@ a:hover {
 p {
   margin: 0;
 }
+h2,
+h5 {
+  font-weight: normal;
+}
 body {
   background: #3c4043;
   color: #fff;
