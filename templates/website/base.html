@@ -15,9 +15,7 @@
     <meta property="og:url" content="http://mejorando.la/"/>
     <meta property="og:image" content="http://mejorando.la/images/isotipo.png" />
     <meta property="og:site_name" content="http://mejorando.la/" />
-    <meta property="fb:admins" content="1030603473" />  
-
-    <link rel="stylesheet" href="{{ STATIC_PREFIX }}css/base.css?2903" />
+    <meta property="fb:admins" content="1030603473" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
@@ -53,16 +51,18 @@
     </script>
   </head>
   <body>
-    {% block letrero %}{% endblock %}
-    <header>
-      <div>
-        <h1><a href="{% url website.views.home %}" title="mejorando.la"><img src="{{ STATIC_PREFIX }}images/logos/mejorandola.png" alt="mejorando.la"></a>
-        </h1><a id="maestros" href="http://maestrosdelweb.com" target="_blank" title="maestros del web"><img src="{{ STATIC_PREFIX }}images/logos/maestros.png" alt="maestros del web"></a><a id="cristalab" href="http://cristalab.com" target="_blank" title="cristalab"><img src="{{ STATIC_PREFIX }}images/logos/cristalab.png" alt="cristalab"></a>
-      </div>
-    </header>
+    <div id="wrapper">
+      {% block letrero %}{% endblock %}
+      <header>
+        <div>
+          <h1><a href="{% url website.views.home %}" title="mejorando.la"><img src="{{ STATIC_PREFIX }}images/logos/mejorandola.png" alt="mejorando.la"></a>
+          </h1><a id="maestros" href="http://maestrosdelweb.com" target="_blank" title="maestros del web"><img src="{{ STATIC_PREFIX }}images/logos/maestros.png" alt="maestros del web"></a><a id="cristalab" href="http://cristalab.com" target="_blank" title="cristalab"><img src="{{ STATIC_PREFIX }}images/logos/cristalab.png" alt="cristalab"></a>
+        </div>
+      </header>
 
-    {% block body %}{% endblock %}
+      {% block body %}{% endblock %}
 
+    </div>
     <footer>
       <div class="izquierda">
         <div class="text"><span>transmisión en vivo</span><span>cada jueves</span>
@@ -71,6 +71,5 @@
       <div class="derecha"><span>con</span><a href="http://twitter.com/freddier" title="@freddier" target="_blank">@freddier</a><span>+</span><a href="http://twitter.com/cvander" title="@cvander" target="_blank">@cvander</a>
       </div>
     </footer>
-
   </body>
 </html>

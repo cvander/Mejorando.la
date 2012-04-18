@@ -4,7 +4,8 @@
 
 {% block head %}
 <meta name="viewport" content="width=device-width , initial-scale=1 ,maximum-scale=1" />
-<link href="{{ STATIC_PREFIX }}css/video.css" rel="stylesheet" />
+<link rel="stylesheet" href="{{ STATIC_PREFIX }}css/base.css?2903" />
+<link rel="stylesheet" href="{{ STATIC_PREFIX }}css/video.css" />
 {% endblock %}
 {% block body %}
 <section id="post">
@@ -31,13 +32,7 @@
 
   {% include "website/comment_form.html" %}
 
-  {% if comentarios|length == 1 %}
-  <h2>1 Comentario</h2>
-  {% elif comentarios|length > 0 %}
-  <h2>{{ comentarios|length }} Comentarios</h2>
-  {% else %}
-  <h2>Sin comentarios</h2>
-  {% endif %}
+  <h2>{{ comentarios|length }} Comentario{{ comentarios|pluralize}}</h2>
 
   {% load gravatar %}
   {% for comentario in comentarios %}

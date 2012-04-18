@@ -1,8 +1,9 @@
-jQuery(function ($) {
-	$('#id_descripcion').wymeditor({ 
-	    updateSelector: "input:submit",
-	    updateEvent: "click",
-	    skin: 'compact',
-	    lang: 'es'
-	  });
+tinyMCE.init({
+	mode : "exact",
+	elements: "id_descripcion",
+	theme : "advanced",
+	theme_advanced_toolbar_location: "top",
+	theme_advanced_toolbar_align: "left",
+	forced_root_block: '',
+	height:300
 });

@@ -1,493 +1,89 @@
-html {
-  margin: 0px;
-  height: 100%;
+@font-face {
+	font-family: 'open sans';
+	src: url("../fonts/opensans-light-webfont.eot");
+	src: url("../fonts/opensans-light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-light-webfont.woff") format('woff'), url("../fonts/opensans-light-webfont.ttf") format('truetype'), url("../fonts/opensans-light-webfont.svg#OpenSansLight") format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
-body {
-  background: #fff url("../images/live/cinta_1920.jpg") repeat-y;
-  background-size: 100% 100%;
-  box-shadow: 0 0 250px rgba(0,0,0,0.90) inset;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  height: 100%;
+
+@font-face {
+	font-family: 'open sans';
+	src: url("../fonts/opensans-bold-webfont.eot");
+	src: url("../fonts/opensans-bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/opensans-bold-webfont.woff") format('woff'), url("../fonts/opensans-bold-webfont.ttf") format('truetype'), url("../fonts/opensans-bold-webfont.svg#OpenSansBold") format('svg');
+	font-weight: bold;
+	font-style: normal;
 }
-.ie8 footer {
-  display: none;
-}
-.opera footer .derecha a {
-  margin: 0 15%;
-}
-footer {
-  background: none;
-  bottom: 0;
-  color: #3d4043;
-  display: block;
-  height: 60px;
-  padding-top: 0;
-  position: absolute;
-  width: 100%;
-}
-footer a {
-  color: #fff;
-}
-footer .derecha {
-  color: #fff;
-  width: 60%;
-}
-footer .derecha a {
-  margin: 0 17%;
-}
-footer .derecha .cvander {
-  margin: 0 0 0 17%;
-}
-footer .izquierda {
-  background: url("../images/live/footer.png") no-repeat right top;
-  color: #3d4043;
-  width: 25%;
-  position: relative;
-  left: 0;
-  max-width: 280px;
-}
-footer .izquierda span:nth-child(1) {
-  margin-top: 15px;
-}
-footer div {
-  min-height: 60px;
-}
-header {
-  display: block;
-  width: 100%;
-  z-index: 3;
-}
-header h1 {
-  width: 30%;
-  min-width: 252px;
-  display: inline-block;
-}
-header h1 a img {
-  width: 252px;
-}
-header #maestros {
-  display: inline-block;
-  margin-left: 15%;
-  padding-top: 10px;
-  position: relative;
-  vertical-align: top;
-  min-width: 100px;
-}
-header #maestros img {
-  width: 101px;
-}
-header #cristalab {
-  display: inline-block;
-  margin-left: 20%;
-  padding-top: 10px;
-  position: relative;
-  vertical-align: top;
-  min-width: 100px;
-}
-header #cristalab img {
-  width: 101px;
-}
-header .logo img {
-  width: 258px;
-  display: block;
-}
-header div {
-  background: url("../images/logos/adorno-logo.png") no-repeat 65% top;
-  width: 100%;
-}
-#col1,
-#col2,
-#mail,
-#social {
-  display: inline-block;
-  vertical-align: top;
-}
-#contenido {
-  margin: 0 auto;
-  padding-top: 110px;
-  width: 85%;
-}
-#contenido #col1 {
-  width: 60%;
-  margin-right: 2%;
-  position: relative;
-}
-#contenido #col1 #contvideo {
-  width: 100%;
-}
-#contenido #col1 #contvideo #video {
-  border: 6px solid rgba(255,255,255,0.20);
-  border-radius: 10px;
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-#contenido #col1 #video iframe,
-#contenido #col1 #video object,
-#contenido #col1 #video embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#contenido #col1 #fila2{
-  clear: both;
-  content:"";
-}
-#contenido #col1 #mail {
-  margin-left: 10px;
-  margin-top: 10px;
-  position: relative;
-  text-transform: uppercase;
-  width: 250px;
-}
-#contenido #col1 #mail input[type=text],
-#contenido #col1 #mail input[type=email] {
-  background: url("../images/live/form01.png") no-repeat left;
-  border: none;
-  color: #fff;
-  display: inline-block;
-  font-size: 13px;
-  height: 31px;
-  outline: 0;
-  padding-left: 20px;
-  position: absolute;
-  right: 0;
-  top: 36px;
-  width: 127px;
-}
-#contenido #col1 #mail input[type=email] {
-  background: url("../images/live/form02.png") no-repeat left;
-  font-size: 13px;
-  top: 74px;
-  width: 160px;
-}
-#contenido #col1 #mail input[type=submit] {
-  background: url("../images/live/button.png") left;
-  border: none;
-  border-radius: 0;
-  color: #fff;
-  cursor: pointer;
-  float: right;
-  font-family: Arial;
-  font-size: 11px;
-  font-weight: bold;
-  height: 31px;
-  line-height: 31px;
-  padding: 0;
-  text-align: center;
-  text-align: center;
-  text-transform: uppercase;
-  width: 145px;
-}
-#contenido #col1 #mail .txt {
-  background: url("../images/live/label02.png") no-repeat right;
-  color: #535456;
-  display: block;
-  font-family: "Bold",Arial,Sans-serif;
-  font-size: 13px;
-  height: 33px;
-  line-height: 33px;
-  margin-bottom: 5px;
-  padding-left: 5%;
-  width: 71px;
-}
-#contenido #col1 #mail .txt:nth-child(2) {
-  background: url("../images/live/label01.png") no-repeat right;
-  width: 105px;
-}
-#contenido #col1 #mail .tit {
-  display: block;
-  font-family: "Bold",Arial,Sans-serif;
-  font-size: 13px;
-  margin: 10px 0;
-}
-#contenido #col1 #social {
-  margin: 0;
-  margin-top: 15px;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  text-align: right;
-  width: 380px;
-  z-index: 2;
-}
-#contenido #col1 #social div {
-  background: rgba(0,0,0,0.30);
-  margin-left: 10px;
-  padding: 7px 10px 5px 10px;
-}
-#contenido #col1 #social div:after {
-  display: none;
-}
-#contenido #col1 #social div:nth-child(1) {
-  margin-left: 0;
-}
-#contenido #col1 #social .btn_facebook {
-  padding-bottom: 9px;
-  width: 45px;
-}
-#contenido #col1 #social .btn_googlemas {
-  padding-bottom: 7px;
-  width: 48px;
-}
-#contenido #col1 #social .btn_facebook:after {
-  margin-top: -25px;
-  width: 65px;
-}
-#contenido #col2 {
-  width: 35%;
-  height: 100%;
-}
-#contenido #col2 .chat {
-  background: #3d4043;
-  width: 100%;
-}
-#contenido #col2 .chat iframe {
-  min-height: 400px;
-}
-.webkit #col2 .chat iframe {
-  height: 75% !important;
-}
-.ipad #contenido #col1 #mail input[type=text] {
-  top: 34px;
-  margin-right: -6px;
-}
-.ipad #contenido #col1 #mail input[type=email] {
-  top: 72px;
-  margin-right: -6px;
-}
-@media screen and (max-width:1200px) and (min-width:1025px) {
-  #contenido #col1 {
-    width: 60%;
-    margin-right: 2%;
-  }
-  #contenido #col1 #contvideo {
-    width: 75%;
-    margin-right: 0;
-  }
-  #contenido #col1 #mail {
-    margin-top: 0;
-  }
-  #contenido #col1 #social {
-    width: 200px;
-  }
-  #contenido #col1 #social div:nth-child(3) {
-    margin-left: -3px;
-    margin-top: 10px;
-    padding: 7px 17px;
-  }
-  #contenido #col1 #social div:nth-child(4) {
-    margin-top: 10px;
-    padding: 7px 20px;
-    height: 62px;
-  }
-  #contenido #col2 {
-    width: 35%;
-  }
-}
-@media screen and (min-width:1500px) {
-  #contenido #col1 #mail {
-    width: 355px;
-  }
-  #contenido #col1 #mail input[type="text"],
-  #contenido #col1 #mail input[type="email"] {
-    width: 192px;
-  }
-  #contenido #col1 #mail input[type="email"] {
-    width: 239px;
-  }
-  #contenido #col1 #mail .txt {
-    padding-left: 20px;
-    width: 87px;
-  }
-  #contenido #col1 #mail .txt:nth-child(2) {
-    width: 135px;
-  }
-}
-@media screen and (max-width:1024px) and (min-width:768px) {
-  #contenido {
-    width: 90%;
-  }
-  #contenido #col1 #mail {
-    margin-left: 0;
-    margin-top: 0;
-    width: 230px;
-  }
-  #contenido #col1 #mail .txt {
-    width: 51px;
-  }
-  #contenido #col1 #mail .txt:nth-child(2) {
-    width: 85px;
-  }
-  #contenido #col1 #social {
-    float: right;
-    margin-top: 10px;
-    position: absolute;
-    width: 183px;
-  }
-  #contenido #col1 #social div:nth-child(3) {
-    margin-left: -3px;
-    margin-top: 10px;
-    padding: 7px 17px;
-  }
-  #contenido #col1 #social div:nth-child(4) {
-    margin-top: 10px;
-    padding: 7px 20px;
-  }
-  .ipad #contenido #col1 #mail input[type=submit] {
-    margin-right: -6px;
-  }
-  .ipad #contenido #col1 #social {
-    position: relative;
-    margin-left: 120px;
-    float: none;
-  }
-}
-@media screen and (min-height:769px) and (max-width:768px) {
-  body {
-    background: #fff url("../images/live/background.jpg") repeat-y;
-  }
-  footer .izquierda {
-    width: 50%;
-  }
-  footer .derecha {
-    width: 450px;
-  }
-  footer .derecha a {
-    margin: 0 10%;
-  }
-  header h1 a img {
-    height: auto;
-    width: auto;
-  }
-  header div {
-    background: url("../images/adorno-logo.png") no-repeat 550px top;
-  }
-  header #maestros img {
-    width: auto;
-  }
-  header #cristalab {
-    margin-left: 120px;
-  }
-  header #cristalab img {
-    width: auto;
-  }
-  #contenido {
-    width: 95%;
-    padding-top: 160px;
-  }
-  #contenido #col1 {
-    margin-right: 2%;
-    width: 50%;
-  }
-  #contenido #col1 #mail {
-    overflow: hidden;
-    width: 355px;
-  }
-  #contenido #col1 #mail input[type="text"],
-  #contenido #col1 #mail input[type="email"] {
-    width: 192px;
-  }
-  #contenido #col1 #mail input[type="email"] {
-    width: 239px;
-  }
-  #contenido #col1 #mail .txt {
-    padding-left: 20px;
-    width: 87px;
-  }
-  #contenido #col1 #mail .txt:nth-child(2) {
-    width: 135px;
-  }
-  #contenido #col1 #social {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    position: relative !important;
-    top: 40px;
-  }
-  #contenido #col2 {
-    width: 47%;
-  }
-}
-/*.ipad #contenido #col1 #social {
-  position: relative !important;
-  }*/
-.ipad #contenido #col1 #mail input[type=text] {
-  top: 34px;
-}
-.ipad #contenido #col1 #mail input[type=email] {
-  top: 72px;
-}
-@media screen and (max-height:700px) {
-  footer {
-    display: none;
-  }
-  header h1 a img {
-    width: 150px;
-  }
-  #contenido {
-    padding-top: 80px;
-  }
-  #contenido #col1 {
-    width: 60%;
-    margin-right: 2%;
-  }
-  #contenido #col1 #contvideo {
-    width: 100%;
-    margin-right: 2%;
-  }
-  #contenido #col1 #mail {
-    margin-top: 0;
-  }
-  #contenido #col1 #social {
-    margin-top: 10px;
-  }
-  #contenido #col2 {
-    width: 37%;
-  }
-  #contenido #col2 iframe {
-    height: 85%;
-  }
-}
-@media screen and (max-width:767px) {
-  body {
-    onverflow-x: hidden;
-    overflow-y: scroll;
-  }
-  header {
-    display: none;
-  }
-  footer {
-    display: none;
-  }
-  #contenido {
-    width: 100%;
-    padding-top: 0;
-  }
-  #contenido #col1 {
-    width: 100%;
-    margin-bottom: 0;
-    margin-right: 0;
-  }
-  #contenido #col1 #contvideo {
-    width: 100%;
-  }
-  #contenido #col1 #mail {
-    display: none;
-  }
-  #contenido #col1 #social {
-    display: none;
-  }
-  #contenido #col2 {
-    width: 100%;
-  }
-  #contenido #col2 {
-    width: 100%;
-  }
+.ir{direction:ltr;display:block;height:100%;overflow:hidden;position:relative;text-align:left;text-indent:100%;white-space:nowrap;width:100%}
+.hidden,#video script{display:none}
+.visuallyhidden{left:-9999px;position:absolute !important;top:-9999px}
+.invisible{visibility:hidden}
+.noselect{-o-user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none;-khtml-user-select:none}
+.clearfix,footer .izquierda,#contenido .wrap,#email-container,#name-container,#formulario{zoom:1;}
+.clearfix:after,footer .izquierda:after,#contenido .wrap:after,#email-container:after,#name-container:after,#formulario:after{clear:both;content:"\0020";display:block;height:0;visibility:hidden}
+.clear{display:block;clear:both;zoom:1}
+.nomargin{margin:0 !important}
+body{background:#fff url("../images/live/cinta_1920.jpg") repeat-y fixed;-o-background-size:100%;-moz-background-size:100%;-webkit-background-size:100%;background-size:100%;font-family:'open sans',sans-serif;height:100%;margin:0;padding:0}
+footer{color:#3d4043;margin-top:-68px;position:relative;width:100%;}
+footer .izquierda{background:url("../images/live/footer.png") no-repeat right top;height:68px;left:0;position:absolute;text-transform:uppercase;top:0;width:280px;}
+footer .izquierda span{display:block;}
+footer .izquierda span:first-child{font-size:20px;letter-spacing:-1px;}
+footer .izquierda span:first-child + span{font-size:12px;font-weight:bold}
+footer .izquierda .text{padding:15px 0 0 35px}
+footer .derecha{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:25px;font-weight:bold;padding-left:280px;line-height:68px;text-align:center;width:100%;max-width:1280px;}
+footer .derecha,footer .derecha a{color:#fff}
+footer .derecha a,footer .derecha span{margin:0 3%}
+header{border-top:7px solid #fff;margin-bottom:10px;position:relative;width:auto;}
+header:before{background:url("../images/logos/adorno-logo.png") no-repeat 65% 0;content:" ";height:35px;left:60%;margin-left:103px;position:absolute;width:31px}
+header h1{margin:0;}
+header h1 img{height:75px}
+header img{vertical-align:bottom}
+html{margin:0;height:100%}
+img{border:0}
+input.text-field{background:#003e73;border:1px solid #409fd6;border-left:0;-o-border-radius:0;-ms-border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;color:#fff;float:left;font:13px/30px 'open sans',sans-serif;height:30px;left:0;margin:0;padding:0;position:absolute;top:0;width:100%;}
+input.text-field:focus{outline:0}
+.btn_facebook iframe{width:44px !important}
+#col1{float:left;width:60%}
+#col2{float:right;width:35%;}
+#col2 iframe{background:#3d4043;height:100%;position:absolute;width:35%}
+#cristalab,#maestros{position:absolute;top:10px;}
+#cristalab img,#maestros img{height:28px}
+#contenido{margin:0 auto;padding-bottom:68px;width:85%;}
+#contenido .wrap{position:relative}
+#cristalab{left:70%;margin-left:103px}
+#email-container,#name-container{margin:0 0 15px;position:relative;}
+#email-container span,#name-container span{position:absolute;right:0}
+#email-container span{left:100px}
+#email-container .txt{width:50px}
+#fila2{height:175px;margin:25px 0 0;position:relative}
+#formulario{font-size:13px;font-weight:bold;text-transform:uppercase;position:absolute;top:0;left:0;right:368px;}
+#formulario .tit{color:#fff;clear:both;display:block;margin-bottom:15px}
+#formulario .txt{background:url("../images/live/label_input.png") no-repeat right;color:#535456;float:left;clear:left;height:32px;line-height:32px;padding:0 35px 0 15px}
+#inscribete-btn{background:url("../images/live/button.png") no-repeat !important;border:0;-o-border-radius:0;-ms-border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;clear:both;color:#fff;cursor:pointer;display:block;float:right;font:bold 13px 'open sans',sans-serif;height:31px;line-height:31px;padding:0 0 0 18px;text-transform:uppercase;width:158px}
+#maestros{left:50%}
+#name-container span{left:120px}
+#name-container .txt{width:70px}
+#social{float:right;}
+#social > div{background:rgba(0,0,0,0.30);-o-border-radius:5px;-ms-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;float:left;height:62px;margin:0 0 0 10px;padding:10px;}
+#social > div:first-child{margin:0}
+#video{background:#000;border:6px solid #338ed3;-o-border-radius:5px;-ms-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;left:-6px;overflow:hidden;position:relative;top:0;width:100%;}
+#video a{padding:0 !important;}
+#video a img{left:50%;margin-left:-80px;margin-top:-80px;position:absolute;top:50%}
+#video a,#video embed,#video object,#video video{background:#000;height:100% !important;left:0;position:absolute;top:0;width:100% !important}
+#video img.video{height:auto;width:100%}
+#wrapper{min-height:100%;position:relative;}
+#wrapper:before{bottom:0;-o-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-ms-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-moz-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-webkit-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-webkit-background-clip:padding-box;content:" ";left:0;position:absolute;right:0;top:0}
+@media screen and (max-width:1280px){#formulario{right:213px}
+#social .btn_facebook{clear:left;margin:10px 0 0;padding:10px 17px}
+#social .btn_googlemas{margin:10px 0 0 10px;padding:10px 20px}
+}@media screen and (max-height:700px){footer{display:none}
+header h1 img{height:45px}
+#contenido{padding-bottom:25px}
+}@media screen and (max-width:768px){footer,header,#formulario,#social{display:none}
+#col1,#col2,#contenido{float:none;width:auto}
+#col2 iframe{width:100%}
+#fila2{height:auto;margin:0}
+#video{border:0;-o-border-radius:0;-ms-border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;left:0}
+}@media screen and (max-width:768px) and (orientation:landscape){#col2,#video img.video{display:none}
+#contenido{padding-bottom:0 !important}
+#contenido .wrap,#video,#wrapper{position:static}
 }
