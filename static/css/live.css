@@ -38,6 +38,7 @@ header h1{margin:0;}
 header h1 img{height:75px}
 header img{vertical-align:bottom}
 html{margin:0;height:100%}
+img{border:0}
 input.text-field{background:#003e73;border:1px solid #409fd6;border-left:0;color:#fff;float:left;font:13px/30px 'open sans',sans-serif;height:30px;margin:0;padding:0;position:absolute;left:0;top:0;width:100%;}
 input.text-field:focus{outline:0}
 .btn_facebook iframe{width:44px !important}
