@@ -22,7 +22,7 @@
 .clearfix:after,footer .izquierda:after,#contenido .wrap:after,#email-container:after,#name-container:after,#formulario:after{clear:both;content:"\0020";display:block;height:0;visibility:hidden}
 .clear{display:block;clear:both;zoom:1}
 .nomargin{margin:0 !important}
-body{background:#fff url("../images/live/cinta_1920.jpg") repeat-y fixed;font-family:'open sans',sans-serif;height:100%;margin:0;padding:0}
+body{background:#fff url("../images/live/cinta_1920.jpg") repeat-y fixed;-o-background-size:100%;-moz-background-size:100%;-webkit-background-size:100%;background-size:100%;font-family:'open sans',sans-serif;height:100%;margin:0;padding:0}
 footer{color:#3d4043;margin-top:-68px;position:relative;width:100%;}
 footer .izquierda{background:url("../images/live/footer.png") no-repeat right top;height:68px;left:0;position:absolute;text-transform:uppercase;top:0;width:280px;}
 footer .izquierda span{display:block;}
