@@ -74,15 +74,15 @@ input.text-field:focus{outline:0}
 @media screen and (max-width:1280px){#formulario{right:213px}
 #social .btn_facebook{clear:left;margin:10px 0 0;padding:10px 17px}
 #social .btn_googlemas{margin:10px 0 0 10px;padding:10px 20px}
+}@media screen and (max-height:700px){footer{display:none}
+header h1 img{height:45px}
+#contenido{padding-bottom:25px}
 }@media screen and (max-width:768px){footer,header,#formulario,#social{display:none}
 #col1,#col2,#contenido{float:none;width:auto}
 #col2 iframe{width:100%}
 #fila2{height:auto;margin:0}
 #video{border:0;-o-border-radius:0;-ms-border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;left:0}
-}@media screen and (max-width:768px) and (orientation:landscape){#contenido{padding-bottom:0 !important}
-#col2{display:none}
+}@media screen and (max-width:768px) and (orientation:landscape){#col2,#video img.video{display:none}
+#contenido{padding-bottom:0 !important}
 #contenido .wrap,#video,#wrapper{position:static}
-}@media screen and (max-height:700px){footer{display:none}
-header h1 img{height:45px}
-#contenido{padding-bottom:25px}
 }

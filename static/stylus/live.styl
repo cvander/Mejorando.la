@@ -191,12 +191,15 @@ input.text-field
 	@extends .clearfix
 	margin 0 0 15px
 	position relative
+	
 	span
 		position absolute
 		right 0
+
 #email-container
 	span
 		left 100px
+
 	.txt
 		width 50px
 #fila2
@@ -252,6 +255,7 @@ input.text-field
 #name-container
 	span
 		left 120px
+
 	.txt
 		width 70px
 
@@ -308,7 +312,6 @@ input.text-field
 	script
 		@extends .hidden
 
-
 #wrapper
 	// padding-bottom 68px
 	min-height 100%
@@ -325,6 +328,7 @@ input.text-field
 
 
 // media queries
+// Full desktop mode with 2 column social widget
 @media screen and (max-width:1280px)
 	#formulario
 		right 178px + 35
@@ -338,6 +342,18 @@ input.text-field
 		margin 10px 0 0 10px 
 		padding 10px 20px 
 
+// Full desktop mode, small header, no footer
+@media screen and (max-height:700px)
+	footer
+		display none
+
+	header h1 img 
+		height 45px
+	
+	#contenido
+		padding-bottom 25px
+
+// Mobile portrait mode, video and chat only
 @media screen and (max-width:768px)
 	footer,
 	header,
@@ -363,23 +379,16 @@ input.text-field
 		border-radius 0
 		left 0
 
+// Mobile landscape mode, video only
 @media screen and (max-width:768px) and (orientation:landscape)
+	#col2
+	#video img.video
+		display none
+
 	#contenido
 		padding-bottom 0 !important
-	#col2
-		display none
+	
 	#contenido .wrap,
 	#video,
 	#wrapper
 		position static
-
-@media screen and (max-height:700px)
-	footer
-		display none
-
-	header h1 img 
-		height 45px
-	
-	#contenido
-		padding-bottom 25px
-
