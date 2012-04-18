@@ -44,7 +44,7 @@ input.text-field:focus{outline:0}
 .btn_facebook iframe{width:44px !important}
 #col1{float:left;width:60%}
 #col2{float:right;width:35%;}
-#col2 iframe,#col2 video{background:#3d4043;height:100%;position:absolute;width:35%}
+#col2 iframe{background:#3d4043;height:100%;position:absolute;width:35%}
 #cristalab,#maestros{position:absolute;top:10px;}
 #cristalab img,#maestros img{height:28px}
 #contenido{margin:0 auto;padding-bottom:68px;width:85%;}
@@ -68,7 +68,7 @@ input.text-field:focus{outline:0}
 #video{background:#000;border:6px solid #338ed3;-o-border-radius:5px;-ms-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;left:-6px;overflow:hidden;position:relative;top:0;width:100%;}
 #video a{padding:0 !important;}
 #video a img{left:50%;margin-left:-80px;margin-top:-80px;position:absolute;top:50%}
-#video a,#video embed,#video object{background:#000;height:100% !important;left:0;position:absolute;top:0;width:100% !important}
+#video a,#video embed,#video object,#video video{background:#000;height:100% !important;left:0;position:absolute;top:0;width:100% !important}
 #video img.video{height:auto;width:100%}
 #wrapper{min-height:100%;position:relative;}
 #wrapper:before{bottom:0;-o-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-ms-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-moz-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-webkit-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-webkit-background-clip:padding-box;content:" ";left:0;position:absolute;right:0;top:0}
