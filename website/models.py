@@ -19,7 +19,7 @@ class Video(models.Model):
 	fecha 	      = models.DateField()
 	embed_code    = models.TextField()
 	descripcion   = models.TextField()
-	participantes = models.TextField()
+	participantes = models.TextField(blank=True)
 
 	def __unicode__(self):
 		return self.titulo
