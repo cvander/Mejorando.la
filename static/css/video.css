@@ -61,8 +61,8 @@
 #comentarios .comentario .bla{width:600px;padding:10px 20px 25px 20px;float:right}
 .social{background:#fff;display:block;margin:0 auto;max-width:1000px;text-align:center;}
 .social div{display:inline-block;zoom:1;*display:inline}
-.archivogo{margin:15px auto;display:block;padding:10px;background:#3298fd url("../images/post/pattern_btn_post.png");color:#fff !important;text-align:center;border:5px solid #3298fd;width:200px;text-transform:uppercase;font-weight:bold}
-.fehca{text-transform:uppercase;font-weight:bold;letter-spacing:10px;background:rgba(0,0,0,0.50);padding:5px 5px 5px 15px;margin-bottom:5px}
+.archivogo{background:#3298fd url("../images/post/pattern_btn_post.png");border:5px solid #3298fd;color:#fff !important;display:block;font-weight:bold;margin:15px auto;padding:10px;text-align:center;text-transform:uppercase;width:200px}
+.fehca{background:rgba(0,0,0,0.50);display:inline-block;zoom:1;*display:inline;font-weight:bold;letter-spacing:10px;margin-bottom:5px;padding:5px 5px 5px 15px;text-transform:uppercase}
 .ie #comentarios .commentform .submit{margin-right:5px;margin-top:-34px}
 .ie8 #comentarios .submit{margin-top:-27px !important;top:-6px}
 .ie7 #comentarios .commentform input{top:-1px}
