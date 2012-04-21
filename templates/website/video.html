@@ -29,7 +29,7 @@
 </section>
 
 {% if video.participantes %}
-<div id="participantes"> {{ video.participantes|safe }} </div>
+  {% include "website/participantes.html" %}
 {% endif %} 
 
 <section id="comentarios">
