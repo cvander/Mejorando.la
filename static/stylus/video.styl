@@ -222,7 +222,11 @@
 	max-width 1000px
 	text-align center
 	div
-		display inline-block
+		display: inline-block
+		height: 20px
+		text-align: center
+		width: 150px
+		overflow hidden
 .archivogo
 	background: #3298fd url("../images/post/pattern_btn_post.png")
 	border: 5px solid #3298fd
@@ -268,7 +272,8 @@
 @media screen and (max-width:500px)
 	#comentarios .comentario .top .derecha
 		line-height 25px !important
-  
+  	.social
+  		display none
 @media screen and (max-width:720px)
 	.wrap_p
 		padding 20px 0
@@ -336,7 +341,8 @@
 	#video 
 		h2
 			font-size 30px
-		
+		.cont
+			text-align center
 		.patron 
 			height 400px
 		
