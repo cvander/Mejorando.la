@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="{{ STATIC_PREFIX }}css/base.css?2903" />
 <link rel="stylesheet" href="{{ STATIC_PREFIX }}css/video.css" />
 {% endblock %}
+
 {% block body %}
 <section id="post">
   <article id="video">
@@ -22,7 +23,7 @@
   </article>
    <div id="contdes">
     <article class="desc">
-      <a href="{{ STATIC_PREFIX }}videos" class="archivogo">archivo de videos</a>
+      <a href="{% url website.views.videos %}" class="archivogo">Archivo de videos</a>
       <div class="intro">
         {{ video.descripcion|safe|linebreaks }}
       </div>
@@ -40,6 +41,7 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   </div>
 </aside>
+
 {% if video.participantes %}
   {% include "website/participantes.html" %}
 {% endif %} 
