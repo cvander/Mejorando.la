@@ -38,6 +38,7 @@
 #participantes span{background:#3298fd url("../images/post/pattern_btn_post.png");border:2px solid #3298fd;color:#fff;font-size:16px;font-weight:bold;height:20px;left:-9999px;opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);padding:10px;position:absolute;top:-9999px;-o-transition:all .15s linear;-ms-transition:all .15s linear;-moz-transition:all .15s linear;-webkit-transition:all .15s linear;transition:all .15s linear;-o-transition-property:margin,opacity;-ms-transition-property:margin,opacity;-moz-transition-property:margin,opacity;-webkit-transition-property:margin,opacity;transition-property:margin,opacity;}
 #participantes span:hover{text-decoration:underline}
 #participantes span:after{border-left:5px solid #3298fd;border-bottom:5px solid transparent;border-top:5px solid #3298fd;border-right:5px solid transparent;content:"";display:block;width:0;position:relative;top:12px;left:-12px}
+.dest{margin-bottom:10px}
 .dest img{height:66px;width:66px}
 .nodest img{height:44px;width:44px}
 #comentarios{background:#fff;color:#3d4043;font-family:Arial;font-size:14px;line-height:19px;margin:0 auto;max-width:1000px;width:100%;}
@@ -65,7 +66,7 @@
 @media screen and (max-width:500px){#comentarios .comentario .top .derecha{line-height:25px !important}
 }@media screen and (max-width:720px){.wrap_p{padding:20px 0}
 }@media screen and (max-width:700px){#contdes .desc .intro{width:95%}
-#contdes .desc,#comentarios .commentform,#comentarios .comentario,#contdes .desc img{width:100%}
+#contdes .desc,#comentarios .commentform,#comentarios .comentario,#contdes .desc img{width:100%;height:auto}
 #comentarios{position:relative;overflow:hidden;}
 #comentarios h2{margin-left:0;text-align:right;margin-right:20px}
 #comentarios .commentform label,#comentarios .commentform .coment{background:#6b6e71}
