@@ -40,7 +40,9 @@
 #participantes .dest img{height:66px;width:66px}
 #participantes .nodest img{height:44px;width:44px}
 #participantes .wrap_p{background:#fff;font-size:0;margin:0 auto;max-width:660px;padding:50px 30px}
-#comentarios{background:#fff;color:#3d4043;font-family:Arial;font-size:14px;line-height:19px;margin:0 auto;max-width:1000px;width:100%;}
+@media screen and (max-width:720px){.dest{margin-bottom:10px}
+.wrap_p{padding:20px 0}
+}#comentarios{background:#fff;color:#3d4043;font-family:Arial;font-size:14px;line-height:19px;margin:0 auto;max-width:1000px;width:100%;}
 #comentarios .errorlist{display:block;list-style:none;color:#f00;padding-left:0}
 #comentarios .commentform,#comentarios .comentario{width:682px;margin:0 auto}
 #comentarios .commentform{position:relative;padding-bottom:50px;}
@@ -68,8 +70,6 @@
 #comentarios h2{margin-left:154px;padding-bottom:20px;font-weight:bold}
 @media screen and (max-width:500px){.social{display:none}
 #comentarios .comentario .top .derecha{line-height:25px !important}
-}@media screen and (max-width:720px){.wrap_p{padding:20px 0}
-.dest{margin-bottom:10px}
 }@media screen and (max-width:700px){#contdes .desc .intro{width:95%}
 #contdes .desc,#comentarios .commentform,#comentarios .comentario,#contdes .desc img{width:100%;height:auto}
 #comentarios{position:relative;overflow:hidden;}
