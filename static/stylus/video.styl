@@ -2,7 +2,7 @@
 @import "classes.styl"
 #contdes
 	background white
-	padding-bottom 50px
+	padding-bottom 10px
 	width 100%
 
 	.desc
@@ -61,10 +61,11 @@
 		margin 10px 0
 		text-align right
 	.contvideo
-		border-radius 10px
 		border 10px solid rgba(255, 255, 255, 0.30)
+		border-radius 10px
 		padding-bottom:56.25%
 		position relative
+		text-align left
 		z-index 1
 	.contvideo	iframe, .contvideo object, .contvideo embed 
 		position: absolute
@@ -278,7 +279,8 @@
 @media screen and (max-width:720px)
 	.wrap_p
 		padding 20px 0
-
+	.dest
+		margin-bottom 10px
 @media screen and (max-width:700px)
 	#contdes .desc .intro 
 		width 95% 
