@@ -90,11 +90,15 @@
 		z-index 2
 
 
-.ipad #comentarios .commentform,
-.ipad #comentarios .comentarios{
+.ipad #comentarios .commentform
+.ipad #comentarios .comentarios
 	width 690px
-  	margin 0 auto
-}
+	margin 0 auto
+
+
+@import "participantes.styl"
+
+
 #comentarios
 	background white
 	color #3d4043
@@ -211,23 +215,26 @@
 			padding 10px 20px 25px 20px
 			float right
 
+
 /**************** crossbowser *************/
 
-.ie #comentarios .commentform .submit {
-  margin-right: 5px
-  margin-top: -34px 
-}
-.ie8 #comentarios .submit {
-  margin-top: -27px !important
-  top:-6px
-}
+.ie #comentarios .commentform .submit
+	margin-right: 5px
+	margin-top: -34px 
+
+.ie8 #comentarios .submit
+	margin-top: -27px !important
+	top:-6px
+
+
 .ie7 #comentarios .commentform input
 	top -1px
-#comentarios h2 {
-  margin-left:154px
-  padding-bottom:20px
-  font-weight:bold;
-}
+
+#comentarios h2
+	margin-left:154px
+	padding-bottom:20px
+	font-weight:bold;
+
 
 /********responsive*****************/
 
@@ -281,11 +288,11 @@
 			
 				.avatar
 					background white
+					float left
 					margin-right 10px
 				
 				.derecha
 					display inline
-					float none
 					line-height 45px
 				
 					h5 
