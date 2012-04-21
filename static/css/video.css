@@ -67,7 +67,8 @@
 .ie8 #comentarios .submit{margin-top:-27px !important;top:-6px}
 .ie7 #comentarios .commentform input{top:-1px}
 #comentarios h2{margin-left:154px;padding-bottom:20px;font-weight:bold}
-@media screen and (max-width:500px){#comentarios .comentario .top .derecha{line-height:25px !important}
+@media screen and (max-width:500px){.social{display:none}
+#comentarios .comentario .top .derecha{line-height:25px !important}
 }@media screen and (max-width:720px){.wrap_p{padding:20px 0}
 }@media screen and (max-width:700px){#contdes .desc .intro{width:95%}
 #contdes .desc,#comentarios .commentform,#comentarios .comentario,#contdes .desc img{width:100%;height:auto}
@@ -84,6 +85,7 @@
 #comentarios .comentario .top .derecha a small{display:none}
 #comentarios .comentario .bla{width:90%}
 #video h2{font-size:30px}
+#video .cont{text-align:center}
 #video .patron{height:400px}
 #video .absolute{width:auto;height:400px}
 #video .contvideo{border:5px solid rgba(255,255,255,0.30)}
