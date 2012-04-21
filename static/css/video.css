@@ -3,11 +3,11 @@
 .visuallyhidden{left:-9999px;position:absolute !important;top:-9999px}
 .invisible{visibility:hidden}
 .noselect{-o-user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none;-khtml-user-select:none}
-.clearfix,.wrap_p,background white,height 204px,margin 0auto,padding 40px30px,width 650px,.dest,.nodest{zoom:1;}
-.clearfix:after,.wrap_p:after,background white:after,height 204px:after,margin 0auto:after,padding 40px30px:after,width 650px:after,.dest:after,.nodest:after{clear:both;content:"\0020";display:block;height:0;visibility:hidden}
+.clearfix,.dest,.nodest{zoom:1;}
+.clearfix:after,.dest:after,.nodest:after{clear:both;content:"\0020";display:block;height:0;visibility:hidden}
 .clear{display:block;clear:both;zoom:1}
 .nomargin{margin:0 !important}
-#contdes{background:url("../images/post/cont-post.jpg") no-repeat left top,url("../images/post/cont-post2.jpg") no-repeat right bottom;padding-bottom:50px;width:100%;}
+#contdes{background:#fff;padding-bottom:50px;width:100%;}
 #contdes .desc{color:#3d4043;font-family:Arial;letter-spacing:-.2;line-height:20px;margin:0 auto;text-align:left;width:650px;}
 #contdes .desc p{margin:1em 0}
 #contdes .desc strong{font-weight:bold}
@@ -27,7 +27,8 @@
 #video .cont{margin:0 auto;max-width:682px;padding-top:115px;position:relative;width:100%;z-index:2}
 #video .patron{background:url("../images/post/pattern-post.png");height:549px;position:absolute;width:1000px;z-index:2}
 .ipad #comentarios .commentform,.ipad #comentarios .comentarios{width:690px;margin:0 auto}
-#participantes{background:#fff url("../images/pattern_participantes_post.png");height:284px;margin:0 auto;position:relative;width:1000px;}
+.wrap_p{background:#fff;height:224px;margin:0 auto;padding:50px 30px;width:650px}
+#participantes{background:#fff url("../images/post/pattern_participantes_post.png");height:314px;margin:0 auto;position:relative;width:1000px;}
 #participantes h4{background:#04b83b;color:#fff;display:block;font-size:20px;font-weight:bold;margin-bottom:10px;padding:10px;text-transform:uppercase;width:490px}
 #participantes img{display:inline;vertical-align:bottom}
 #participantes .img_p{float:left;position:relative;vertical-align:top;}
