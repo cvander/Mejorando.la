@@ -40,8 +40,8 @@
 #participantes .dest img{height:66px;width:66px}
 #participantes .nodest img{height:44px;width:44px}
 #participantes .wrap_p{background:#fff;font-size:0;margin:0 auto;max-width:660px;padding:50px 30px}
-@media screen and (max-width:720px){.dest{margin-bottom:10px}
-.wrap_p{padding:20px 0}
+@media screen and (max-width:720px){#participantes .dest{margin-bottom:10px}
+#participantes .wrap_p{padding:20px 0}
 }#comentarios{background:#fff;color:#3d4043;font-family:Arial;font-size:14px;line-height:19px;margin:0 auto;max-width:1000px;width:100%;}
 #comentarios .errorlist{display:block;list-style:none;color:#f00;padding-left:0}
 #comentarios .commentform,#comentarios .comentario{width:682px;margin:0 auto}
