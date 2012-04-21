@@ -1,8 +1,8 @@
 // nib framework + custom mixins & classes
 @import "classes.styl"
 #contdes
-	background url(../images/post/cont-post.jpg) no-repeat left top, url(../images/post/cont-post2.jpg) no-repeat right bottom
-	padding-bottom 50px
+	background white
+	padding-bottom 10px
 	width 100%
 
 	.desc
@@ -61,10 +61,11 @@
 		margin 10px 0
 		text-align right
 	.contvideo
-		border-radius 10px
 		border 10px solid rgba(255, 255, 255, 0.30)
+		border-radius 10px
 		padding-bottom:56.25%
 		position relative
+		text-align left
 		z-index 1
 	.contvideo	iframe, .contvideo object, .contvideo embed 
 		position: absolute
@@ -80,6 +81,7 @@
 		max-width 682px
 		padding-top 115px
 		position relative
+		text-align right
 		width 100%
 		z-index 2
 	.patron
@@ -90,11 +92,15 @@
 		z-index 2
 
 
-.ipad #comentarios .commentform,
-.ipad #comentarios .comentarios{
+.ipad #comentarios .commentform
+.ipad #comentarios .comentarios
 	width 690px
-  	margin 0 auto
-}
+	margin 0 auto
+
+
+@import "participantes.styl"
+
+
 #comentarios
 	background white
 	color #3d4043
@@ -210,31 +216,66 @@
 			width 600px
 			padding 10px 20px 25px 20px
 			float right
+.social
+	background white
+	display block
+	margin 0 auto
+	max-width 1000px
+	text-align center
+	div
+		display: inline-block
+		height: 20px
+		text-align: center
+		width: 150px
+		overflow hidden
+.archivogo
+	background: #3298fd url("../images/post/pattern_btn_post.png")
+	border: 5px solid #3298fd
+	color: white !important
+	display: block
+	font-weight: bold
+	margin: 15px auto
+	padding: 10px
+	text-align: center
+	text-transform: uppercase
+	width: 200px
+.fehca 
+	background: rgba(0, 0, 0, .5)
+	display inline-block
+	font-weight: bold
+	letter-spacing: 10px
+	margin-bottom: 5px
+	padding: 5px 5px 5px 15px
+	text-transform: uppercase
 
 /**************** crossbowser *************/
 
-.ie #comentarios .commentform .submit {
-  margin-right: 5px
-  margin-top: -34px 
-}
-.ie8 #comentarios .submit {
-  margin-top: -27px !important
-  top:-6px
-}
+.ie #comentarios .commentform .submit
+	margin-right: 5px
+	margin-top: -34px 
+
+.ie8 #comentarios .submit
+	margin-top: -27px !important
+	top:-6px
+
+
 .ie7 #comentarios .commentform input
 	top -1px
-#comentarios h2 {
-  margin-left:154px
-  padding-bottom:20px
-  font-weight:bold;
-}
+
+#comentarios h2
+	margin-left:154px
+	padding-bottom:20px
+	font-weight:bold
+
 
 /********responsive*****************/
 
 @media screen and (max-width:500px)
+	.social
+		display none
+	
 	#comentarios .comentario .top .derecha
 		line-height 25px !important
-  
 
 @media screen and (max-width:700px)
 	#contdes .desc .intro 
@@ -245,7 +286,8 @@
 	#comentarios .comentario,
 	#contdes .desc img
 		width 100%
-
+		height auto
+	
 	#comentarios
 		position relative
 		overflow hidden
@@ -281,11 +323,11 @@
 			
 				.avatar
 					background white
+					float left
 					margin-right 10px
 				
 				.derecha
 					display inline
-					float none
 					line-height 45px
 				
 					h5 
@@ -300,7 +342,8 @@
 	#video 
 		h2
 			font-size 30px
-		
+		.cont
+			text-align center
 		.patron 
 			height 400px
 		
@@ -331,7 +374,3 @@
 
 	#video h2 
 		text-align center
-  
-  
-	
-

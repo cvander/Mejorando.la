@@ -1,0 +1,96 @@
+#participantes
+	background white url("../images/post/pattern_participantes_post.png")
+	margin 0 auto
+	max-width 1000px
+	// min-height 314px
+	position relative
+
+	a.img_p
+		display inline-block
+		margin-bottom 1px
+		position relative
+		text-decoration: none
+		vertical-align top
+
+		&:hover span
+			left: 15px
+			margin-top 5px
+			opacity 1
+			top: -50px
+
+	h4
+		background: #04b83b
+		color: white
+		display: inline-block
+		font-size: 20px
+		font-weight: bold
+		margin-bottom: 10px
+		// max-width: 490px
+		padding: 10px
+		text-transform: uppercase
+
+	h4
+	.dest
+	.nodest
+		text-align center
+
+	img
+		display inline
+		vertical-align bottom
+			
+	span
+		background: #3298fd url("../images/post/pattern_btn_post.png")
+		border: 2px solid #3298fd
+		color: white
+		font-size 16px
+		font-weight: bold
+		height: 20px
+		left -9999px
+		opacity 0
+		padding: 10px
+		position: absolute
+		top -9999px
+		transition()
+		transition-property margin, opacity
+
+		&:hover
+			text-decoration: underline
+
+		&:after
+			border 5px solid transparent
+			border-color #3298fd transparent transparent #3298fd
+			content: ""
+			display: block
+			left: -12px
+			position: relative
+			top: 12px
+			width: 0
+
+	.dest
+		margin-bottom 1px
+
+		img
+			height 66px
+			width 66px
+
+	.nodest img
+		height: 44px
+		width: 44px
+
+	.wrap_p
+		background white
+		font-size 0
+		margin 0 auto
+		max-width 660px
+		// min-height 224px
+		padding 50px 30px
+		// text-align center
+
+
+@media screen and (max-width:720px)
+	#participantes
+		.dest
+			margin-bottom 10px
+
+		.wrap_p
+			padding 20px 0
