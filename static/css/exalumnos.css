@@ -44,7 +44,9 @@ body{font-family:"open sans",Arial,Sans Serif}
 .pais img{position:absolute;width:70px}
 .pais .derecha{position:relative;text-align:right;width:100%;margin-left:0}
 .foto h4{letter-spacing:2px}
-}@media screen and (max-width:650px){.testimonios .testimonio{width:90%}
+}@media screen and (max-width:650px){.foto h4{background:rgba(0,115,232,0.50);font-size:13px;text-shadow:1px 1px 0 #000}
+.testimonios{margin-top:0;}
+.testimonios .testimonio{width:90%}
 .testimonios .testimonio:nth-child(2){margin:0}
 }@media screen and (max-width:800px){.curso_header{height:350px;}
 .curso_header .datos{text-align:center}
