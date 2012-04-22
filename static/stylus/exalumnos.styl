@@ -55,29 +55,32 @@ body
 		width 100%
 		z-index 2
 	h4
+		//letter-spacing 3px
 		background #0073e8
+		font-size 18px
 		font-weight normal
-		letter-spacing 3px
-		line-height 20px
-		min-height 35px
-		padding 10px 15px
+		line-height 15px
+		padding 15px 35px 5px 15px
 		position absolute
 		right 0
 		text-align right
 		text-transform uppercase
 		top 10px
-		z-index 3
-		span
-			font-size 50px
-			font-weight bold
-			position relative
-			right -10px
-			top 10px
+		z-index 3		
+	h4:after
+		display block
+		content "/"
+		font-size 50px
+		font-weight bold
+		position relative
+		right -30px
+		top -13px
 .testimonios
 	color #3D4043
 	margin-top -80px
 	position relative
 	text-align center
+	font-family Arial
 	z-index 5
 	.testimonio
 		background white
@@ -103,6 +106,7 @@ body
 			width 55px
 			height auto
 		.tweet
+			height 76px
 			margin 20px 0
 			p a
 				color #3D4043
@@ -124,8 +128,10 @@ body
 	h3,h4
 		font-weight normal
 		text-transform uppercase
-		span
-			font-weight bold
+	h3:after
+		font-weight bold
+		display inline-block
+		content "/"
 	h4
 		font-size 10px
 		font-weight bold
@@ -145,6 +151,8 @@ body
 		width 40%
 	.testimonios .testimonio:nth-child(3)
 		width 90%
+	.testimonios .testimonio .tweet
+		height auto
 @media screen and (max-width:480px)
 	.pais
 		padding 10px
@@ -160,19 +168,26 @@ body
 		letter-spacing 2px
 @media screen and (max-width:650px)
 	.foto h4
-		background rgba(0,115,232,.5)
+		background rgba(0,115,232,.9)
 		font-size 13px
+		padding 15px
 		text-shadow 1px 1px 0 black
+	.foto h4:after
+		display none
+	.pais h3:after
+		display none
 	.testimonios
 		margin-top 0
 		.testimonio
 			width 90%
 		.testimonio:nth-child(2)
 			margin 0
+
 @media screen and (max-width:800px)
 	.curso_header
 		height 350px
 		.datos
+			margin-right 0
 			text-align center
 		h2
 			font-size 35px

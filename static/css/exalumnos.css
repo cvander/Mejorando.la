@@ -19,36 +19,39 @@ body{font-family:"open sans",Arial,Sans Serif}
 .curso_pais{background:#fff}
 .foto{border:5px solid #0172ea;max-height:385px;overflow:hidden;position:relative;}
 .foto img{height:auto;position:relative;width:100%;z-index:2}
-.foto h4{background:#0073e8;font-weight:normal;letter-spacing:3px;line-height:20px;min-height:35px;padding:10px 15px;position:absolute;right:0;text-align:right;text-transform:uppercase;top:10px;z-index:3;}
-.foto h4 span{font-size:50px;font-weight:bold;position:relative;right:-10px;top:10px}
-.testimonios{color:#3d4043;margin-top:-80px;position:relative;text-align:center;z-index:5;}
+.foto h4{background:#0073e8;font-size:18px;font-weight:normal;line-height:15px;padding:15px 35px 5px 15px;position:absolute;right:0;text-align:right;text-transform:uppercase;top:10px;z-index:3}
+.foto h4:after{display:block;content:"/";font-size:50px;font-weight:bold;position:relative;right:-30px;top:-13px}
+.testimonios{color:#3d4043;margin-top:-80px;position:relative;text-align:center;font-family:Arial;z-index:5;}
 .testimonios .testimonio{background:#fff;display:inline-block;zoom:1;*display:inline;padding:15px;text-align:left;vertical-align:top;width:265px;}
 .testimonios .testimonio .img,.testimonios .testimonio .texto{display:inline-block;zoom:1;*display:inline}
 .testimonios .testimonio .texto{margin-left:10px;position:relative;top:-10px}
 .testimonios .testimonio h3{font-size:15px;text-transform:lowercase;letter-spacing:.5px}
 .testimonios .testimonio h4{font-weight:normal}
 .testimonios .testimonio .img img{width:55px;height:auto}
-.testimonios .testimonio .tweet{margin:20px 0;}
+.testimonios .testimonio .tweet{height:76px;margin:20px 0;}
 .testimonios .testimonio .tweet p a{color:#3d4043;font-size:15px}
 .testimonios .testimonio .curso{background:#04a764 url("../images/exalumnos/esquinita.png") no-repeat center top;padding:5px}
 .testimonios .testimonio:nth-child(2){margin:0 30px}
 .pais{background:#fff;color:#3d4043;font-weight:normal;padding:50px 10px 8px 10px;}
 .pais .derecha{display:inline-block;zoom:1;*display:inline;margin-left:10px}
-.pais h3,.pais h4{font-weight:normal;text-transform:uppercase;}
-.pais h3 span,.pais h4 span{font-weight:bold}
+.pais h3,.pais h4{font-weight:normal;text-transform:uppercase}
+.pais h3:after{font-weight:bold;display:inline-block;zoom:1;*display:inline;content:"/"}
 .pais h4{font-size:10px;font-weight:bold;letter-spacing:3px;position:relative;top:-5px}
 .tela{background:rgba(0,0,0,0.50);height:100%;position:absolute;z-index:2;width:1000px}
 @media screen and (max-width:960px){.testimonios .testimonio{width:40%}
 .testimonios .testimonio:nth-child(3){width:90%}
+.testimonios .testimonio .tweet{height:auto}
 }@media screen and (max-width:480px){.pais{padding:10px;}
 .pais img{position:absolute;width:70px}
 .pais .derecha{position:relative;text-align:right;width:100%;margin-left:0}
 .foto h4{letter-spacing:2px}
-}@media screen and (max-width:650px){.foto h4{background:rgba(0,115,232,0.50);font-size:13px;text-shadow:1px 1px 0 #000}
+}@media screen and (max-width:650px){.foto h4{background:rgba(0,115,232,0.90);font-size:13px;padding:15px;text-shadow:1px 1px 0 #000}
+.foto h4:after{display:none}
+.pais h3:after{display:none}
 .testimonios{margin-top:0;}
 .testimonios .testimonio{width:90%}
 .testimonios .testimonio:nth-child(2){margin:0}
 }@media screen and (max-width:800px){.curso_header{height:350px;}
-.curso_header .datos{text-align:center}
+.curso_header .datos{margin-right:0;text-align:center}
 .curso_header h2{font-size:35px;line-height:35px}
 }
