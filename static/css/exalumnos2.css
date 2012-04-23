@@ -9,7 +9,7 @@
 .nomargin{margin:0 !important}
 body{font-family:"open sans",Arial,Sans Serif}
 ::selection{background:#ffa500;text-shadow:none;color:#fff}
-.curso_header,.curso_pais{max-width:1000px;margin:0 auto}
+.curso_header,.curso_pais,.paises{max-width:1000px;margin:0 auto}
 .curso_header{margin:0 auto;height:500px;position:relative;overflow:hidden;}
 .curso_header h2{display:inline-block;zoom:1;*display:inline;font-size:80px;font-weight:normal;line-height:70px;margin-top:5px;-o-transition:.3s;-ms-transition:.3s;-moz-transition:.3s;-webkit-transition:.3s;transition:.3s;text-shadow:2px 2px 0 #000}
 .curso_header img{position:absolute;z-index:1}
@@ -37,17 +37,24 @@ body{font-family:"open sans",Arial,Sans Serif}
 .pais h3,.pais h4{font-weight:normal;text-transform:uppercase}
 .pais h3:after{font-weight:bold;display:inline-block;zoom:1;*display:inline;content:"/";margin-left:5px}
 .pais h4{font-size:10px;font-weight:bold;letter-spacing:3px;position:relative;top:-5px}
+.paises{position:relative;text-align:center;top:-50px;background:#fff;margin-bottom:-50px;}
+.paises .pais_b{color:#3d4043;display:inline-block;zoom:1;*display:inline;margin:0 20px;position:relative;z-index:5;}
+.paises .pais_b .bandera{border:5px solid #fff;-o-border-radius:50%;-ms-border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;height:80px;width:80px;}
+.paises .pais_b .bandera img{-o-border-radius:50%;-ms-border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;height:80px;width:80px}
+.paises p{text-transform:uppercase;margin-top:5px}
 .tela{background:rgba(0,0,0,0.50);height:100%;position:absolute;z-index:2;width:1000px}
 @media screen and (max-width:960px){.testimonios .testimonio{width:40%}
 .testimonios .testimonio:nth-child(3){width:90%}
 .testimonios .testimonio .tweet{height:auto}
-}@media screen and (max-width:480px){.pais{padding:10px;}
+}@media screen and (max-width:480px){.curso_header .datos{top:100px}
+.pais{padding:10px;}
 .pais img{position:absolute;width:70px}
 .pais .derecha{position:relative;text-align:right;width:100%;margin-left:0}
 .foto h4{letter-spacing:2px}
 }@media screen and (max-width:650px){.foto h4{background:rgba(0,115,232,0.90);font-size:13px;padding:15px;position:static;text-shadow:1px 1px 0 #000}
 .foto h4:after{display:none}
 .pais h3:after{display:none}
+.paises .pais_b{margin:0 2px}
 .testimonios{margin-top:0;}
 .testimonios .testimonio{width:90%}
 .testimonios .testimonio:nth-child(2){margin:0}

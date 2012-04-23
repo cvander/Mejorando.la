@@ -2,6 +2,7 @@ verdeclaro=#04a764
 azulclaro=#0073e8
 verdeoscuro=#03978d
 azuloscuro=#0186b8
+fuente=#3D4043
 @import "classes.styl"
 body
 	font-family "open sans",Arial,Sans Serif
@@ -11,9 +12,11 @@ body
 	color white
 
 .curso_header,
-.curso_pais
+.curso_pais,
+.paises
 	max-width 1000px
 	margin 0 auto
+
 .curso_header
 	margin 0 auto
 	height 500px
@@ -140,7 +143,30 @@ body
 		position relative
 		top -5px
 
-	
+.paises
+	position relative
+	text-align center
+	top -50px
+	background white
+	margin-bottom -50px
+	.pais_b
+		color fuente
+		display inline-block
+		margin 0 20px
+		position relative
+		z-index 5
+		.bandera
+			border 5px solid white
+			border-radius 50%
+			height 80px
+			width 80px
+			img
+				border-radius 50%
+				height 80px
+				width 80px
+	p
+		text-transform uppercase
+		margin-top 5px
 .tela
 	background rgba(0,0,0,.5)
 	height 100%
@@ -155,6 +181,8 @@ body
 	.testimonios .testimonio .tweet
 		height auto
 @media screen and (max-width:480px)
+	.curso_header .datos 
+		top 100px
 	.pais
 		padding 10px
 		img
@@ -178,6 +206,8 @@ body
 		display none
 	.pais h3:after
 		display none
+	.paises .pais_b 
+		margin 0 2px
 	.testimonios
 		margin-top 0
 		.testimonio
