@@ -22,7 +22,8 @@ body{font-family:"open sans",Arial,Sans Serif}
 .foto h4{background:#0073e8;font-size:18px;font-weight:normal;line-height:15px;padding:15px 35px 5px 15px;position:absolute;right:0;text-align:right;text-transform:uppercase;top:10px;z-index:3}
 .foto h4:after{display:block;content:"/";font-size:50px;font-weight:bold;position:relative;right:-30px;top:-13px}
 .testimonios{color:#3d4043;margin-top:-80px;position:relative;text-align:center;font-family:Arial;z-index:5;}
-.testimonios .testimonio{background:#fff;display:inline-block;zoom:1;*display:inline;padding:15px;text-align:left;vertical-align:top;width:265px;}
+.testimonios .patron{background:url("../images/post/pattern_participantes_post.png");height:110px;position:absolute;top:80px;width:100%;z-index:1}
+.testimonios .testimonio{background:#fff;display:inline-block;zoom:1;*display:inline;padding:15px;position:relative;text-align:left;vertical-align:top;width:265px;z-index:2;}
 .testimonios .testimonio .img,.testimonios .testimonio .texto{display:inline-block;zoom:1;*display:inline}
 .testimonios .testimonio .texto{margin-left:10px;position:relative;top:-10px}
 .testimonios .testimonio h3{font-size:15px;text-transform:lowercase;letter-spacing:.5px}
