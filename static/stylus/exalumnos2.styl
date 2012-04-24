@@ -48,8 +48,8 @@ body
 	background white
 .foto
 	border 5px solid #0172ea
-	margin-top 10px
-	max-height 385px
+	margin-top 5px
+	max-height 453px
 	overflow hidden
 	position relative
 	img
@@ -58,7 +58,6 @@ body
 		width 100%
 		z-index 2
 	h4
-		//letter-spacing 3px
 		background #0073e8
 		font-size 18px
 		font-weight normal
@@ -81,21 +80,20 @@ body
 		font-weight bold
 	.datos
 		background white
-		position absolute
+		position static
 		text-align right
-		right 0
-		top 10px
+		margin-top -4px
 		z-index 3	
 		img
 			width auto
-			position absolute
+			float left
 			top 6px
 			left 10px
 
 
 .testimonios
 	color #3D4043
-	margin-top -80px
+	//margin-top -80px
 	position relative
 	text-align center
 	font-family Arial
@@ -130,6 +128,8 @@ body
 			margin-left 10px
 			position relative
 			top -10px
+			a
+				color fuente
 		.img img
 			width 55px
 			height auto
@@ -180,14 +180,14 @@ body
 			border 5px solid white
 			border-radius 80px
 			height 80px
-			transition .3s
+			transition 1s
 			width 80px
 			img
 				border-radius 80px
 				height 80px
 				width 80px
-			&:hover
-				transform scale(1.1)
+	.pais_b:hover .bandera
+		transform rotateY(360deg) scale(1.1)
 	p
 		text-transform uppercase
 		margin-top 5px
