@@ -24,12 +24,11 @@ body
 	overflow hidden
 	h2
 		display:inline-block
-		font-size: 80px
+		font-size: 50px
 		font-weight: normal
-		line-height: 70px
+		line-height: 50px
 		margin-top: 5px
 		transition: .3s
-		text-shadow 2px 2px 0 black
 	img
 		position absolute
 		z-index 1
@@ -42,13 +41,14 @@ body
 	.datos
 		margin-right 25px
 		text-align right
-		top 150px
+		top 180px
 		position relative
 		z-index 4
 .curso_pais
 	background white
 .foto
 	border 5px solid #0172ea
+	margin-top 10px
 	max-height 385px
 	overflow hidden
 	position relative
@@ -63,21 +63,36 @@ body
 		font-size 18px
 		font-weight normal
 		line-height 15px
-		padding 15px 35px 5px 15px
-		position absolute
-		right 0
-		text-align right
-		text-transform uppercase
-		top 10px
-		z-index 3		
+		padding 15px 30px 5px 50px
+		text-transform uppercase		
 	h4:after
 		display block
 		content "/"
-		font-size 50px
+		font-size 40px
 		font-weight bold
 		position relative
-		right -30px
+		right -25px
 		top -13px
+	h5
+		color fuente
+		padding 5px
+		text-transform uppercase
+		font-size 10px
+		font-weight bold
+	.datos
+		background white
+		position absolute
+		text-align right
+		right 0
+		top 10px
+		z-index 3	
+		img
+			width auto
+			position absolute
+			top 6px
+			left 10px
+
+
 .testimonios
 	color #3D4043
 	margin-top -80px
@@ -101,6 +116,13 @@ body
 		vertical-align top
 		width 265px
 		z-index 2
+		
+		h3
+			font-size 15px
+			text-transform lowercase
+			letter-spacing .5px
+		h4
+			font-weight normal
 		.img
 		.texto 
 			display inline-block
@@ -108,25 +130,15 @@ body
 			margin-left 10px
 			position relative
 			top -10px
-		h3
-			font-size 15px
-			text-transform lowercase
-			letter-spacing .5px
-		h4
-			font-weight normal
 		.img img
 			width 55px
 			height auto
 		.tweet
 			height 76px
-			margin 20px 0
+			margin 10px 0
 			p a
 				color #3D4043
 				font-size 15px
-
-		.curso
-			background #04a764 url("../images/exalumnos/esquinita.png") no-repeat center top
-			padding 5px
 	.testimonio:nth-child(2)
 		margin 0 30px
 .pais
@@ -168,11 +180,14 @@ body
 			border 5px solid white
 			border-radius 50%
 			height 80px
+			transition .3s
 			width 80px
 			img
 				border-radius 50%
 				height 80px
 				width 80px
+			&:hover
+				transform scale(1.1)
 	p
 		text-transform uppercase
 		margin-top 5px
@@ -205,12 +220,14 @@ body
 	.foto h4
 		letter-spacing 2px
 @media screen and (max-width:650px)
-	.foto h4
-		background rgba(0,115,232,.9)
-		font-size 13px
-		padding 15px
-		position static
-		text-shadow 1px 1px 0 black
+	.foto 
+		.datos
+			font-size 13px
+			position static
+		h4
+			padding 15px
+		h5
+			padding-right 15px
 	.foto h4:after
 		display none
 	.pais h3:after
