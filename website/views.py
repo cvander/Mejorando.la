@@ -29,7 +29,7 @@ def home(solicitud):
 	return render_to_response('website/home.html', {
 		'ultimo_video': ultimo_video, # el ultimo video
 		'videos'	  : Video.objects.all().order_by('-fecha')[1:5], # ultimos 4 videos
-		'horario'	  : get_horario(solicitud.META['REMOTE_ADDR']), # el horario del programa localizado
+		'horario'	  : get_horario(solicitud.META), # el horario del programa localizado
 	})
 
 # el archivo muestra todos los videos 
@@ -98,13 +98,19 @@ def handler404(solicitud):
 # devuelve el horario del programa
 # localizado por pais gracias a la 
 # libreria GeoIP
-def get_horario(ip):
+def get_horario(meta):
 	horario = {
 		'pais': 'Centroamérica',
 		'hora': '3pm'
 	}
 
 	geo = GeoIP.new(GeoIP.GEOIP_MEMORY_CACHE)
+
+	# por si el usuario esta detras de un proxy
+	if 'HTTP_X_FORWARDED_FOR' in meta and meta['HTTP_X_FORWARDED_FOR']:
+		ip = meta['HTTP_X_FORWARDED_FOR'].split(',')[0]
+	else:
+		ip = meta['REMOTE_ADDR']
 
 	country = geo.country_code_by_addr(ip)
 
