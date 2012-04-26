@@ -17,19 +17,19 @@
 .hidden,#video script{display:none}
 .visuallyhidden{left:-9999px;position:absolute !important;top:-9999px}
 .invisible{visibility:hidden}
-.noselect{-o-user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none;-khtml-user-select:none}
+.noselect{-khtml-user-select:none}
 .clearfix,footer .izquierda,#contenido .wrap,#email-container,#name-container,#formulario{zoom:1;}
 .clearfix:after,footer .izquierda:after,#contenido .wrap:after,#email-container:after,#name-container:after,#formulario:after{clear:both;content:"\0020";display:block;height:0;visibility:hidden}
 .clear{display:block;clear:both;zoom:1}
 .nomargin{margin:0 !important}
-body{background:#fff url("../images/live/cinta_1920.jpg") repeat-y fixed;-o-background-size:100%;-moz-background-size:100%;-webkit-background-size:100%;background-size:100%;font-family:'open sans',sans-serif;height:100%;margin:0;padding:0}
+body{background:#fff url("../images/live/cinta_1920.jpg") repeat-y fixed;background-size:100%;font-family:'open sans',sans-serif;height:100%;margin:0;padding:0}
 footer{color:#3d4043;margin-top:-68px;position:relative;width:100%;}
 footer .izquierda{background:url("../images/live/footer.png") no-repeat right top;height:68px;left:0;position:absolute;text-transform:uppercase;top:0;width:280px;}
 footer .izquierda span{display:block;}
 footer .izquierda span:first-child{font-size:20px;letter-spacing:-1px;}
 footer .izquierda span:first-child + span{font-size:12px;font-weight:bold}
 footer .izquierda .text{padding:15px 0 0 35px}
-footer .derecha{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:25px;font-weight:bold;padding-left:280px;line-height:68px;text-align:center;width:100%;max-width:1280px;}
+footer .derecha{box-sizing:border-box;font-size:25px;font-weight:bold;padding-left:280px;line-height:68px;text-align:center;width:100%;max-width:1280px;}
 footer .derecha,footer .derecha a{color:#fff}
 footer .derecha a,footer .derecha span{margin:0 3%}
 header{border-top:7px solid #fff;margin-bottom:10px;position:relative;width:auto;}
@@ -39,7 +39,7 @@ header h1 img{height:75px}
 header img{vertical-align:bottom}
 html{margin:0;height:100%}
 img{border:0}
-input.text-field{background:#003e73;border:1px solid #409fd6;border-left:0;-o-border-radius:0;-ms-border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;color:#fff;float:left;font:13px/30px 'open sans',sans-serif;height:30px;left:0;margin:0;padding:0;position:absolute;top:0;width:100%;}
+input.text-field{background:#003e73;border:1px solid #409fd6;border-left:0;color:#fff;float:left;font:13px/30px 'open sans',sans-serif;height:30px;left:0;margin:0;padding:0;position:absolute;top:0;width:100%;}
 input.text-field:focus{outline:0}
 .btn_facebook iframe{width:44px !important}
 #col1{float:left;width:60%}
@@ -58,20 +58,20 @@ input.text-field:focus{outline:0}
 #formulario{font-size:13px;font-weight:bold;text-transform:uppercase;position:absolute;top:0;left:0;right:368px;}
 #formulario .tit{color:#fff;clear:both;display:block;margin-bottom:15px}
 #formulario .txt{background:url("../images/live/label_input.png") no-repeat right;color:#535456;float:left;clear:left;height:32px;line-height:32px;padding:0 35px 0 15px}
-#inscribete-btn{background:url("../images/live/button.png") no-repeat !important;border:0;-o-border-radius:0;-ms-border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;clear:both;color:#fff;cursor:pointer;display:block;float:right;font:bold 13px 'open sans',sans-serif;height:31px;line-height:31px;padding:0 0 0 18px;text-transform:uppercase;width:158px}
+#inscribete-btn{background:url("../images/live/button.png") no-repeat !important;border:0;clear:both;color:#fff;cursor:pointer;display:block;float:right;font:bold 13px 'open sans',sans-serif;height:31px;line-height:31px;padding:0 0 0 18px;text-transform:uppercase;width:158px}
 #maestros{left:50%}
 #name-container span{left:120px}
 #name-container .txt{width:70px}
 #social{float:right;}
-#social > div{background:rgba(0,0,0,0.30);-o-border-radius:5px;-ms-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;float:left;height:62px;margin:0 0 0 10px;padding:10px;}
+#social > div{background:rgba(0,0,0,0.30);float:left;height:62px;margin:0 0 0 10px;padding:10px;}
 #social > div:first-child{margin:0}
-#video{background:#000;border:6px solid #338ed3;-o-border-radius:5px;-ms-border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;left:-6px;overflow:hidden;position:relative;top:0;width:100%;}
+#video{background:#000;border:6px solid #338ed3;left:-6px;overflow:hidden;position:relative;top:0;width:100%;}
 #video a{padding:0 !important;}
 #video a img{left:50%;margin-left:-80px;margin-top:-80px;position:absolute;top:50%}
 #video a,#video embed,#video object,#video video{background:#000;height:100% !important;left:0;position:absolute;top:0;width:100% !important}
 #video img.video{height:auto;width:100%}
 #wrapper{min-height:100%;position:relative;}
-#wrapper:before{bottom:0;-o-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-ms-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-moz-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-webkit-box-shadow:0 0 250px rgba(0,0,0,0.90) inset;box-shadow:0 0 250px rgba(0,0,0,0.90) inset;-webkit-background-clip:padding-box;content:" ";left:0;position:absolute;right:0;top:0}
+#wrapper:before{bottom:0;-webkit-background-clip:padding-box;content:" ";left:0;position:absolute;right:0;top:0}
 @media screen and (max-width:1280px){#formulario{right:213px}
 #social .btn_facebook{clear:left;margin:10px 0 0;padding:10px 17px}
 #social .btn_googlemas{margin:10px 0 0 10px;padding:10px 20px}
@@ -82,7 +82,7 @@ header h1 img{height:45px}
 #col1,#col2,#contenido{float:none;width:auto}
 #col2 iframe{width:100%}
 #fila2{height:auto;margin:0}
-#video{border:0;-o-border-radius:0;-ms-border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;left:0}
+#video{border:0;left:0}
 }@media screen and (max-width:768px) and (orientation:landscape){#col2,#video img.video{display:none}
 #contenido{padding-bottom:0 !important}
 #contenido .wrap,#video,#wrapper{position:static}

@@ -13,12 +13,13 @@ class Setting(models.Model):
 
 # el archivo de videos
 class Video(models.Model):
-	titulo 		= models.CharField(max_length=150)
-	slug	    = models.CharField(max_length=300)
-	imagen 	    = models.ImageField(upload_to='videos')
-	fecha 	    = models.DateField()
-	embed_code  = models.TextField()
-	descripcion = models.TextField()
+	titulo 		  = models.CharField(max_length=150)
+	slug	      = models.CharField(max_length=300)
+	imagen 	      = models.ImageField(upload_to='videos')
+	fecha 	      = models.DateField()
+	embed_code    = models.TextField()
+	descripcion   = models.TextField()
+	participantes = models.TextField(blank=True)
 
 	def __unicode__(self):
 		return self.titulo

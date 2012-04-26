@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="{{ STATIC_PREFIX }}css/base.css?2903" />
 <link rel="stylesheet" href="{{ STATIC_PREFIX }}css/video.css" />
 {% endblock %}
+
 {% block body %}
 <section id="post">
   <article id="video">
@@ -16,17 +17,34 @@
         alt="{{ video.titulo }}" class="absolute"/>
     <div class="cont">
       <h2 class="titulo">{{ video.titulo }}</h2>
+      <span class="fehca">{{ video.fecha|date:"F.j" }}</span>
       <div class="contvideo">{{ video.embed_code|safe }}</div>
     </div>
   </article>
-  <div id="contdes">
-    <article class="desc"><span class="fehca">{{ video.fecha|date:"F.j" }}</span>
+   <div id="contdes">
+    <article class="desc">
+      <a href="{% url website.views.videos %}" class="archivogo">Archivo de videos</a>
       <div class="intro">
         {{ video.descripcion|safe|linebreaks }}
       </div>
     </article>
   </div>
 </section>
+<aside class="social">
+  <div id="fb-root" class="btn_facebook"><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like  send="false" layout="button_count" width="80" show_faces="false" ></fb:like>
+  </div>
+  <div class="google+">
+    <g:plusone size="tall" annotation="none"></g:plusone>
+  </div>
+  <div class="twitter">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="LeonidasEsteban" data-lang="es">Twittear</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+</aside>
+
+{% if video.participantes %}
+  {% include "website/participantes.html" %}
+{% endif %} 
 
 <section id="comentarios">
 
