@@ -27,25 +27,6 @@
 	
 	$('#formulario').ajaxForm(opciones); 
 
-	/*+function () {
-		var alto = window.innerHeight;
-			$('#col2 .chat iframe').css('height',alto-alto*0.25)
-			var alto1 = screen.height;
-			var x = true
-			document.onkeydown = function(){ 
-			if(window.event.keyCode == 122 ){
-				if (x == true)
-				{
-					$('#col2 .chat iframe').css('height',alto1-alto1*0.25)
-					x = false;
-				}
-				else{
-					$('#col2 .chat iframe').css('height',alto-alto*0.25)
-					x = true;
-				}
-			}
-		}
-	}()*/
 
 	$(window).on('load', function(){
 		$('#col2').html('<div class="chat"><iframe src="http://chat.mejorando.la" width="100%" height="75%" frameborder="0"></iframe></div>');
@@ -79,12 +60,6 @@
 			if ($iframe.data('resized'))
 				$iframe.css('height', '');
 		}
-
-		// resize video
-		// var $video = $('#video');
-		// var height = $video.height();
-		// var width = $video.width();
-		// $video.find('object,embed').attr('height', height).attr('width', width);
 	}
 
 	resize();

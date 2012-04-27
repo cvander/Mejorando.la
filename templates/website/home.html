@@ -11,7 +11,7 @@
     <img src="{{ ultimo_video.get_home_image_url }}" alt="{{ ultimo_video.titulo }}" width="999" height="442" class="absolute"/>
     
     <div class="datos">
-      <p class="horario"><span class="block">todos los jueves - <strong>en vivo </strong></span><span class="big">{{ horario.pais }} /</span><strong class="big"> {{ horario.hora }}</strong>
+      <p class="horario"><span class="block">todos los jueves - <strong>en vivo </strong></span>{% if pais %}<span class="big">{{ pais }} /</span>{% endif %}<strong id="hora" class="big"> 4pm GMT-5</strong>
       </p><a href="{{ ultimo_video.get_absolute_url }}" title="{{ ultimo_video.titulo }}" class="titulo">
         <h2 class="titulo">{{ ultimo_video.titulo }}</h2></a><span class="fecha">{{ ultimo_video.fecha|date:"F • j" }}</span>
         <a href="{{ ultimo_video.get_absolute_url }}" title="{{ ultimo_video.titulo }}" class="boton">&#62; ver capitulo &#60;</a>
@@ -31,7 +31,7 @@
 
     </div>
   </aside>
-  <div id="proximo" data-time="{{ horario.hora }}">
+  <div id="proximo" timestamp="{{ timestamp }}">
     <div class="cinta">
     </div>
     <h3 class="centro">proximo capitulo en

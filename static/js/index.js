@@ -1,34 +1,41 @@
 jQuery(function ($) {
-	// tomar la hora del atributo 
-	var hora = $('#proximo').attr('data-time');
+	// elementos que cambiaran
+	var $dias, $horas, $minutos, $hora, nextEpisode = $('#proximo').attr('timestamp');
 
-	if(hora) {
-		// elementos que cambiaran
-		var $dias = $('#nextday'),
-			$horas = $('#nexthour'),
-			$minutos = $('#nextmin');
+	// si es el "home" (donde este el #proximo)
+	if(nextEpisode) {
+		nextEpisode = parseInt(nextEpisode);
+
+		// los elementos que cambiaran
+
+		// contador
+		$dias 	 = $('#nextday');
+		$horas 	 = $('#nexthour');
+		$minutos = $('#nextmin');
+
+		// horario del programa
+		$hora 	 = $('#hora');
 
 		// cada minuto
-		+function () {
-			var time = Date.today().next().thursday().at(hora).getElapsed() * -1;
+		+function updateCounter(){
+			var elapsed = nextEpisode - new Date(), // puede ser Date.now() pero iexplorer8 no lo reconoce
+	                  d = new Date(nextEpisode);
 
-			if(Date.today().is().thursday() && Date.compare(new Date(), Date.today().at(hora)) == -1) {
-				time = Date.today().at(hora).getElapsed() * -1;
-			}
+	        // horario del programa
+			$hora.text(d.toString("htt"));
 
-			var days = Math.floor(time/1000/60/60/24);
-			time -= days*1000*60*60*24;
+			if(elapsed < 0) return; // detenemos el contador;
 
-			var hours = Math.floor(time/1000/60/60);
-			time -= hours*1000*60*60;
+			// calcular los dias, horas y minutos que faltan
+			var days 	= Math.floor(elapsed/1000/60/60/24),
+			    hours 	= Math.floor(elapsed/1000/60/60) % 24,
+			    minutes = Math.floor(elapsed/1000/60) % 60;
 
-			var mins = Math.floor(time/1000/60);
+			$dias.text(days), $horas.text(hours), $minutos.text(minutes);
 
-			$dias.text(days);
-			$horas.text(hours);
-			$minutos.text(mins);
-
-			setTimeout(arguments.callee, 6000);
+			setTimeout(arguments.callee, 6000); // callee esta obsoleto y deberia llamarse por el nombre;
+												// en este caso updateCounter, pero iexplorer8 no reconoce;
+												// este tipo de declaracion de funcion;
 		}();
 	}
 });
