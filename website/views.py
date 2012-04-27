@@ -8,6 +8,8 @@ from akismet import Akismet
 import GeoIP
 import image
 from models import Setting, Video, VideoComentario, VideoComentarioForm
+import datetime
+import time
 
 # La vista del home muestra el ultimo video destacado
 # y 4 videos mas, + el horario localizado
@@ -29,8 +31,24 @@ def home(solicitud):
 	return render_to_response('website/home.html', {
 		'ultimo_video': ultimo_video, # el ultimo video
 		'videos'	  : Video.objects.all().order_by('-fecha')[1:5], # ultimos 4 videos
-		'horario'	  : get_horario(solicitud.META), # el horario del programa localizado
+		'pais'	      : get_pais(solicitud.META), # el horario del programa localizado
+		'timestamp'   : get_timestamp(), #Obtiene el timestamp del siguiente programa 
 	})
+
+
+def siguiente_jueves_3pm(now):
+	_4PM = datetime.time(hour=16)
+	_JUE = 3 # Monday=0 for weekday()
+	now += datetime.timedelta( (_JUE - now.weekday()) % 7 )
+	now = now.combine(now.date(), _4PM)
+	return now
+		 
+   
+def get_timestamp():
+	now = datetime.datetime.now()
+	sig_jueves = siguiente_jueves_3pm(now)
+	return int(time.mktime(sig_jueves.timetuple()) * 1000)
+
 
 # el archivo muestra todos los videos 
 # organizados por mes-año
@@ -98,12 +116,7 @@ def handler404(solicitud):
 # devuelve el horario del programa
 # localizado por pais gracias a la 
 # libreria GeoIP
-def get_horario(meta):
-	horario = {
-		'pais': 'Centroamérica',
-		'hora': '3pm'
-	}
-
+def get_pais(meta):
 	geo = GeoIP.new(GeoIP.GEOIP_MEMORY_CACHE)
 
 	# por si el usuario esta detras de un proxy
@@ -112,46 +125,8 @@ def get_horario(meta):
 	else:
 		ip = meta['REMOTE_ADDR']
 
-	country = geo.country_code_by_addr(ip)
-
-	if country:
-		country = country.lower()
-
-		if country == 'mx':
-			horario['pais'] = 'México'
-			horario['hora'] = '4pm'
-		elif country == 've':
-			horario['pais'] = 'Venezuela'
-			horario['hora'] = '3:30pm'
-		elif country == 'co':
-			horario['pais'] = 'Colombia'
-			horario['hora'] = '4pm'
-		elif country == 'pe':
-			horario['pais'] = 'Perú'
-			horario['hora'] = '4pm'
-		elif country == 'ec':
-			horario['pais'] = 'Ecuador'
-			horario['hora'] = '4pm'
-		elif country == 'bo':
-			horario['pais'] = 'Bolivia'
-			horario['hora'] = '5pm'
-		elif country == 'cl':
-			horario['pais'] = 'Chile'
-			horario['hora'] = '6pm'
-		elif country == 'ar':
-			horario['pais'] = 'Argentina'
-			horario['hora'] = '6pm'
-		elif country == 'py':
-			horario['pais'] = 'Paraguay'
-			horario['hora'] = '6pm'
-		elif country == 'uy':
-			horario['pais'] = 'Uruguay'
-			horario['hora'] = '6pm'
-		elif country == 'br':
-			horario['pais'] = 'Brasil'
-			horario['hora'] = '7pm'
-		elif country == 'es':
-			horario['pais'] = 'España'
-			horario['hora'] = '11pm'
+	country = geo.country_name_by_addr(ip)
+	if country is None:
+		country = 'Centroamérica' 
 	
-	return horario
+	return country
