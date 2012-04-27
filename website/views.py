@@ -127,6 +127,6 @@ def get_pais(meta):
 
 	country = geo.country_name_by_addr(ip)
 	if country is None:
-		country = 'Centroamérica' 
+		country = '' 
 	
 	return country
