@@ -36,17 +36,20 @@ def home(solicitud):
 	})
 
 
-def siguiente_jueves_3pm(now):
+def siguiente_jueves_4pm(now):
 	_4PM = datetime.time(hour=16)
 	_JUE = 3 # Monday=0 for weekday()
+	old_now = now
 	now += datetime.timedelta( (_JUE - now.weekday()) % 7 )
 	now = now.combine(now.date(), _4PM)
+	if old_now >= now:
+		now += datetime.timedelta(days=7)
 	return now
-		 
+
    
 def get_timestamp():
 	now = datetime.datetime.now()
-	sig_jueves = siguiente_jueves_3pm(now)
+	sig_jueves = siguiente_jueves_4pm(now)
 	return int(time.mktime(sig_jueves.timetuple()) * 1000)
 
 

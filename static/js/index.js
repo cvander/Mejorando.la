@@ -22,7 +22,7 @@ jQuery(function ($) {
 	                  d = new Date(nextEpisode);
 
 	        // horario del programa
-			$hora.text(d.toString("htt"));
+			$hora.text(d.toString("h:mmtt"));
 
 			if(elapsed < 0) return; // detenemos el contador;
 
@@ -33,7 +33,7 @@ jQuery(function ($) {
 
 			$dias.text(days), $horas.text(hours), $minutos.text(minutes);
 
-			setTimeout(arguments.callee, 6000); // callee esta obsoleto y deberia llamarse por el nombre;
+			setTimeout(arguments.callee, 60100 - (new Date() % 60000)); // callee esta obsoleto y deberia llamarse por el nombre;
 												// en este caso updateCounter, pero iexplorer8 no reconoce;
 												// este tipo de declaracion de funcion;
 		}();
