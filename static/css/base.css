@@ -81,8 +81,8 @@ strong{font-weight:bold}
 #proximo span{display:block;font-size:12px;margin-top:10px;text-transform:uppercase}
 #proximo span:nth-child(6){margin-left:2px}
 #proximo .cuenta{display:inline-block;*display:inline;vertical-align:top;zoom:1;}
-#proximo .cuenta div{background:#3d4043;font-size:50px;font-weight:bold;height:64px;padding:0 10px;position:relative;}
-#proximo .cuenta div span{color:#fff;font-size:57px;position:relative}
+#proximo .cuenta div{font-size:50px;font-weight:bold;height:64px;position:relative;}
+#proximo .cuenta div span{background:#3d4043;color:#fff;font-size:57px;position:relative;padding:0 10px}
 #proximo .cuenta div .linea{background:#fff;display:none;height:2px;margin-left:-10px;margin-top:50%;position:absolute;width:100%}
 #proximo .cuenta:nth-child(even){margin:0 80px}
 #social{margin:-50px auto 0 auto;margin-left:310px;position:absolute;width:400px;z-index:5;}
