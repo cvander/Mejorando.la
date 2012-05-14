@@ -24,3 +24,4 @@ class VideoComentarioAdmin(admin.ModelAdmin):
 admin.site.register(Video, VideoAdmin)
 admin.site.register(VideoComentario, VideoComentarioAdmin)
 admin.site.register(Setting)
+admin.site.register(Curso, CursoAdmin)

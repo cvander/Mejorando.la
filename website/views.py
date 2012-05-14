@@ -52,6 +52,15 @@ def get_timestamp():
 	sig_jueves = siguiente_jueves_4pm(now)
 	return int(time.mktime(sig_jueves.timetuple()) * 1000)
 
+# el archivo de cursos 
+# organizados por mes-año
+def cursos(solicitud):
+	return render_to_response('website/cursos.html', {
+		'meses': [{
+			'fecha' : fecha,
+			'cursos': Curso.objects.filter(fecha__year=fecha.year, fecha__month=fecha.month,activado=True)
+		} for fecha in Curso.objects.dates('fecha', 'month', order='DESC')]
+	})
 
 # el archivo muestra todos los videos 
 # organizados por mes-año

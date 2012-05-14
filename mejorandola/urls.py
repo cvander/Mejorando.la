@@ -9,6 +9,7 @@ handler404 = 'website.views.handler404'
 
 urlpatterns = patterns('',
 	url(r'^$', 		   'website.views.home'), # home
+    url(r'^cursos/?$', 'website.views.cursos'), # archivo de cursos
 	url(r'^videos/?$', 'website.views.videos'), # archivo de videos
 	url(r'^videos/(?P<video_slug>.+?)/?$', 'website.views.video'), # video individual
     url(r'^live/?$',   'website.views.live'),  # transmision en vivo

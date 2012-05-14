@@ -1,0 +1,38 @@
+{% extends "website/base.html" %}
+
+{% block title %}Cursos Presenciales | Mejorando.la{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ STATIC_PREFIX }}css/base.css?2903" />
+<link rel="stylesheet" href="{{ STATIC_PREFIX }}css/videos.css" />
+{% endblock %}
+
+{% block body %}
+<section id="cuerpo">
+  <section id="archivo">
+	{% for mes in meses %}
+		<div class="mes">
+	      <h5>{{ mes.fecha|date:"F" }}</h5><span>{{ mes.fecha|date:"Y" }}</span>
+	    </div>
+
+	    <section id="anteriores">
+	      {% for curso in mes.cursos %}
+	      <article class="capitulo">
+	        <p class="desc">{{ curso.descripcion|striptags|truncatechars:120 }}</p>
+	        <div class="cintaver">
+	        </div><a href="{{ curso.get_absolute_url }}" title="{{ curso.titulo }}">
+	          
+	          <div class="imagen"><img src="{{ curso.get_thumb_image_url }}" alt="{{ curso.titulo }}"/></div>
+	          <div class="texto">
+	            <div class="block">
+	              <h2 class="tit">{{ curso.titulo|truncatechars:40 }}</h2>
+	            </div>
+	          </div></a>
+	      </article>
+		  {% endfor %}
+	    </section>
+	{% endfor %}
+    
+  </section>
+</section>
+{% endblock %}

@@ -3,18 +3,18 @@
 <html lang="es_ES">
   <head>
     <meta charset="utf-8" />
-    <title>{% block title %}Mejorando.la Web | un show en vivo de gente que crea Internet, todos los jueves a las 4pm GMT-5{% endblock %}</title>
+    <title>{% block title %}Mejorando.la | un show en vivo de gente que crea Internet, todos los jueves a las 4pm GMT-5{% endblock %}</title>
     
     <link rel="shortcut icon" href="{{ STATIC_PREFIX }}images/favicon.ico" />
 
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{% url feed %}" />
 
     <meta property="fb:page_id" content="198868566791554" />
-    <meta property="og:title" content="Mejorando.la" />
+    <meta property="og:title" content="{% block title %}Mejorando.la{% endblock %}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://mejorando.la/"/>
     <meta property="og:image" content="http://mejorando.la/images/isotipo.png" />
-    <meta property="og:site_name" content="http://mejorando.la/" />
+    <meta property="og:site_name" content="mejorando.la" />
     <meta property="fb:admins" content="1030603473" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
